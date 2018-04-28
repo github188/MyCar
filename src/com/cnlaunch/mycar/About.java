@@ -26,7 +26,7 @@ public class About extends Activity implements OnClickListener {
         View okButton = findViewById(R.id.about_ok);
         okButton.setOnClickListener(this);
         View projectUrl = findViewById(R.id.project_url);
-        projectUrl.setOnClickListener(this);
+        projectUrl.setOnClickListener(this);//你好 。。。。。
         m_version = (TextView)findViewById(R.id.mycar_about_version);
         m_version.setText(Constants.MYCAR_VERSION);/*客户端软件的当前版本*/
         m_builder_version = (TextView)findViewById(R.id.mycar_about_builder_version);
