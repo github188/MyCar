@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:orientation="horizontal" >
+			<LinearLayout 
+				android:id="@+id/userinfo_ll1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_marginTop="5dip"
+				android:layout_marginLeft="20dip"
+				android:layout_marginBottom="5dip"
+				android:orientation="vertical">
+				<TextView 
+			  		android:id="@+id/usercenter_tv_userinfo_label" 
+			  		android:layout_weight="0.13" 
+					android:textColor="@color/main_black"
+					android:textSize="20dip"
+					android:text="用户名"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"></TextView>	
+	        	<TextView 
+		        	android:id="@+id/usercenter_tv_userinfo_value" 
+		        	android:layout_weight="0.13"
+		        	android:text="randyyyyy" 
+		 			android:layout_height="wrap_content" 
+		 		    android:textColor="@color/main_description"
+					android:layout_width="wrap_content"></TextView>		
+			</LinearLayout>
+			<LinearLayout 
+				android:id="@+id/userinfo_ll2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dip"
+				android:layout_alignParentRight="true"
+				android:layout_marginLeft="30dip"
+				android:orientation="horizontal">
+				<ImageView android:id="@+id/userinfo_bind"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+					android:visibility="invisible"
+					android:src="@drawable/bind"/>		        	
+				<ImageView android:id="@+id/userinfo_edit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/edit"/>
+			
+			</LinearLayout>
+</RelativeLayout>

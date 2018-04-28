@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/im_chat_log_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageview_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_list_item_margin_left"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/im_ic_folder" />
+
+    <TextView
+        android:id="@+id/textview_file_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/main_list_item_margin_right"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="文件夹"
+        android:textColor="@color/black"
+        android:textSize="@dimen/im_list_item_title" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="device_activate_guide">
+	Before using, the unit needs to be Activated. 
+	1. Log in your account;
+	2. Ensure the DBScar connector is in 16 PIN DLC under the dash (see the picture below);
+	3. Connect the DBScar connector via Bluetooth;
+	4. Turn the ignition switch to ON position;
+	Caution: Disconnect the DBScar connector from DLC during the activation will permanent damage the vehicle and device!
+    </string><!--尊敬的用户,在开始使用车云卡(DBScar)之前,必须激活并下载相应车型软件.请将车云卡(DBScar)接上汽车的OBDII诊断座,并使汽车钥匙处于打开状态.-->
+    <string name="device_configure_guide">
+	Congratulations! The DBScar connector is activated. Please update the firmware.    
+	</string><!--恭喜你，车云卡(DBScar)激活成功 -->
+    <string name="firmware_update_guide">
+	Before using, the unit needs to be updated. 
+	1. Log in your account;
+	2. Ensure the DBScar connector is in 16 PIN DLC under the dash (see the picture below);
+	3. Connect the DBScar connector via Bluetooth;
+	4. Turn the ignition switch to ON position;
+	Caution: Disconnect the DBScar connector from DLC during the update will permanent damage the vehicle and device!
+    </string><!--尊敬的用户,在开始使用车云卡(DBScar)之前,必须下载车型配置软件并升级,请将车云卡(DBScar)接上汽车的OBDII诊断座.如下图：-->
+</resources>

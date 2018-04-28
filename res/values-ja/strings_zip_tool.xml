@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ZIP 解凍  @author luxingsong -->
+    <string name="zip_decompressing_now">データを解凍中&#8230;</string>
+    <string name="zip_decompress_error"> 解凍エラー!</string>
+    <string name="zip_decompress_exception"> 解凍が異常!</string>
+    <string name="zip_decompress_success"> 解凍完了!</string>
+    <string name="zip_get_the_file">選択したファイルを</string>
+    <string name="zip_decompress_to">に解凍します</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/manager_custom_keyboard_padding_bottom"
+     >
+
+    <!-- 以下是数字键盘 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/keyboard_num_1"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@drawable/manager_keyboard_button_1"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_2"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_2"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_3"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_3"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/keyboard_num_4"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_4"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_5"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_5"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_6"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_6"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/keyboard_num_7"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_7"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_8"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_8"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_9"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_9"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/keyboard_num_0"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_0"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_point"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_point"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_num_textsize"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/keyboard_num_del"
+            android:layout_height="@dimen/manager_category_button_height"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+            android:layout_margin="4dip"
+            android:background="@drawable/manager_keyboard_button_del"
+            android:onClick="CustomKeyboardButton_ClickHandler"
+            android:textSize="@dimen/manager_custom_keyboard_del_textsize"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

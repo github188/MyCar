@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 蓝牙配对界面  add by pufengming 20120331-->
+    <string name="bluetoothconnect_open">正在打开蓝牙...</string>
+    <string name="bluetoothconnect_Readversioning">正在读取版本信息...</string>
+    <string name="bluetoothconnect_title">蓝牙连接配对</string>
+    <string name="bluetoothconnect_button_return">返回</string>
+    <string name="bluetoothconnect_button_reset">重置</string>
+    <string name="bluetoothconnect_button_search">搜寻设备</string>
+    <string name="bluetoothconnect_button_searching">正在搜寻...</string>
+    <string name="bluetoothconnect_pair">已配对</string>
+    <string name="bluetoothconnect_nopair">未配对</string>
+    <string name="bluetoothconnect_mac_error">蓝牙地址错误！</string>
+    <string name="bluetoothconnect_blue_connectnone">未连接...</string>
+    <string name="bluetoothconnect_blue_connecting">正在连接...</string>
+    <string name="bluetoothconnect_blue_connected">已连接</string>
+    <string name="bluetoothconnect_blue_connectfail">连接不成功</string>
+    <string name="bluetoothconnect_set_changename">修改蓝牙名称</string>
+    <string name="bluetoothconnect_set_cancelpair">取消配对</string>
+    <string name="bluetoothconnect_input_title">请输入新的蓝牙名称:</string>
+    <string name="bluetoothconnect_input_ok">确定</string>
+    <string name="bluetoothconnect_input_cancel">取消</string>
+    <string name="bluetoothconnect_retry">重试</string>
+    <string name="bluetoothconnect_pair_waitting">操作中，请等待...</string>
+    <string name="bluetoothconnect_pair_checkpasswording">正在验证密码...</string>
+    <string name="bluetoothconnect_pair_changenameing">正在修改蓝牙名称...</string>
+    <string name="bluetoothconnect_pair_changename_ok">改名成功，重新搜索完成后显示新名称!</string>
+    <string name="bluetoothconnect_pair_changename_false">改名失败，请返回!</string>
+    <string name="bluetoothconnect_input_firstname">DBS </string>
+    <string name="bluetoothconnect_tip_bluecancel">蓝牙已关闭，请重新进入！</string>
+ 	<string name="bluetoothconnect_illegal">连接失败，请确认该设备是否被您所激活注册</string>
+</resources>

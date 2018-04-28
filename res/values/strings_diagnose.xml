@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ggpFileName -->
+    <string name="obdGgpFileName">obd2_en.ggp</string><!---->
+
+    <!-- DeviceListActivity -->
+    <string name="select_device">Select Connector</string><!--查询蓝牙给予连接-->
+    <string name="none_paired">No paired connector found!</string><!--无已配对蓝牙-->
+    <string name="none_found">No connector found!</string><!--搜索无结果-->
+    <string name="title_paired_devices">Paired Device</string><!--已配对蓝牙-->
+    <string name="title_other_devices">Other Devices</string><!--其他蓝牙-->
+    <string name="button_scan">Search</string><!--搜寻蓝牙设备-->
+    <string name="back_main">Main</string><!--主页-->
+    <string name="back_pre">Back</string><!--返回-->
+    <string name="dialog_yes">Yes</string><!--是-->
+    <string name="dialog_no">No</string><!--否-->
+    <string name="dialog_ok">Okay</string><!--确定-->
+    <string name="dialog_retry">Retry</string><!--重试-->
+    <string name="dialog_cancle">Cancel</string><!--取消-->
+    <string name="dialog_print">Print</string><!--打印-->
+    <string name="dialog_cancel_datastreamchoice">Reset</string><!--重选-->
+    <string name="diag_selectversion">About</string><!--诊断版本信息-->
+    <string name="datastream_show_graph">Graph</string><!--图像显示-->
+    <string name="datastream_graph_up">Previous</string><!--上一页-->
+    <string name="datastream_graph_down">Next</string><!--下一页-->
+    <string name="datastream_title_checkbox">Select All</string><!--全选-->
+    <string name="diagnose_exit_title">Info</string><!--重要提示-->
+    <string name="diagnose_exit_messge1">Exit</string><!--退出高级诊断？-->
+    <string name="datastream_graph_tip_title">Info</string><!--提示-->
+    <string name="datastream_choice_tip_title_adv">Suggestioin:</string><!--建议:-->
+    <string name="datastream_graph_tip_message">No PID selected</string><!--没有可以绘制的数据流！-->
+    <string name="datastream_choice_tip_msg">Please select the PID:</string><!--请选择数据流!-->
+    <string name="datastream_choice_tip_toomuch">Selected too much,the automatic reduction of 100!</string><!--当前数据流选中超过100条，为了保证数据流显示的流畅性，本次自动缩减为100条!  这里就不应该让他选择超过100条的数据流。而不是给客户减掉-->
+    <string name="bluetoothdevicelist_connect_failed">Connection Failed</string><!--蓝牙连接失败，重试？-->
+    <string name="bluetoothdevicelist_password_check_failed">Verification Failed</string><!--密码验证失败，重试？-->
+    <string name="bluetoothdevicelist_zhixing_failed">Execution fails, try again?</string><!--执行失败，重试？ 需要解释-->
+    <string name="menu_show_nodtc">No DTC Found!</string><!--无故障码!-->
+    <string name="diagnose_menu_show_title">Menu</string><!--菜单-->
+
+    <!-- 诊断版本信息 -->
+    <string name="version_progress_title">Diagnostic Software Version Information</string><!--诊断版本信息-->
+    <string name="version_progress_readversion">Loading...</string><!--正在读取版本信息…-->
+    <string name="version_progress_enter_download">Checking...</string><!--正在检查…-->
+    <string name="version_progress_enter_diagmode">Loading...</string><!--正在进入…-->
+    <string name="version_progress_input_password">Verifying...</string><!--正在验证密码…-->
+    <string name="version_progress_reset_password">Updating...</string><!--正在重置密码…-->
+    <string name="version_progress_safecheck">Verifying...</string><!--正在进行安全认证…-->
+    <string name="versoin_show_dpuid">DPU_ID:</string><!---->
+    <string name="version_show_serialno">S/N</string><!--序列号:-->
+    <string name="version_show_language">Language</string><!--车型语言:-->
+    <string name="version_show_carname">Model Name:</string><!--车型名称:-->
+    <string name="version_show_diagversion">Model Ver:</string><!--车型版本:-->
+    <string name="version_show_boot">BOOT Ver：</string>
+    <string name="version_show_download">Download Ver：</string>
+    <string name="version_button_enter_update">Update</string><!--进入升级中心!-->
+    <string name="version_button_enter_diag">Diagnostics</string><!--进入诊断-->
+    <string name="version_button_enter_fast_diag">Quick Diagnostics</string><!--进入快速诊断-->
+    <string name="version_no_find_sd_card">No SDCard!</string><!--手机没有SD卡不能进行诊断!-->
+    <string name="version_button_enter_noconnect">Bluetooth disconnect,reconnected,Please!</string><!--蓝牙未连接,请重新进入!-->
+    <string name="datastream_graph_first_page">It\'s the first page!</string><!--已经是第一页-->
+    <string name="datastream_graph_last_page">It\'s the last page!</string><!--已经是最后一页-->
+    <string name="firmware_needs_to_be_updated">Firmware needs to be updated</string><!-- 有固件需要更新 -->
+    <string name="version_selectcar_not_equal">Select vehicle inconsistent with current DPU! Do you want to continue?</string>
+	<string name="version_selectlang_not_equal">Select language inconsistent with current DPU!\nIf you continue, may cause display garbled! Do you want to continue?</string>
+	<string name="version_enter_update_toast">Version inconsistencies, please upgrade ...</string>
+	<string name="version_enter_update_notcomplete">The last upgrade was not completed！</string>
+	<string name="version_bluetooth_connect_lost">Bluetooth connection interrupted, please restart the diagnosis!</string>
+	
+	<!-- 诊断模块string注册区域                       begin -->
+    <string name="diagnoseMain">Diagnose</string>
+    <string name="datastream_choice_title">Datastream select</string>
+    <string name="datastream_show_title">Datastream</string>
+    <string name="diag_dtc_title">DTC</string>
+    <string name="diagnose_quit">Exit</string>
+    <!-- 诊断模块string注册区域                          end -->
+    
+    <!-- 异常处理 -->
+    <string name="error_title">Tips</string><!--提示-->
+    <string name="back_too_long">Error: Invalid package length</string><!--接收到的数据包长度过长！-->
+    <string name="BT_check_error">Error: Bluetooth verification Error!</string><!--蓝牙通信校验错误！-->
+    <string name="diag_commun_error_title">Communication Error</string><!--通讯错误-->
+    <string name="diag_error_00">Error Code - 00: Communication Timeout</string><!--通讯超时-->
+    <string name="diag_error_01">Error Code - 01: Security key is not available.</string><!--尚未获得安全校验,或安全校验错误! 需要解释-->
+    <string name="diag_error_02">Error Code - 02: Data Received, DBScar connector is busy.</string><!--数据已接收,接头在忙!-->
+    <string name="diag_error_03">Error Code - 03: Data Not Received, DBScar connector is busy.</string><!--数据未接收,接头在忙!-->
+    <string name="diag_error_04">Error Code - 04: Insufficient Storage Space!</string><!--存储空间不足!-->
+    <string name="diag_error_05">Error Code - 05: The Target File Exists!</string><!--文件已存在!-->
+	<string name="diag_error_06">Error Code - 06: The target file exists, update is completed.</string><!--已存在该软件,版本相同,升级完成!-->
+    <string name="diag_error_07">Error Code - 07: The target file exists, update is imcompleted.</string><!--已存在该软件,版本相同,升级未完成!-->
+    <string name="diag_error_08">Error Code - 08: Incorrect Data Length.</string><!--数据长度校验错误,写入位置与已接收数据长度不符!-->
+    <string name="diag_error_09">Error Code - 09: File check failed.</string><!--MD5校验失败!-->
+    <string name="diag_error_10">Error Code - 10: Wrong Number of Files</string><!--文件数量不正确!需要解释-->
+    <string name="diag_error_11">Error Code - 11: Fatal Exception Error</string><!--其他异常!-->
+    <string name="diag_error_12">Error Code - 12: Insufficient Memory!</string><!--分配空间不足!-->
+    <string name="diag_error_13">Error Code - 13: Cannot erase the the file!</string><!--擦除失败!-->
+    <string name="diag_error_14">Error Code - 14: Cannot write to file!</string><!--写失败!-->
+    <string name="diag_error_15">Error Code - 15: Incorrect File Path!</string><!--文件空!-->
+    <string name="diag_error_16">Error Code - 16: Incorrect File Length!</string><!--文件长度问题!-->
+    <string name="diag_error_17">Error Code - 17: Incorrect Configuration!</string><!--设置出错!需要解释-->
+    <string name="diag_error_18">Error Code - 18: Incorrect Password!</string><!--密码不正确!-->
+    <string name="diag_error_19">Error Code - 19: Incorrect Verification Code!</string><!--密码验证未通过!-->
+    <string name="diag_error_20">Error Code - 20: The maximum number of login attempts has been reached</string><!--密码错误次数过多-->
+
+    <!-- 蓝牙连接提示对话框 -->
+    <string name="BT_conn_dialog_message">DBSCar connector is needed for</string><!--此功能需要在蓝牙连接情况下才可使用，蓝牙尚未连接，是否进行蓝牙连接-->
+    <string name="BT_conn_dialog_title">Tips</string><!--提示-->
+    <string name="BT_conn_dialog_choose_yes">Yes</string><!--是-->
+    <string name="BT_conn_dialog_choose_no">No</string><!--否-->
+
+    <!-- 数据流选择 -->
+    <string name="dataStreamChooseOKButton">Okay</string><!--确定-->
+
+</resources>

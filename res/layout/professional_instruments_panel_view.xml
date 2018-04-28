@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#000000"
+	android:orientation="vertical" >
+	<AbsoluteLayout
+		android:layout_width="800px"
+		android:layout_height="0dip"
+		android:layout_weight="353" >
+		<com.cnlaunch.mycar.professioninstruments.PanelView1
+			android:id="@+id/professional_instrument_panelview"
+			android:layout_width="800px"
+			android:layout_height="353px" />
+	</AbsoluteLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="127"
+		android:background="#000000"
+		android:orientation="horizontal" >
+		<ImageView
+			android:id="@+id/professional_instruments_abs"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_abs" />
+		<ImageView
+			android:id="@+id/professional_instruments_park"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_parking" />
+		<ImageView
+			android:id="@+id/professional_instruments_maintenance"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_maintenance" />
+		<ImageView
+			android:id="@+id/professional_instruments_doors"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_doors" />
+		<ImageView
+			android:id="@+id/professional_instruments_seatbelt"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_seatbelt" />
+		<ImageView
+			android:id="@+id/professional_instruments_highbeam"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_highbeam" />
+		<ImageView
+			android:id="@+id/professional_instruments_frontlight"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_frontlight" />
+		<ImageView
+			android:id="@+id/professional_instruments_backlight"
+			android:layout_width="0dip"
+			android:layout_height="50dip"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:src="@drawable/professional_instruments_backlight" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 简易报告 -->
+    <string name="simple_report">快速诊断</string>
+    <string name="pre_exam_num">车辆上次体检得分:</string>
+    <string name="car_exam">开始体检</string>
+    <string name="question_num">故障码个数:</string>
+    <string name="cause_result">可能造成的后果:</string>
+    <string name="help_advise">驾驶行为分析与建议:</string>
+    <string name="data_stream_name">数据流名称</string>
+    <string name="data_stream_value">数据值</string>
+    <string name="simple_report_maxvalue">最大值</string>
+    <string name="simple_report_minvalue">最小值</string>
+    <string name="simple_report_datailInfo">详细报告</string>
+    <string name="diag_scan_sys_list">正在扫描:系统列表</string>
+    <string name="diag_scan_sys_data_stream">正在扫描:系统数据流</string>
+    <string name="diag_scan_sys_question_code">正在扫描:系统故障码</string>
+    <string name="diag_scan_finish">扫描完成</string>
+    <string name="diag_advise_regular">正常</string>
+    <string name="diag_sp_push_str">检测到</string><!-- 标签 1-->
+    <string name="diag_sp_push_unit">个故障码</string><!-- 单1元 -->
+    <string name="diag_sp_push_str2">你还没有检测</string><!-- 标签 2 -->
+    <string name="diag_sp_push_str3"></string><!-- 标签 3 -->  
+    <string name="diag_sp_push_unit2">故障码</string><!-- 单元2 -->
+    <string name="diag_sp_error_00">通讯超时</string>
+    <string name="diag_sp_error_01">密码验证失败</string>
+	<string name="diag_sp_error_02">安全认证失败</string>
+	<string name="diag_sp_no_sys_list">读取系统支持的列表失败</string>
+	<string name="diag_sp_no_appoint_data_list">读取指定系统数据流列表失败</string>
+	<string name="diag_sp_no_appoint_id_list">读取指定ID的数据流失败</string>
+	<string name="diag_sp_no_appoint_doc_list">读取指定系统故障码列表失败</string>
+	<string name="diag_sp_bluetooth_connection_lost">蓝牙连接断开</string>
+	<string name="diag_sp_bluetooth_re_connect">重新连接</string>
+    <string name="diag_sp_activity_init">正在初始化...</string>
+    <string name="diag_car_pre_check_num">你的爱车上次体检得分是: </string>
+	<string name="diag_all_test_doc">，共检测出 </string>
+	<string name="diag_car_not_check">您的爱车尚未体检，请立即体检 </string> 
+	<string name="diag_car_cur_check_num">车辆体检得分: </string>
+	<string name="diag_all_test">您的爱车还没有体检，请立即体检，祝您旅途愉快</string>
+	<string name="diag_some_good_advise">，请尽快处理，祝您旅途愉快 </string>
+	<string name="diag_stop_car_exam">停止体检</string>
+	<string name="diag_sp_sys_no_support">系统不支持</string>
+	<string name="diag_sp_error_title2">错误</string>
+ 	<string name="diag_sp_id_not_defined">ID未定义</string>
+ 	<string name="diag_sp_data_name_not_defined">名称未定义</string>
+ 	<string name="diag_sp_sys_data_empty">没有系统列表</string>
+ 	<string name="diag_sp_sys_info_show">信息提示</string>
+ 	<string name="diag_sp_timeing_info">系统正忙，请在 10秒以后再点击 </string>
+ 	<string name="diagnose_sp_exit_messge">退出快速诊断</string>
+ 	<string name="diagnose_sp_update_show_messge">升级尚未完成，不能使用快速诊断，请升级</string>
+</resources>

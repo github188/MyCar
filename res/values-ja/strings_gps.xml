@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gps_track">足跡</string>
+    <string name="track_list">足跡リスト</string>
+    <string name="error_gps_improt_io">GPXファイル読取失敗</string>
+    <string name="error_gps_improt_xml_parse">GPXファイル解析エラー</string>
+    <string name="error_gps_improt_xml_parse_io">GPXファイル解析異常</string>
+    <string name="error_gps_improt_xml_parse_time_parse">GPXファイル解析異常、ウェイポイントの日付のフォーマットが正しくありません</string>
+    <string name="gps_map_menu">メニュー</string>
+    <string name="gps_map_start">スタート</string>
+    <string name="gps_map_pause">一時停止</string>
+    <string name="gps_map_resume">続行</string>
+    <string name="gps_map_stop">ストップ</string>
+    <string name="gps_map_note">メモ</string>
+    <string name="gps_map_photo">撮影</string>
+    <string name="gps_map_locate">ロケーション</string>
+    <string name="gps_provider_network">GPRS位置</string>
+    <string name="gps_provider_gps">GPS位置</string>
+    <string name="gps_provider_undisabled">位置取得サービスが無効、トラックを記録できません</string>
+    <string name="gps_service_start">トラック記録機能が既に起動されました</string>
+    <string name="gps_default_track_name">足跡</string>
+    <string name="gps_default_track_datetime">2012-2-29 9:51:01</string>
+    <string name="gps_no_waypoint">記録中です。ウェイポイントを取得できませんでした</string>
+    <string name="gps_out_of_service">GPS電波が悪く、ロケーション機能が失敗しました</string>
+    <string name="gps_temporarily_unavailable">GPS電波が弱く，ロケーションが一時失敗しました</string>
+    <string name="gps_get_waypoint">記録中: %1$sつのウェイポイントを取得しました</string>
+    <string name="gps_notice">表示</string>
+    <string name="gps_open">GPSをオンにします</string>
+    <string name="gps_cancle">キャンセル</string>
+    <string name="gps_note_with_no_waypoint">ロケーション情報を取得していません。他の位置情報と関連していません。続行しますか？</string>
+    <string name="gps_photo_with_no_waypoint">ロケーション情報を取得していません。他の位置情報と関連していません。続行しますか？</string>
+    <string name="gps_go_on">続行</string>
+    <string name="gps_wait_for_create_gpxfile">GPXファイルを作成しています。お待ちください…</string>
+    <string name="gps_ensure">OK</string>
+    <string name="gps_export_failed">エクスポートできませんでした。SDカードが正しく差込まれているか確認してください</string>
+    <string name="gps_export_succ">エクスポート完了。保存ファイルは：</string>
+    <string name="gps_no_track">トラックなし</string>
+    <string name="gps_is_ensure_to_import">インポートしますか？</string>
+    <string name="gps_tarck_opterate">実施</string>
+    <string-array name="gps_track_list_operate">
+        <item>名称変更</item>
+        <item>削除</item>
+        <item> GPXファイルをエクスポートします</item>
+        <item>トラックを確認します</item>
+    </string-array>
+    <string name="gps_track_del_failed">削除できませんでした。トラックを記録中...</string>
+    <string name="gps_wait_for_export">エクスポート中，お待ちください…</string>
+    <string name="gps_edit_track_name">トラック名を変更します</string>
+    <string name="gps_track_name">トラック名</string>
+    <string name="gps_track_start">トラックスタート</string>
+    <string name="gps_save">保存</string>
+    <string name="gps_cancel">キャンセル</string>
+    <string name="gps_sure">OK</string>
+    <string name="gps_unavailable">GPS起動していません。トラックを記録できません</string>
+    <string name="gps_track_name_cannot_be_blank">トラック名を記入してください</string>
+    <string name="gps_cannot_save_photo_for_sdcard_unavailable">SDカード異常、写真を保存できません</string>
+    <string name="gps_note">ノード</string>
+    <string name="gps_tip">注意</string>
+    <string name="gps_ensure_to_stop_track">トラック記録を中止しますか？</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<TextView
+		android:id="@+id/tv_title_user"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginTop="5dip"
+		android:background="@drawable/main_detail_title"
+		android:text="@string/usercenter_account"
+		android:textColor="@color/main_black"
+		android:textSize="16dip" />
+	<LinearLayout
+		android:id="@+id/ll_userinfo"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:background="@drawable/main_detail_panel"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/tv_label_username"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/usercenter_username"
+			android:textColor="@color/main_black"
+			android:textSize="20dip" />
+		<TextView
+			android:id="@+id/tv_value_username"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/usercenter_userinfo"
+			android:textColor="@color/main_description"
+			android:textSize="16dip" />
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/main_divider" />
+		<TextView
+			android:id="@+id/tv_label_email"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/usercenter_email"
+			android:textColor="@color/main_black"
+			android:textSize="20dip" />
+		<TextView
+			android:id="@+id/tv_value_email"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/usercenter_userinfo"
+			android:textColor="@color/main_description"
+			android:textSize="16dip" />
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/main_divider" />
+		<RelativeLayout
+			android:id="@+id/rl_userinfo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingBottom="10dp"
+			android:visibility="invisible"
+			android:paddingTop="10dp" >
+			<TextView
+				android:id="@+id/tv_userinfo_ex"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/uc_ex_userinfo"
+				android:textColor="@color/main_black"
+				android:textSize="20dip" />
+			<ImageView
+				android:id="@+id/iv_ex_userinfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:layout_marginTop="10dp"
+				android:src="@drawable/setting_arrows" />
+		</RelativeLayout>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_title_device"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginTop="5dip"
+		android:background="@drawable/main_detail_title"
+		android:text="@string/usercenter_device_info"
+		android:textColor="@color/main_black"
+		android:textSize="16dip" />
+
+	<RelativeLayout
+		android:id="@+id/ll_userinfo"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:background="@drawable/main_detail_panel"
+		android:orientation="vertical" >
+		<ListView
+			android:id="@+id/list_device_info"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:divider="@drawable/main_divider"
+			android:layout_marginBottom="70dip"
+			android:fadingEdge="none"
+			android:scrollingCache="false" >
+		</ListView>
+		<LinearLayout
+			android:id="@+id/usercenter_linelayout05"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp"
+			android:gravity="left"
+			android:orientation="vertical" > 
+			<LinearLayout
+				android:id="@+id/usercenter_linelayout04"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="10dp"
+				android:visibility="invisible"
+				android:gravity="left"
+				android:orientation="vertical" >
+				<TextView
+					android:id="@+id/usercenter_ask_device"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20px"
+					android:paddingRight="20px"
+					android:text="@string/usercenter_ask_device_notice"
+					android:textColor="@color/main_description"
+					android:textSize="14dp" />
+			</LinearLayout>
+
+		</LinearLayout>
+		<LinearLayout
+				android:id="@+id/usercenter_linelayout04"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginTop="5dp"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal" >
+				<Button
+					android:id="@+id/btn_activate"
+					android:text="@string/uc_immediately_activate"
+    				android:layout_width="@dimen/usercenter_login_button_width_small"
+    				android:layout_height="@dimen/usercenter_login_button_height"		
+    				android:textColor="@color/main_black"
+			   		android:background="@drawable/main_button_gray" 
+			   		/>
+				<!-- 
+				<Button
+					android:id="@+id/btn_buy"
+					android:text="@string/uc_immediately_buy"
+					android:layout_marginLeft="30dip"
+    				android:layout_width="@dimen/usercenter_login_button_width_small"
+    				android:layout_height="@dimen/usercenter_login_button_height"		
+    				android:textColor="@color/main_black"
+			   		android:background="@drawable/main_button_gray" 
+					 /> -->
+			</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

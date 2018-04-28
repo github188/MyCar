@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+    <LinearLayout
+    	android:orientation = "vertical"
+    	android:id = "@+id/usercenter_linelayout01"
+    	android:gravity="center_horizontal"
+    	android:layout_width= "fill_parent"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="5dp"
+    	android:layout_height="wrap_content">
+		<TextView 
+			android:id="@+id/usercenter_register_notice" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="14dp"
+			android:textColor="@color/main_description"
+			android:text="@string/usercenter_register_notice"
+			/> 
+    </LinearLayout>
+	<LinearLayout
+    	android:orientation = "vertical"
+    	android:id = "@+id/usercenter_linelayout02"
+    	android:gravity="left"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_width= "fill_parent"
+    	android:layout_height="wrap_content">
+		<TextView 
+			android:id="@+id/usercenter_tv_cc" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:gravity="left"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:textColor="@color/main_black"
+			android:text="@string/usercenter_cc"
+			/>			
+		<TextView 
+			android:id="@+id/usercenter_tv_username" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:gravity="left"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:layout_marginTop="10dp"
+			android:textColor="@color/main_black"
+			android:text="@string/usercenter_username"
+			/>
+		<TextView 
+			android:id="@+id/usercenter_tv_email" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:gravity="left"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:layout_marginTop="10dp"			
+			android:textColor="@color/main_black"
+			android:text="@string/usercenter_email"
+			/>				
+		<TextView 
+			android:id="@+id/usercenter_tv_password" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:gravity="left"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:layout_marginTop="10dp"			
+			android:textColor="@color/main_black"
+			android:text="@string/usercenter_password"
+			/>					
+		<TextView 
+			android:id="@+id/usercenter_tv_mobile" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:gravity="left"
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:layout_marginTop="10dp"			
+			android:textColor="@color/main_black"
+			android:text="@string/usercenter_mobile"
+			/>							
+    </LinearLayout>
+	<LinearLayout
+    	android:orientation = "vertical"
+    	android:id = "@+id/usercenter_linelayout03"
+    	android:gravity="center_horizontal"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_width= "fill_parent"
+    	android:layout_height="wrap_content">
+		<Button 
+			android:id="@+id/usercenter_btn_ensure"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="@string/uc_confirm"
+			android:textColor="@color/white"
+			android:background="@drawable/main_button"/>				
+    </LinearLayout>    
+	<LinearLayout
+    	android:orientation = "vertical"
+    	android:id = "@+id/usercenter_linelayout04"
+    	android:gravity="left"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_width= "fill_parent"
+    	android:layout_height="wrap_content">
+		<TextView 
+			android:id="@+id/usercenter_ask_device" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="20px"
+			android:paddingRight="20px"
+			android:textSize="14dp"
+			android:textColor="@color/main_description"
+			android:text="@string/usercenter_ask_device_notice"
+			/>			
+    </LinearLayout>    	
+    <RelativeLayout 
+    	android:id="@+id/usercenter_confirm_relativelayout01"
+   		android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+   		android:gravity="center_horizontal" >
+	<LinearLayout
+    	android:id = "@+id/usercenter_linelayout04"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal" >
+		<Button 
+			android:id="@+id/btn_activate"
+			android:text="@string/uc_immediately_activate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/usercenter_btn_padding"
+			android:paddingRight="@dimen/usercenter_btn_padding"
+			android:paddingTop="@dimen/usercenter_btn_padding_vertical"
+			android:paddingBottom="@dimen/usercenter_btn_padding_vertical"  				
+			android:textColor="@color/main_black"
+	   		android:background="@drawable/main_button_gray" />
+<!-- 		<Button 
+			android:id="@+id/btn_buy"
+			android:text="@string/uc_immediately_buy"
+			android:paddingLeft="@dimen/usercenter_btn_padding"
+			android:paddingRight="@dimen/usercenter_btn_padding"
+			android:paddingTop="@dimen/usercenter_btn_padding_vertical"
+			android:paddingBottom="@dimen/usercenter_btn_padding_vertical"
+			android:layout_marginLeft="47dip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/main_black"
+	    	android:background="@drawable/main_button_gray" 
+	    	/> -->
+    </LinearLayout>    	
+	</RelativeLayout>	
+</LinearLayout>

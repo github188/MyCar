@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="5dip"
+        android:background="@drawable/manager_list_head">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_marginLeft="17dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/manager_billing_user_settings_usercar_name"
+            android:text="@string/manager_billing_user_settings_usercar_name" />
+
+        <EditText
+            android:id="@+id/textview_manager_billing_user_settings_usercar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_edit"
+            android:singleLine="true"
+            android:layout_weight="3"
+            android:maxLength="10"
+             >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/manager_billing_user_settings_usercar_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_button"
+            android:textColor="@color/white"
+            android:textSize="14dip"
+            android:paddingLeft="30dip"
+            android:text="@string/manager_billing_user_settings_usercar_add" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/manager_billing_user_settings_usercar_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/main_divider"
+        android:dividerHeight="@dimen/manager_divider_height" >
+    </ListView>
+
+</LinearLayout>

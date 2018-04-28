@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="manager_keyboard_num_0">0</string>
+	<string name="manager_keyboard_num_1">1</string>
+	<string name="manager_keyboard_num_2">2</string>
+	<string name="manager_keyboard_num_3">3</string>
+	<string name="manager_keyboard_num_4">4</string>
+	<string name="manager_keyboard_num_5">5</string>
+	<string name="manager_keyboard_num_6">6</string>
+	<string name="manager_keyboard_num_7">7</string>
+	<string name="manager_keyboard_num_8">8</string>
+	<string name="manager_keyboard_num_9">9</string>
+    <string name="manager_keyboard_num_point">.</string>
+	<string name="manager_keyboard_num_del">削除</string>
+	<string name="manager_category">支出別</string>
+	<string name="manager_datetime">支出別</string>
+	<string name="licheng">KM</string>
+	<string name="edit">編集</string>
+	<string name="manager_amount">金額</string>
+	<string name="manager_save">保 存</string>
+	<string name="manager_editsave">変 更</string>
+	<string name="manager_editsave_full">変更を保存</string>
+	<string name="manager_menu_detail">明細</string>
+	<string name="manager_menu_day_list">本月請求書</string>
+	<string name="manager_menu_statistics">一覧</string>
+	<string name="manager_setting">設定</string>
+	<string name="manager_err_db_readnull">データ読取失敗</string>
+	<string name="manager_otherCategory">他の種類</string>
+	<string name="manager_other">一覧</string>
+	<string name="manager_custom_category">カスタマ定義別</string>
+	<string name="manager_custom_category_hint">4文字以内</string>
+	<string name="manager_custom">カスタマ定義</string>
+	<string name="manager_no_other_category">他の種類がなし。[カスタマ定義]をクリックして追加します</string>
+	<string name="manager_ensure">OK</string>
+	<string name="manager_cancel">キャンセル</string>
+	<string name="manager_delete">削除</string>
+	<string name="manager_edit">編集</string>
+	<string name="manager_err_null_category">種類を選択してください</string>
+	<string name="manager_err_null_amount">金額を入力してください</string>
+	<string name="manager_err_invalid_amount">金額入力が無効</string>
+	<string name="licheng_dushu">メータマイル数</string>
+	<string name="manager_saved">保存完了</string>
+	<string name="billing_add">支出</string>
+	<string name="billing_edit">変更</string>
+	<string name="billing_statistics_year_list">年度統計</string>
+	<string name="billing_statistics_year_choose">統計年間を選択してください</string>
+	<string name="manager_totalize">総合</string>
+	<string name="manager_detail_title">タイトル</string>
+	<string name="manager_close">ホームページ</string>
+	<string name="month">月</string>
+	<string name="day">日</string>
+	<string name="year">年</string>
+	<string name="manager_add_continue">追加</string>
+	<string name="manager_op_account">実施</string>
+	<string name="manager_account_expense_time">消費時間:</string>
+	<string name="manager_account_statistics_year">年次統計</string>
+	<string name="manager_account_statistics_month">月次統計</string>
+	<string name="manager_account_category_list">種類別統計</string>
+	<string name="manager_account_detail">明細</string>
+	<string name="manager_account_category_day_detail">カテゴリ別明細</string>
+	<string name="manager_statistics_month_list">日間統計</string>
+	<string name="manager_statistics_year_list">月間統計</string>
+	<string name="manager_frequency_unit">回</string>
+	<string name="manager_currency">円</string>
+	<string name="manager_oil_add">給油</string>
+	<string name="manager_oil_car_name">車種名</string>
+	<string name="manager_oil_amount">給油金額</string>
+	<string name="manager_oil_amount_hint">費用?</string>
+	<string name="manager_oil_quantity">給油量</string>
+	<string name="manager_oil_quantity_hint">何リットル?</string>
+	<string name="manager_oil_price">単価</string>
+	<string name="manager_oil_price_hint">費用?</string>
+	<string name="manager_oil_type">オイル種類</string>
+	<string name="manager_mileage">オドメーター</string>
+	<string name="manager_expense_time">給油日時</string>
+	<string name="manager_oil_remark">備考</string>
+	<string name="manager_oil_save">保存</string>
+	<string name="manager_user_settings">車両設定</string>
+	<string name="manager_oil_mileage_hint">何キロメートル?</string>
+	<string name="manager_err_oil_type_null">“オイル種類”を選択してください</string>
+	<string name="manager_err_car_id_null">“車種名”を選択してください</string>
+	<string name="manager_err_oil_amount">“金額”の入力が正しくありません</string>
+	<string name="manager_err_oil_quantity">“給油量”の入力が正しくありません</string>
+	<string name="manager_err_oil_price">“単価”の入力が正しくありません</string>
+	<string name="manager_err_oil_mileage">“マイル”の入力が正しくありません</string>
+	<string name="manager_err_oil_expense_time">“給油日時”の入力が正しくありません</string>
+	<string name="manager_oil_detail_head_average_oil">平均オイル消費量(L / 100 km)</string>
+	<string name="manager_oil_detail_head_average_oil_unit"> L / 100 km </string>
+	<string name="manager_oil_detail_head_average_fee_unit">/日</string>
+	<string name="manager_oil_detail">給油記録</string>
+	<string name="manager_oil_detail_title_oil_type">オイル種類</string>
+	<string name="manager_oil_detail_title_oil_amount">金額</string>
+	<string name="manager_oil_detail_title_oil_quantity">給油量</string>
+	<string name="manager_oil_detail_title_mileage">オドメーター</string>
+	<string name="date_picker">日時選択</string>
+	<string name="date_picker_year_error">年の選択が正しくありません</string>
+	<string name="date_picker_month_error">月の選択が正しくありません</string>
+	<string name="date_picker_day_error">日の選択が正しくありません</string>
+	<string name="date_picker_error">日付の選択が正しくありません。開始日は終了日より遅くてはいけません</string>
+	<string name="manager_user_settings_usercar">マイカー</string>
+	<string name="manager_billing_user_settings_usercar">マイカーを管理します</string>
+	<string name="manager_billing_user_settings_usercar_add">車両を追加します</string>
+	<string name="manager_billing_user_settings_usercar_name">車名：</string>
+	<string name="manager_billing_user_settings_usercar_name_err_null">操作失敗，車名を入力してください！</string>
+	<string name="manager_billing_user_settings_usercar_name_err_repeat">操作が失敗しました。車名が登録済！</string>
+	<string name="manager_billing_user_settings_usercar_add_succ">車両を追加完了しました</string>
+	<string name="manager_billing_user_settings_usercar_edit_succ">車両を変更完了しました</string>
+	<string name="manager_billing_user_settings_usercar_err_hold_one">少なくても車両を一台残してください</string>
+	<string name="manager_billing_user_settings_usercar_err_connect_oil">給油記録がすでに存在しました。削除はできません</string>
+	<string name="manager_backup_db">データベースをバックアップします</string>
+	<string name="manager_recovery_db">データベースを修復します</string>
+	<string name="manager_export">データをエクスポートします</string>
+	<string name="manager_recovery_ensure">データベースを修復しますか?\n修復すると、前回バックアップされた内容がすべて失われます！</string>
+	<string name="manager_recovery_err_null">修復できませんでした。データベースバックアップが見つかりません！</string>
+	<string name="manager_recovery_err_using">修復できませんでした。データデースが他の機能に使用されています！</string>
+	<string name="item_mycar_manage_title">マイカーを管理します</string>
+	<string name="item_budget_title">支出予算を設定します</string>
+	<string name="item_db_backup_title">データベースをバックアップします</string>
+	<string name="item_db_recovery_title">データベースを修復します</string>
+	<string name="item_db_export_title">データをエクスポートします</string>
+	<string name="item_db_sync_title">ネットワークをバックアップします</string>
+	<string name="sync_wait">データを同期しています。お待ちください…</string>
+	<string name="sync_interrupt">データを同期できませんでした。ログインしてください</string>
+	<string name="sync_result">同期結果</string>
+	<string name="sync_finished">同期が完了しました</string>
+	<string name="manager_not_login">未登録な状態なので，同期できません</string>
+	<string name="manager_net_invalid">ネットワークに接続してないので、同期バックアップを起動できません</string>
+	<string name="manager_custom_category_exist">カスタマ定義別が既に存在します</string>
+	<string name="manager_syncing_account">支出データを同期化中…</string>
+	<string name="manager_syncing_oil">給油データを同期化中…</string>
+	<string name="manager_syncing_user_setting">搭載情報を同期化中…</string>
+	<string name="manager_syncing_user_car">車両情報を同期化中…</string>
+	<string name="manager_syncing_custom_category">カスタマ定義カテゴリを同期化中…</string>
+	<string name="manager_synced_account">支出データの同期が完成【√】</string>
+	<string name="manager_synced_oil">給油データの同期が完成【√】</string>
+	<string name="manager_synced_user_setting">搭載情報の同期が完成【√】</string>
+	<string name="manager_synced_user_car">車両情報の同期が完成【√】</string>
+	<string name="manager_synced_custom_category">自定義支出類別の同期が完成【√】</string>
+	<string name="manager_sync_err_account">支出データの同期が失敗！【×】</string>
+	<string name="manager_sync_err_account_no_data_to_sync">支出データを同期する必要がありません！</string>
+	<string name="manager_sync_err_oil">給油データの同期が失敗！【×】</string>
+	<string name="manager_sync_err_oil_no_data_to_sync">給油データを同期する必要がありません！</string>
+	<string name="manager_sync_err_user_setting">搭載情報の同期が失敗！【×】</string>
+	<string name="manager_sync_err_user_car">車両情報の同期が失敗！【×】</string>
+	<string name="manager_sync_err_custom_category">自定義支出類別の同期が失敗！【×】</string>
+	<string name="manager_backuping">データバックアップ中…</string>
+	<string name="manager_recoverying">データ回復中…</string>
+	<string name="manager_exporting">データエクスポート中…</string>
+	<string name="item_db_sync_detail">ネットワークを同期バックアップします。バックアップによりデータを復元することができます</string>
+	<string name="item_mycar_manage_detail">マイカー管理</string>
+	<string name="item_budget_detail">今月支出予算:￥[BUDGET]，今月支出済金額:￥[TOTAL]</string>
+	<string name="manager_err_budget_amount">“金額”の入力が正しくありません</string>
+	<string name="item_db_backup_detail">前回バックアップ日時：[DATETIME]</string>
+	<string name="item_db_recovery_detail">本機能をよく確認の上、ご使用ください</string>
+	<string name="item_db_export_detail">エクスポートされたEフォームをExcelで開くことができます。前回エクスポート：[DATETIME]</string>
+	<string name="manager_result">実施結果</string>
+	<string name="manager_result_export_succ">データのエクスポートが成功</string>
+	<string name="manager_result_export_fail">データのエクスポートが失敗，SDカードの接続を確認してください</string>
+	<string name="manager_result_backup_succ">データのバックアップが成功</string>
+	<string name="manager_result_backup_fail">データのバックアップが失敗，SDカードの接続を確認してください</string>
+	<string name="manager_result_recovery_succ">データの修復が成功</string>
+	<string name="manager_result_recovery_fail">データの修復が失敗，SDカードの接続を確認してください</string>
+	<string name="manager_notice">注意</string>
+	<string name="manager_err_sdcard_invalid">SDカードが使用できません</string>
+	<string name="manager_toolbar_back_main">メインメニュー</string>
+	<string name="manager_toolbar_oil_add">給油</string>
+	<string name="manager_toolbar_oil_detail">給油記録</string>
+	<string name="manager_toolbar_oil_chart">オイル消費</string>
+	<string name="manager_toolbar_billing_detail">支払い状況</string>
+	<string name="manager_toolbar_billing_statistics">合計</string>
+	<string name="manager_toolbar_setting">設定</string>
+	<string name="manager_oil_per_hundred_kilomi">オイル消費量/100キロ</string>
+	<string name="manager_oil_cost_per_day">一日平均費用</string>
+	<string name="manager_oil_field_category">支出種類</string>
+	<string name="manager_oil_field_amount">金額</string>
+	<string name="manager_oil_field_datetime">日時</string>
+	<string name="manager_oil_field_remark">備考</string>
+	<string name="manager_oil_field_mileage">オドメーター</string>
+	<string name="manager_oil_field_quantity">給油量</string>
+	<string name="manager_oil_field_oil_type">オイル種類</string>
+	<string name="manager_oil_diesel">ディーゼル</string>
+	<string-array name="manager_oil_manager_default_oiltype">
+		<item>#93|1</item>
+		<item>#97|2</item>
+		<item>#98|3</item>
+		<item>#90|4</item>
+		<item>ディーゼル|5</item>
+	</string-array>
+
+    <string-array name="manager_oil_manager_default_category">
+		<item>通過|10|1</item>
+		<item>給油|9|1</item>
+		<item>給油|8|1</item>
+		<item>整備|7|1</item>
+		<item>保険|6|1</item>
+		<item>罰金|5|1</item>
+		<item>購入|4|1</item>
+		<item>手数料|3|1</item>
+		<item>事故|2|0</item>
+		<item>メンテナンス|1|1</item>
+		<item>食材買出し|9|0</item>
+		<item>三食|8|0</item>
+		<item>交通|7|0</item>
+		<item>果物、お菓子|6|0</item>
+		<item>タバコ、お酒、お茶|5|0</item>
+		<item>日常雑費|4|0</item>
+		<item>携帯料金|3|0</item>
+		<item>ガス、水道、電気料金|2|0</item>
+		<item>家賃|1|0</item>
+		<item>交際費|10|0</item>
+		<item>ネットワーク利用料|9|0</item>
+		<item>医療費|8|0</item>
+		<item>美容保健|7|0</item>
+		<item>服飾|6|0</item>
+		<item>帽子、カバン|5|0</item>
+		<item>化粧品、アクセサリー|4|0</item>
+		<item>娯楽|3|0</item>
+		<item>ペット|2|0</item>
+		<item>旅行|1|0</item>
+	</string-array>
+	<string name="month01">01月</string>
+	<string name="month02">02月</string>
+	<string name="month03">03月</string>
+	<string name="month04">04月</string>
+	<string name="month05">05月</string>
+	<string name="month06">06月</string>
+	<string name="month07">07月</string>
+	<string name="month08">08月</string>
+	<string name="month09">09月</string>
+	<string name="month10">10月</string>
+	<string name="month11">11月</string>
+	<string name="month12">12月</string>
+	<string name="day01">01日</string>
+	<string name="day02">02日</string>
+	<string name="day03">03日</string>
+	<string name="day04">04日</string>
+	<string name="day05">05日</string>
+	<string name="day06">06日</string>
+	<string name="day07">07日</string>
+	<string name="day08">08日</string>
+	<string name="day09">09日</string>
+	<string name="day10">10日</string>
+	<string name="day11">11日</string>
+	<string name="day12">12日</string>
+	<string name="day13">13日</string>
+	<string name="day14">14日</string>
+	<string name="day15">15日</string>
+	<string name="day16">16日</string>
+	<string name="day17">17日</string>
+	<string name="day18">18日</string>
+	<string name="day19">19日</string>
+	<string name="day20">20日</string>
+	<string name="day21">21日</string>
+	<string name="day22">22日</string>
+	<string name="day23">23日</string>
+	<string name="day24">24日</string>
+	<string name="day25">25日</string>
+	<string name="day26">26日</string>
+	<string name="day27">27日</string>
+	<string name="day28">28日</string>
+	<string name="day29">29日</string>
+	<string name="day30">30日</string>
+	<string name="day31">31日</string>
+	<string name="car_setting">車両管理設定</string>
+	<string name="User_information">ユーザー情報</string>
+	<string name="day0">日曜日</string>
+	<string name="day1">月曜日</string>
+	<string name="day2">火曜日</string>
+	<string name="day3">水曜日</string>
+	<string name="day4">木曜日</string>
+	<string name="day5">金曜日</string>
+	<string name="day6">土曜日</string>
+	<string name="datetime_mask">yyyy年MM月dd日</string>
+	<string name="manager_push_str_with_budget">バラとカ的費用：予算%d円、支払金額</string>
+	<string name="manager_push_str">支出費用：今月の支払額</string>
+	<string name="manager_push_unit_yuan">円</string>
+	<string name="manager_usercar_default_nickname">マイカー</string>
+</resources>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mycar="http://schemas.android.com/apk/res/com.cnlaunch.mycar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_marginBottom="3dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/scale_plate_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.cnlaunch.mycar.common.ui.EnginePointer
+                android:id="@+id/engine_pointer_1"
+                android:layout_width="280dip"
+                android:layout_height="85dip"
+                mycar:firstScaleCount="12"
+                mycar:scaleOritation="horizontal"
+                mycar:scalePlateTextSize="16dip"
+                mycar:scalePrecision="0"
+                mycar:scaleStart="-60"
+                mycar:scaleStep="10"
+                mycar:scaleValueStep="2"
+                mycar:secondScaleCount="5"
+                mycar:signalPointerHeight="10dip"
+                mycar:valueDownSide="0"
+                mycar:valueUpSide="0" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/scale_plate_devider_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_engine_data9_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/odb2_value_zero"
+                    android:textSize="@dimen/scale_plate_value" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="@string/engine_unit_timing"
+                    android:textSize="@dimen/scale_plate_unit"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/scale_plate_text_area_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/engine_fuel_trims"
+            android:textSize="@dimen/scale_plate_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="150dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_bg"
+                android:orientation="vertical" >
+
+                <com.cnlaunch.mycar.common.ui.ScalePlate
+                    android:id="@+id/scalePlate_data_horizontal_engine_1"
+                    android:layout_width="140dip"
+                    android:layout_height="50dip"
+                    mycar:firstScaleCount="10"
+                    mycar:scaleOritation="horizontal"
+                    mycar:scalePrecision="0"
+                    mycar:scaleStart="-1"
+                    mycar:scaleStep="1"
+                    mycar:scaleValueStep="2"
+                    mycar:secondScaleCount="2"
+                    mycar:signalLineColor="#FF00FF00"
+                    mycar:zoomDescription="x10"
+                    mycar:value="0" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/scale_plate_devider_bg" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_engine_data1_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/odb2_value_zero"
+                        android:textSize="@dimen/scale_plate_value" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dip"
+                        android:text="@string/unit_temperate"
+                        android:textSize="@dimen/scale_plate_unit"
+                        android:typeface="serif" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_text_area_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/engine_fuel_intake"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_bg"
+                android:orientation="vertical" >
+
+                <com.cnlaunch.mycar.common.ui.ScalePlate
+                    android:id="@+id/scalePlate_data_horizontal_engine_2"
+                    android:layout_width="140dip"
+                    android:layout_height="50dip"
+                    mycar:firstScaleCount="6"
+                    mycar:scaleOritation="horizontal"
+                    mycar:scalePrecision="0"
+                    mycar:scaleStart="0"
+                    mycar:scaleStep="2"
+                    mycar:secondScaleCount="5"
+                    mycar:signalLineColor="#FFFF0000"
+                    mycar:zoomDescription="x10"
+                    mycar:value="0" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/scale_plate_devider_bg" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_engine_data2_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/odb2_value_zero"
+                        android:textSize="@dimen/scale_plate_value" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dip"
+                        android:text="@string/unit_temperate"
+                        android:textSize="@dimen/scale_plate_unit"
+                        android:typeface="serif" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_text_area_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/engine_fuel_coolant"
+                android:textSize="13dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="200dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_bg"
+                android:orientation="vertical" >
+
+                <com.cnlaunch.mycar.common.ui.ScalePlate
+                    android:id="@+id/scalePlate_data_horizontal_engine_3"
+                    android:layout_width="140dip"
+                    android:layout_height="50dip"
+                    mycar:firstScaleCount="10"
+                    mycar:scaleOritation="horizontal"
+                    mycar:scalePrecision="0"
+                    mycar:scaleStart="0"
+                    mycar:scaleValueStep="2"
+                    mycar:secondScaleCount="2"
+                    mycar:signalLineColor="#FFFF8200"
+                    mycar:zoomDescription="x10"
+                    mycar:value="0" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/scale_plate_devider_bg" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_engine_data3_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/odb2_value_zero"
+                        android:textSize="@dimen/scale_plate_value" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dip"
+                        android:text="@string/engine_unit_kpa"
+                        android:textSize="@dimen/scale_plate_unit"
+                        android:typeface="serif" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_text_area_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/engine_fuel_map"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="200dip"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_bg"
+                android:orientation="vertical" >
+
+                <com.cnlaunch.mycar.common.ui.ScalePlate
+                    android:id="@+id/scalePlate_data_horizontal_engine_4"
+                    android:layout_width="140dip"
+                    android:layout_height="50dip"
+                    mycar:firstScaleCount="10"
+                    mycar:scaleOritation="horizontal"
+                    mycar:scalePrecision="0"
+                    mycar:scaleStart="0"
+                    mycar:scaleValueStep="2"
+                    mycar:secondScaleCount="2"
+                    mycar:signalLineColor="#FFFFBE00"
+                    mycar:zoomDescription="x10"
+                    mycar:value="0" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/scale_plate_devider_bg" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_engine_data4_value"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/odb2_value_zero"
+                        android:textSize="@dimen/scale_plate_value" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dip"
+                        android:text="@string/engine_unit_lb_min"
+                        android:textSize="@dimen/scale_plate_unit"
+                        android:typeface="serif" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scale_plate_text_area_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/engine_fuel_maf"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

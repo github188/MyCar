@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="black_box_query_file">Query File</string>
+    <string name="balck_box_requery_file">Requery file</string>
+    <string name="black_box_upload">Uploaded to the server</string>
+	</resources>

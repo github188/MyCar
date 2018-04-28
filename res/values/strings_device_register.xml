@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VIN 码验证   @author luxingsong-->
+    <string name="devregister_device_info">Device Information</string><!--车云卡(DBScar)信息-->
+    <string name="devregister_serialnumber">S/N:</string><!--车云卡(DBScar)序列号:-->
+    <string name="devregister_serialnumber_status">S/N Status:</string><!--序列号状态:-->
+    <string name="devregister_family_name">Family Name:</string>
+    <string name="devregister_name">Name:</string><!--名字:-->
+    <string name="devregister_phone">Phone:</string><!--电话: -->
+    <string name="devregister_address">Address:</string><!--地址: -->
+    <string name="devregister_device_name">Device name:</string><!--蓝牙名:-->
+    <string name="devregister_dev_passwd">Password:</string><!--密码:-->
+    <string name="devregister_goback">Back</string><!--返回-->
+    <string name="devregister_activate">Activate</string><!--激活-->
+</resources>

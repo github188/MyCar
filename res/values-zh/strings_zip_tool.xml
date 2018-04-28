@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ZIP 解压  @author luxingsong -->
+    <string name="zip_decompressing_now">正在解压文件&#8230;</string>
+    <string name="zip_decompress_error"> 解压出错!</string>
+    <string name="zip_decompress_exception"> 解压异常!</string>
+    <string name="zip_decompress_success"> 解压成功!</string>
+    <string name="zip_get_the_file">把文件</string>
+    <string name="zip_decompress_to">解压到</string>
+</resources>

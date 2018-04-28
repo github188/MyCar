@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_vehicle_logo_ll"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+    <ImageView 
+    	android:id="@+id/main_im_vehicle_logo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	/>
+    <TextView
+    	android:layout_marginTop="15dp"
+    	android:id="@+id/main_tv_vehicle_type"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:textColor="@color/black"
+    	android:textSize="20dp"
+    	android:text="英菲尼迪2010款G系"
+    	/>
+    <TextView 
+    	android:id="@+id/main_vehicle_config"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:textColor="@color/black"
+    	android:textSize="16dp"
+    	android:text="VIN:HINNIIICCO02300"/>
+</LinearLayout>

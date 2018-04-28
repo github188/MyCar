@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 蓝牙设备列表界面，显示已经配对的远程蓝牙设备列表和新扫描到的远程
+蓝牙设备列表，以及扫描、配对、连接等操作
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bluetoothconnect"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/bluetoothconnect_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/bluetoothconnect_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="@string/bluetoothconnect_title"
+            android:textSize="22dip" />
+    </LinearLayout> 
+    <LinearLayout
+        android:id="@+id/bluetoothconnect_buttonteam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bluetoothconnect_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/bluetoothconnect_button_return" />
+        <Button
+            android:id="@+id/bluetoothconnect_button_open"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/bluetoothconnect_button_reset" />
+        <Button
+            android:id="@+id/bluetoothconnect_button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/bluetoothconnect_button_search" />
+    </LinearLayout>  
+    
+    <ListView
+        android:id="@+id/bluetoothconnect_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:background="#FFFFFF"
+        android:layout_below="@id/bluetoothconnect_title"   
+        android:layout_above="@id/bluetoothconnect_buttonteam">
+    </ListView>
+ 
+</RelativeLayout>

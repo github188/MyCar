@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gps_button_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/gps_button_menu"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@string/gps_map_menu"
+            android:src="@drawable/gps_button_menu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gps_button_devider" />
+
+        <LinearLayout
+            android:id="@+id/gps_menu_before_start"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/gps_button_start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_start"
+                android:src="@drawable/gps_button_start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gps_menu_after_start"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/gps_button_pause"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_pause"
+                android:src="@drawable/gps_button_pause"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/gps_button_resume"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_resume"
+                android:src="@drawable/gps_button_start" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gps_button_devider" />
+
+            <ImageButton
+                android:id="@+id/gps_button_stop"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_stop"
+                android:src="@drawable/gps_button_stop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gps_button_devider" />
+
+            <ImageButton
+                android:id="@+id/gps_button_note"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_note"
+                android:src="@drawable/gps_button_note" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gps_button_devider" />
+
+            <ImageButton
+                android:id="@+id/gps_button_photo"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/gps_map_photo"
+                android:src="@drawable/gps_button_photo" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gps_button_devider" />
+
+        <ImageButton
+            android:id="@+id/gps_button_locate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/gps_button_locate" />
+    </LinearLayout>
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0aMaKSsZJVFs-I9t7MbzPkPWfbfg-iCv74sGp1A"
+        android:clickable="true"
+        android:visibility="visible" />
+    <!-- 严朝国 使用dbscar_key 签名打包时，android:apiKey="0aMaKSsZJVFs-I9t7MbzPkPWfbfg-iCv74sGp1A" -->
+	<!-- 向远茂 使用dbscar_key 签名打包时，android:apiKey="09pTpWwBHzunv94NtEi1rHTYBSdCf4NIUgidjkg" -->
+    <!-- 徐卓为 自己debug时 android:apiKey="09pTpWwBHzumrsW6sAqxVzTdYbG9aqMbsCkw1Sg" -->
+    <!-- android:apiKey="09pTpWwBHzunH5p_T28WOhpdBuSvkRmYPpoOE0A" -->
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="im_push_str">New Message</string>
+    <!-- 我的社区：新消息 -->
+    <string name="im_push_unit_tiao"></string>
+    <!-- 条 可以忽略 -->
+    <string name="im_toolbar_friend">Contacts</string>
+    <!-- 联系人 -->
+    <string name="im_toolbar_chatlog">History</string>
+    <!-- 聊天记录 -->
+    <string name="im_toolbar_sendfile">Tran. rec</string>
+    <!-- 传输记录 这个建议合并到聊天记录中 -->
+    <string name="im_toolbar_add_friend">Add</string>
+    <!-- 添加好友 -->
+    <string name="im_sound_off">Turn Off</string>
+    <!-- 关闭提示音 -->
+    <string name="im_sound_on">Turn On</string>
+    <!-- 打开提示音 -->
+    <string name="im_profile_eidt">Edit</string>
+    <!-- 修改个人资料 -->
+    <string name="im_logout">Log Off</string>
+    <!-- 退出 -->
+    <string name="im_add_friend_search_keyword">CC number / Nickname</string>
+    <!-- CC号/昵称 -->
+    <string name="search_by_nickname">by Nickname</string>
+    <!-- 搜昵称 -->
+    <string name="search_by_ccno">by CC number</string>
+    <!-- 搜CC号 -->
+    <string name="search_by_online_list">Online</string>
+    <!-- 在线列表 -->
+    <string name="search_no_result">No matching user was found!</string>
+    <!-- 未找到CC用户，请重试 -->
+    <string name="im_title_add_friend">Add</string>
+    <!-- 添加好友 -->
+    <string name="im_title_chat">Send Message</string>
+    <!-- 聊天 -->
+    <string name="im_title_chat_log">History</string>
+    <!-- 聊天记录 -->
+    <string name="im_title_friend_list">Contacts</string>
+    <!-- 好友列表 -->
+    <string name="im_friend_info">Profile</string>
+    <!-- 好友信息 -->
+    <string name="im_relogin">ReLogin</string>
+    <!-- 重新登录 -->
+    <string name="im_send_file_log">File Transfer records</string>
+    <!-- 文件传输记录 -->
+    <string name="im_send_file">Send</string>
+    <!-- 文件传输 -->
+    <string name="im_getting_online_list">Loading...</string>
+    <!-- 在线列表获取中… -->
+    <string name="im_please_enter_keyword">Please type in key words</string>
+    <!-- 请输入关键字 -->
+    <string name="im_is_allready_your_friend">is already in your contact list.</string>
+    <!-- 该用户已经是你的好友了 -->
+    <string name="im_ensure_to_build_friendship"></string>
+    <!-- 是否添加该用户为好友？ -->
+    <string name="im_yes">Yes</string>
+    <!-- 是 -->
+    <string name="im_no">No</string>
+    <!-- 否 -->
+    <string name="im_para_not_be_null">Value cannot be null</string>
+    <!-- 请求参数不能为空 -->
+    <string name="im_net_error_can_not_get_friend_list">Network connection failed.</string>
+    <!-- 网络请求失败 -->
+    <string name="im_can_not_chat_with_stranger">You cannot send any message to a stranger</string>
+    <!-- 对方不是你的好友，不支持陌生人聊天 -->
+    <string name="im_with"></string>
+    <!-- 与 -->
+    <string name="im_chating">Chatting with</string>
+    <!-- 聊天中 -->
+    <string name="im_fail_to_create_sendfile_task">File sending failed</string>
+    <!-- 文件传输失败 -->
+    <string name="im_choose_file">Select</string>
+    <!-- 选择文件 -->
+    <string name="im_error_no_sdcard_so_fail_to_choose_file">SD card does not exist.</string>
+    <!-- SD卡不存在，无法选择文件 -->
+    <string name="im_ensure">Okay</string>
+    <!-- 确定 -->
+    <string name="im_cancel">Cancel</string>
+    <!-- 取消 -->
+    <string name="im_is_root_folder">Ro</string>
+    <!-- 已是根目录 -->
+    <string name="im_file_size_limited">Files cannot be larger than 4MB</string>
+    <!-- 仅支持传送小于4M的文件 -->
+    <string name="im_can_not_chat_with_friend_not_online">Don\'t support offline message.</string>
+    <!-- 不支持离线消息 -->
+    <string name="im_x_friends_online">Online</string>
+    <!-- 人在线 -->
+    <string name="im_getting_friend_info">Loading...</string>
+    <!-- 正在获取好友信息… -->
+    <string name="im_notice"></string>
+    <!-- 提示 -->
+    <string name="im_please_login_usercenter_first">Please log in</string>
+    <!-- 请登录 -->
+    <string name="im_please_check_username_and_password">Please log in</string>
+    <!-- 请登录 -->
+    <string name="im_usercenter_logining_please_wait">Loading...</string>
+    <!-- 登录中，请稍后… -->
+    <string name="im_login_succ">Completed</string>
+    <!--  -->
+    <string name="im_reading_friend_list">Loading...</string>
+    <!-- 好友列表刷新中… -->
+    <string name="im_login_fail">Login Failed</string>
+    <!-- 登录失败 -->
+    <string name="im_is_logined">Logged in</string>
+    <!-- 已登录 -->
+    <string name="im_net_error_server_connect_time_out">Timeout, cannot connect to server.</string>
+    <!-- 连接超时，无法连接到服务器 -->
+    <string name="im_is_offline">Offline</string>
+    <!-- CC已离线 -->
+    <string name="im_please_login">Please log in</string>
+    <!-- 请先登录 -->
+    <string name="im_logining">Loading...</string>
+    <!-- 登录中 -->
+    <string name="im_logining_please_wait">Loading...</string>
+    <!-- CC登录中，请稍后… -->
+    <string name="im_you_has_being_kick_offline">You have been disconnected as someone has signed in with your ID on another device.</string>
+    <!-- 您的CC号已在其它地方登录，被迫下线 -->
+    <string name="im_net_error_need_relogin">Network error, please reconnect.</string>
+    <!-- 因网络问题，已掉线，是否重新登录 -->
+    <string name="im_you_has_offline_need_relogin"></string>
+    <!-- 已掉线，是否重新登录 -->
+    <string name="im_sendfile_task_status_exception">Exceptional Status</string>
+    <!-- 状态异常 -->
+    <string name="im_sendfile_status_receiver_get_request">Receiving...</string>
+    <!-- 接收文件 -->
+    <string name="im_refuse">Reject</string>
+    <!-- 拒绝 -->
+    <string name="im_accept">Accept</string>
+    <!-- 接收 -->
+    <string name="im_sendfile_status_receiver_accepted">Waiting...</string>
+    <!-- 等待下载 -->
+    <string name="im_sendfile_download">Download</string>
+    <!-- 下载 -->
+    <string name="im_sendfile_del_log_item">Remove Records</string>
+    <!-- 删除记录 -->
+    <string name="im_sendfile_status_receiver_downloading">Downloading…</string>
+    <!-- 下载中… -->
+    <string name="im_stop_download">Abort</string>
+    <!-- 中止下载 -->
+    <string name="im_sendfile_status_receiver_download_failed"></string>
+    <!-- 下载失败 -->
+    <string name="im_retry_download">Retry</string>
+    <!-- 重新下载 -->
+    <string name="im_sendfile_status_receiver_download_succ">Download Completed</string>
+    <!-- 下载成功 -->
+    <string name="im_sendfile_status_receiver_refuse">Refused</string>
+    <!-- 已拒绝 -->
+    <string name="im_sendfile_status_sender_upload">Uploading…</string>
+    <!-- 上传中… -->
+    <string name="im_stop_upload">Cancel</string>
+    <!-- 取消上传 -->
+    <string name="im_sendfile_status_sender_upload_failed">Error: Upload Failed</string>
+    <!-- 上传中断 -->
+    <string name="im_retry_upload">Retry</string>
+    <!-- 重新上传 -->
+    <string name="im_sendfile_status_sender_upload_succ">Upload Completed</string>
+    <!-- 上传成功 -->
+    <string name="im_retry_sender_send_request">Retry</string>
+    <!-- 重新发送 -->
+    <string name="im_sendfile_status_sender_send_request">Waiting...</string>
+    <!-- 等待对方接收 -->
+    <string name="im_sender_get_response_accepted">File transfer completed</string>
+    <!-- 发送成功 -->
+    <string name="im_sender_get_response_refused">Refused by recipient</string>
+    <!-- 对方已拒绝 -->
+    <string name="im_download_file">Download</string>
+    <!-- 文件下载 -->
+    <string name="im_download_succ">Download Completed</string>
+    <!-- 下载成功 -->
+    <string name="im_donwload_percent">Downloaded</string>
+    <!-- 已下载 -->
+    <string name="im_upload_percent">Uploaded</string>
+    <!-- 已上传 -->
+    <string name="im_folder_create_failed">Failed to create new folder</string>
+    <!-- 文件夹创建失败 -->
+    <string name="im_upload_being_stopped">Error: Upload Failed</string>
+    <!-- 上传中断 -->
+    <string name="im_net_error_sendfile_server_response_invalid">UUID Error: File Upload Failed</string>
+    <!-- 上传失败,服务器返回UUID有误 -->
+    <string name="im_net_error">Network Connection Failed</string>
+    <!-- 网络请求失败 -->
+    <string name="im_sendfile_upload">Upload</string>
+    <!-- 文件上传 -->
+    <string name="im_cc_no">CC No.：</string>
+    <string name="im_nickname">Nickname：</string>
+    <string name="im_area">Area：</string>
+    <string name="im_age">Age：</string>
+    <string name="im_del_friend">Delete Friend</string>
+    <string name="im_no_send_file_history">No file transfer history</string>
+    <string name="im_exit">Exit</string>
+    <string name="im_parent_directory">Parent Directory</string>
+    <string name="im_send">Send</string>
+
+</resources>

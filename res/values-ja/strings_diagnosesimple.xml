@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- シンプルレポート -->
+    <string name="simple_report">クェックテスト</string>
+    <string name="pre_exam_num">前回点検した際の得点:</string>
+    <string name="car_exam">車両点検</string>
+    <string name="question_num">故障コード数:</string>
+    <string name="cause_result">考えられる不具合症状:</string>
+    <string name="help_advise">ドライバーへのアドバイス:</string>
+    <string name="data_stream_name">データストリーム名</string>
+    <string name="data_stream_value">データストリーム値</string>
+    <string name="simple_report_maxvalue">最大値</string>
+    <string name="simple_report_minvalue">最小値</string>
+    <string name="simple_report_datailInfo">詳細</string>
+    <string name="diag_scan_sys_list">スキャン中:システムリスト</string>
+    <string name="diag_scan_sys_data_stream">スキャン中:システムデータストリーム</string>
+    <string name="diag_scan_sys_question_code">スキャン中:システム故障コード</string>
+    <string name="diag_scan_finish">スキャン完了</string>
+    <string name="diag_advise_regular">正常</string>
+    <string name="diag_sp_push_str">検索しました</string><!-- シート 1-->
+    <string name="diag_sp_push_unit">つの故障コード</string><!-- ユニット1 -->
+    <string name="diag_sp_push_str2">検査をまだ行っていません</string><!-- シート2 -->
+    <string name="diag_sp_push_str3"></string><!-- シート 3 -->  
+    <string name="diag_sp_push_unit2">故障コード</string><!-- ユニット2 -->
+    <string name="diag_sp_error_00">通信タイムアウト</string>
+    <string name="diag_sp_error_01">パスワード認証エラー</string>
+    <string name="diag_sp_error_02">セキュリティー認証失敗</string>
+    <string name="diag_sp_no_sys_list">対応システムリストの読取エラー</string>
+    <string name="diag_sp_no_appoint_data_list">システム故障コードリストを読取エラー</string>
+    <string name="diag_sp_no_appoint_id_list">IDのデータストリームを読取エラー</string>
+    <string name="diag_sp_no_appoint_doc_list">システム故障コードリストを読取エラー</string>
+    <string name="diag_sp_bluetooth_connection_lost">ブルートゥース通信エラー</string>
+    <string name="diag_sp_bluetooth_re_connect">接続します</string>
+    <string name="diag_sp_activity_init">初期化中...</string>
+    <string name="diag_car_pre_check_num">前回車両点検の得点は: </string>
+    <string name="diag_all_test_doc">，が検査されました </string>
+    <string name="diag_car_not_check">車両点検を行っていません。点検してください </string> 
+    <string name="diag_car_cur_check_num">点検得点: </string>
+    <string name="diag_all_test">車両点検を行っていません。点検してください</string>
+    <string name="diag_some_good_advise">，早めに点検してください </string>
+    <string name="diag_stop_car_exam">点検中止</string>
+    <string name="diag_sp_sys_no_support">システムが対応しません</string>
+    <string name="diag_sp_error_title2">エラー</string>
+    <string name="diag_sp_id_not_defined">ID未定義</string>
+    <string name="diag_sp_data_name_not_defined">未定義名称</string>
+    <string name="diag_sp_sys_data_empty">システムリスト見付かりません</string>
+    <string name="diag_sp_sys_info_show">情報提示</string>
+    <string name="diag_sp_timeing_info">サーバが込み合っていますので、10秒後に再度試してください </string>
+    <string name="diagnose_sp_exit_messge">クェックテストを終了</string>
+    <string name="diagnose_sp_update_show_messge">アップデットが完了してないため、クェックテストを使用できません</string>
+</resources>

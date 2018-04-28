@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+这个 界面主要用于设备激活之后 让用户进一步完善注册信息
+by luxingsong
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="请输入用户信息"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/main_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_content_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:text="为了更好的为您服务，请填写用户信息，点击‘完成’进行注册"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/main_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_serial_number_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_dev_register_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="DBS_CAR_431"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="姓氏:"
+            android:textColor="@color/main_text_color" />
+
+        <EditText
+            android:id="@+id/edt_append_userinfo_family_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/main_content_margin"
+            android:background="@drawable/main_edit"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="名字:"
+            android:textColor="@color/main_text_color" />
+
+        <EditText
+            android:id="@+id/edt_append_userinfo_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/main_content_margin"
+            android:background="@drawable/main_edit"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="手机:"
+            android:textColor="@color/main_text_color" />
+
+        <EditText
+            android:id="@+id/edt_append_userinfo_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/main_content_margin"
+            android:background="@drawable/main_edit"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="邮箱:"
+            android:textColor="@color/main_text_color" />
+
+        <EditText
+            android:id="@+id/edt_append_userinfo_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/main_content_margin"
+            android:background="@drawable/main_edit"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dip"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="地址:"
+            android:textColor="@color/main_text_color" />
+
+        <EditText
+            android:id="@+id/edt_append_userinfo_addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="@dimen/main_content_margin"
+            android:background="@drawable/main_edit"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_content_margin"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_append_userinfo_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/main_button"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_button_textsize" />
+
+        <Button
+            android:id="@+id/bt_append_userinfo_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/main_button"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_button_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公用 begin -->
+    <string name="main_indestructible_black_box">黑匣子</string>
+    <string name="main_swift_diagnose">一键诊断</string>
+    <string name="main_advance_diagnose">高级诊断</string>
+    <string name="main_manager">车管家</string>
+    <string name="main_gasoline_analysis">油耗分析</string>
+    <string name="main_car_rescue">车辆救援</string>
+    <string name="main_car_forum">车联社区</string>
+    <string name="main_more">更多</string>
+    <string name="main_track">足迹</string>
+    <string name="main_odb2">我的仪表</string>
+    <string name="main_more_oil_record">加油记录</string>
+    <string name="main_more_device_manage">设备管理</string>    
+    <string name="main_more_about">关于</string>
+    <string name="main_more_help">帮助</string>        
+    <string name="call">呼叫</string>
+    <string name="custom_title_left">左标题</string>
+    <string name="custom_title_right">右标题</string>
+    <string name="app_name">车云网</string>
+    <string name="usercenter">用户中心</string>
+    <string name="cccenter">CC中心</string>
+    <string name="vinsearch">VIN查询</string>
+    <string name="carforum">车联社区</string>
+    <string name="manager">车辆管家</string>
+    <string name="carrescue">车辆救援</string>
+    <string name="diagnose">故障诊断</string>
+    <string name="updatecenter">升级中心</string>
+    <string name="maintainreference">维修资料</string>
+    <string name="myCarSetting">DBScar设置页面</string>
+    <string name="gettting_data">数据获取中…</string>
+    <string name="ex_userinfo">用户扩展信息</string>
+    <string name="weather">天气信息</string>
+    <string name="tour_number">出行指数：</string>
+    <string name="car_wash_number">洗车指数：</string>
+    <string name="user_center">用户中心</string>
+    	<string name="device">设备管理</string>
+    <string name="love_car_diagnosis">爱车体检</string>
+    <string name="refresh_weather">[刷新]</string>
+    <string name="refreshing_weather">天气刷新请求已发出</string>
+    <string name="default_city_name">深圳</string>
+    <string name="default_dtc_content">您的车子经过此次体检，未查出故障，非常健康，请放心出行，祝您旅途愉快！！！</string>
+    <string name="dtc_have_fault">您的爱车经过体检，发现部分故障，请尽快处理，祝您旅途愉快！</string>
+    <string name="default_login_state">未登录</string>
+    <string name="user_info_detail">用户详细信息</string>
+    <string name="setting_titile">设置</string>
+    <!-- 公用 end -->
+
+
+    <!-- 用户中心 -->
+    <string name="usercenter_login_notice">尊敬的客户\n
+    			&#160;·&#160;如未注册请【注册】；\n
+    			&#160;·&#160;忘记密码请点击【忘记密码】；\n
+    			&#160;·&#160;如欲下次注册请点击【跳过】按钮跳过注册直\n
+    			&#160;&#160;&#160;接进入程序。</string>
+    <string name="usercenter_register_notice">您已成功注册车云网用户，请记住车云网的CC号为您专属的车云网编号。\n请确认下列注册信息，如无误请点击【确认】</string>
+    <string name="usercenter_cc_mobile_email">用户名/CC号</string> 
+    <string name="usercenter_dbscar_login">车云网用户登录</string>
+    <string name="usercenter_login">登录</string>
+    <string name="usercenter_register_presentation_1">欢迎您加入车云网，请确保您的手机已连接互联网，并填写以下注册信息，*标志栏为必填。</string>    
+    <string name="usercenter_register_presentation_2">创建此账户即表示您同意DBScar隐私权政策和其他隐私权政策</string>
+    <string name="usercenter_pwd">密码:</string> 
+    <string name="usercenter_password">密码: ******</string> 
+    <string name="usercenter_cc">CC:</string>
+    <string name="usercenter_cc_">CC</string>
+    <string name="usercenter_username">用户名:</string>
+    <string name="usercenter_username_">用户名</string>
+    <string name="usercenter_nickname">昵称:</string> 
+    <string name="usercenter_nickname_">昵称</string>
+    <string name="usercenter_mobile">手机:</string> 
+    <string name="usercenter_mobile_">手机</string>
+    <string name="usercenter_email">邮箱:</string> 
+    <string name="usercenter_email_">邮箱</string> 
+    <string name="usercenter_activate">激活</string>
+    <string name="usercenter_bind">绑定</string>
+    <string name="usercenter_not">未</string>   
+    <string name="usercenter_done">已</string>
+    <string name="usercenter_account">账号:</string>
+    <string name="usercenter_device_info">设备信息:</string>
+    <string name="usercenter_re_password">重复密码:</string>
+    <string name="usercenter_input_orgpwd">原密码:</string>
+    <string name="usercenter_input_newpwd">新密码:</string>
+    <string name="usercenter_input_newpwd_again">重复新密码:</string> 
+    <string name="usercenter_dbscar_register">车云网用户注册</string>
+    <string name="usercenter_register">注册</string>
+    <string name="usercenter_forget_pwd">忘记密码</string>
+    <string name="usercenter_auto_login">自动登录</string>
+    <string name="usercenter_save_pwd">记住密码</string>
+    <string name="usercenter_change_pwd">修改密码</string>
+    <string name="usercenter_change_pwd_submit">提交</string>
+    <string name="usercenter_change_pwd_cancel">退出</string>
+    <string name="usercenter_userinfo">用户详细信息</string>
+    <string name="usercenter_update">刷新</string>
+    <string name="usercenter_logout">注销登录</string>
+    <string name="usercenter_back">主页</string> 
+    <string name="usercenter_password_manage">密码管理</string>
+    <string name="usercenter_device_name">设备名称:</string>
+    <string name="usercenter_device_serial">序列号:</string>
+    <string name="usercenter_message_no_defined">未定义的消息</string>    
+    <string name="usercenter_usercenter_exception">修改密码异常</string>
+    <string name="usercenter_connect_service_timeout">连接服务器超时</string>
+    <string name="usercenter_account_is_not_null">账号不能为空</string>
+    <string name="usercenter_illegal_account">账号格式不正确，请填写正确的CC、或者已经绑定的邮箱、手机号码。</string>
+    <string name="usercenter_plese_choice">请选择</string>
+    <string name="usercenter_password_tip_question">密码提示问题</string>
+    <string name="usercenter_retrieve_password_success">找回密码成功，已发送到您的注册邮箱，请注意查收。\n</string>
+    <string name="usercenter_service_io_exceptin">服务器同步用户信息发生IO异常,请检查网络连接状态</string>
+    <string name="usercenter_service_parse_xml_exception">服务器同步用户信息发生Xml解析异常</string>
+    <string name="usercenter_service_exception">服务器同步用户信息发生异常</string>
+    <string name="usercenter_login_exception">登录异常</string>
+    <string name="usercenter_service_login_timeout">登录超时</string>
+    <string name="usercenter_netword_not_connect">网络未连接！请检查网络是否连接正常</string>
+    <string name="rescue_vehicle_not_open_newwork_loaction">您没有打开无线网络定位功能！</string>
+    <string name="rescue_vehicle_go_setting">去设置</string>
+    <string name="usercenter_fail_to_register">注册失败，请检查网络状态！</string>
+    <string name="usercenter_registing">正在注册...</string>
+    <string name="usercenter_logining">正在登录...</string>      
+    <string name="rescue_vehicle_ensure_call">确定拨打</string>
+	<string name="rescue_vehicle_add_emergency_phone">添加紧急电话</string>
+    <string name="rescue_vehicle_update_emergency_phone">修改紧急电话</string>
+    <string name="rescue_vehicle_ilegal_mobile">输入手机号码格式不对</string>
+	<string name="rescue_vehicle_use_gps_location">正在使用GPS定位您的位置，如果长时间无法响应请使用网络定位...</string>
+    <string name="rescue_vehicle_gps_can_get_location">GPS无法定位您的准确位置，请使用网络定位重试！</string>
+    <string name="rescue_vehicle_gps_location">GPS定位</string>
+    <string name="rescue_vehicle_searching_around_store">正在搜索周边店铺信息...</string>
+    <string name="rescue_vehicle_network_locationing">正在使用网络定位获取位置信息...</string>
+ 	<string name="rescue_vehicle_current_location_lat">您当前位置: 纬度：</string>
+ 	<string name="rescue_vehicle_current_location_lng">, 经度：</string>
+ 	<string name="rescue_vehicle_is_search_around_store">\n如果要搜索周边救援信息请点击【确定】</string>
+    <string name="rescue_vehicle_fail_network_location">网络定位超时,定位失败</string>
+    <string name="rescue_vehicle_fail_gps_location">GPS定位超时,定位失败</string>  
+    <string name="rescue_vehicle_store">商户:</string>  
+    <string name="rescue_vehicle_create_date">创建时间:</string>  
+    <string name="rescue_vehicle_main_server">主要服务:</string>  
+    <string name="rescue_vehicle_connection_people">联系人:</string>  
+    <string name="rescue_vehicle_mobile">手机:</string>      
+    <string name="rescue_vehicle_telephone">电话:</string>      	
+    <string name="rescue_vehicle_store_address">商户地址:</string>    
+    <string name="rescue_vehicle_lat">纬度:</string>    
+    <string name="rescue_vehicle_lng">经度:</string>       
+    <string name="usercenter_username_format">5-20位字母或数字</string>       
+    <string name="usercenter_password_format">6-20位字母或数字</string>   
+    <string name="usercenter_have_not_setting_quesetion">未设置密码找回问题</string>
+    <string name="usercenter_hint_password">密码</string> 
+    
+
+	<!-- 车辆救援 start by 向远茂 abbreviate：rv_  -->
+	<string name="emergency_telephone_name">姓名:</string><!--姓名 :-->
+	<string name="emergency_telephone_mobile">手机:</string><!--手机 :-->
+	<string name="emergency_telephone_menu_delete">删除</string><!--删除-->
+    <string name="rv_rescue_vehicles">车辆救援</string>		
+    <string name="rv_stores_information">周边救援信息</string>	
+    <string name="rv_stores_name">商户名称</string>	
+    <string name="rv_distance">距离(KM)</string>
+    <string name="rv_telephone">电话</string>			
+    <string name="rv_gps_location">GPS定位</string>	
+    <string name="rv_close_gps">关闭GPS</string>	    
+    <string name="rv_network_location">网络定位</string>	
+    <string name="rv_search">搜索</string>	
+    <string name="rv_emergency_phone">紧急电话</string>	            		
+	<!-- 车辆救援 end -->
+
+    <string name="mycar_about_title">关于软件</string>
+    <string name="mycar_about_copyright">&#169;2012 Launch Software</string>
+    <string name="mycar_about_url"><u>http://www.dbscar.com</u></string>
+  <string name="mycar_about_detail">欢迎使用元征车云网(DBScar)软件，本软件主要用于汽车诊断及相关服务,更多信息请浏览我们的网站。</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string> 
+    <string name="main_legal_terms">法律条款</string>
+    <string name="main_agree">同意</string>
+    <string name="main_not_agree">不同意</string>   
+    <string name="display_manual_car_portal_net">汽车门户网</string>        
+    <string name="display_manual_dbscar_site">www.dbscar.com</string>    
+    <string name="display_manual_diag_20_year">专注诊断20年</string>    
+    <string name="display_manual_rescue_car">车辆救援，一触即发</string>    
+    <string name="display_manual_black_box">汽车黑匣子，为安全护航</string>    
+    <string name="display_manual_car_after_life">缤纷汽车后生活</string>     
+    <string name="display_manual_real_now">立即开始</string>            	
+    <string name="skip">跳过</string>        
+    <string name="ask_account">是否拥有账号？</string>      
+    <string name="have_account">已有账号，点击</string>
+    <string name="have_not_account">没有账号，点击</string>
+    <string name="legal_terms1">免责声明</string>  
+    <string name="legal_terms2">1、	使用本产品前，请仔细阅读“DBScar使用说明书”。\n
+2、	在驾驶汽车过程中，请不要对本产品进行操作，以免因注意力分散而发生交通危险；对于在使用本产品过程中发生的交通事故或其他经济损失，本公司不承担任何责任。\n
+3、	本产品以蓝牙通讯方式实现与车辆之间的数据采集与传输，为保证正常传输，请尽量不要在电磁干扰强烈的地方使用本产品（如：高压输变电设备周边）。\n
+4、	因擅自改装或加装各种设备或元器件而导致的任何直接或间接损坏，本公司均不承担任何责任。\n
+5、	如果在使用中发再与产品相关的任何问题，必须由本公司专业技术人员进行检修，在检修过程中本公司有义务根据实际情况，决定是否通过修理或更换等方式进行维修。\n
+6、	本软件是由元征公司研发。“软件”的一切版权等知识产权，以及与“软件”相关的所有信息内容，包括但不限于：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、有关数据、印刷材料、或电子文档等均受著作权法和国际著作权条约以及其他知识产权法律法规的保护。\n
+7、	用户不得对本软件产品进行反向工程（reverse engineer）、反向编译（decompile）或反汇编（disassemble），违者属于侵权行为，并自行承担由此产生的不利后果。\n
+8、	使用“软件”涉及到互联网服务和移动通信服务，可能会受到各个环节不稳定因素的影响，存在因不可抗力、计算机病毒、黑客攻击、系统不稳定、用户所在位置、用户关机以及其他任何网络、技术、通信线路等原因造成的服务中断或不能满足用户要求的风险，用户须明白并自行承担以上风险，用户因此不能发送或接受阅读消息，或接、发错消息，本公司不承担任何责任。\n
+9、	用户因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的经济损失，本公司不承担责任。\n
+10、	因技术故障等不可抗事件影响到服务的正常运行的，本公司承诺在第一时间内与相关单位配合，及时处理进行修复，但用户因此而遭受的经济损失，本公司不承担责任。\n
+11、	鉴于用户硬件环境的差异性和复杂性，本公司所提供的各项功能并不能保证在任何情况下都能正常执行或达到用户所期望的结果。用户使用本软件所产生的一切后果，软件作者不承担任何责任。\n
+12、	不得利用“软件”发表、传送、传播、储存违反国家法律、危害国家安全、祖国统一、社会稳定的内容，或任何不当的、侮辱诽谤的、淫秽的、暴力的及任何违反国家法律法规政策的内容。\n
+13、	如果用户自行安装本软件，即表明用户信任本公司，自愿选择安装本软件，并接受本协议所有条款。
+    </string>
+    
+    <string name="uc_register_result">注册结果</string>
+    <string name="uc_register_success">注册成功</string>
+    <string name="uc_register_fail">注册失败</string>    
+    <string name="uc_ask_register_device">是否立即激活设备？</string>    
+    <string name="uc_notice">提示</string>    
+    <string name="uc_send_password_to_email">发送密码到邮箱</string>
+    <string name="uc_send_password_to_mobile">发送密码到手机</string>
+    <string name="uc_retrieved_password_by_question">通过密码提示问题找回密码</string>
+    <string name="uc_ask_retrieved_method">请选择找回密码的方式</string>
+    <string name="uc_show_password">显示密码</string>
+    <string name="uc_hide_password">隐藏密码</string>
+    <string name="uc_confirm">确认</string>
+    <string name="usercenter_ask_device_notice">您是否已有车云卡(DBScar)？\n·如果有请点击【激活】。</string>
+    <!-- 
+    <string name="usercenter_ask_device_notice">您是否已有车云卡(DBScar)？\n·如果有请点击【激活】；\n·如果没有，点击【购买】。</string> -->
+    <string name="uc_immediately_activate">激活新设备</string>
+    <string name="uc_immediately_buy">购买</string>        
+    <string name="uc_account_is_null">请在账号栏输入CC号/用户名/邮箱！</string>
+    <string name="uc_account_is_illegal">账号信息不合法！</string>
+    <string name="uc_password_is_illegal">密码长度必须是6-20位字符！</string>
+    <string name="uc_username_is_null">用户名不能为空！</string>
+    <string name="uc_username_is_illegal">用户名不合法！</string>
+    <string name="uc_username_is_illegal_1">输入用户名长度必须为5－20位！</string> 
+    <string name="uc_password_is_null">密码不能为空！</string>
+    <string name="uc_repassword_is_null">重复密码不能为空！</string> 
+    <string name="uc_repassword_is_illegal">重复密码不合法！</string>
+    <string name="uc_password_different">两次密码输入不一致！</string>
+    <string name="uc_email_is_null">邮箱不能为空！</string>
+    <string name="uc_email_is_illegal">邮箱不合法！</string>
+    <string name="uc_nickname_illegal">输入昵称长度必须为1－20位！</string>
+    <string name="uc_mobile_illegal">手机号码输入有误！</string>
+    <string name="uc_question_1">问题1:</string>
+    <string name="uc_question_2">问题2:</string>
+    <string name="uc_question_3">问题3:</string>
+    <string name="uc_answer">答案:</string>
+    <string name="uc_select_question">请选择密码提示问题</string>
+    <string name="uc_answer_is_null">请填写密码提示问题答案！</string>
+    <string name="uc_answer_repeat_or_less">密码提示问题没有选择或选择重复！</string>
+    <string name="uc_get_question_list">正在获取密码提示问题列表...</string>
+    <string name="intenet_invalid">无效的网络请求！</string>
+    <string name="intenet_answererror">密码提示问题回答不正确！</string>
+    <string name="uc_retrieved_password">通过密码提示问题找回密码</string>
+    <string name="uc_set_password_question">设置密码提示问题</string>
+    <string name="uc_set_password_question_success">设置密码提示问题成功！</string>
+    <string name="uc_retrieved_password_success">找回密码成功，请登录您的邮箱查看！</string>
+    <string name="uc_retrieved_password_success_and_new">找回密码成功，新密码是：</string>
+    <string name="uc_change_password">修改密码</string>
+    <string name="uc_setting_question">正在设置密码提示问题...</string>
+    <string name="uc_retriefeing_question">正在找回密码...</string>
+    <string name="uc_ex_userinfo">用户扩展信息</string>
+    <string name="must_be_not_blank">不能为空！</string>
+	<string-array
+	    name="ex_userinfo_labels">
+	    <item>名字</item>
+	    <item>姓氏</item>
+	    <item>纬度</item>
+	    <item>经度</item>
+	    <item>定位地址</item>
+	    <item>公司名称</item>
+	    <item>家庭电话</item>
+	    <item>办公电话</item>
+	    <item>地址</item>
+	    <item>城市</item>
+	    <item>洲</item>
+	    <item>国家</item>
+	    <item>省</item>
+	    <item>CC</item>
+	    <item>邮编</item>  
+	</string-array>
+	 <string-array name="MAIN_MENUTITLE">
+		<item>常用</item>
+		<item>设置</item>
+		<item>工具</item>
+	</string-array>
+	<string name="uc_sync_ex_userinfo_to_ws">同步到服务器</string>
+    <string name="uc_syncing_ex_userinfo_to_ws">正在同步用户扩展信息到服务器...</string>
+	<string name="uc_syncing_ex_userinfo_from_ws">正在从服务器同步用户扩展信息...</string>
+	<string name="main_user_logout">尚未登录,点击登录</string>
+	<string name="main_my_bbs">我的社区</string>
+	<string name="main_my_instrument">我的仪表</string>
+	<string name="main_my_bill">我的账单</string>
+	<string name="main_my_report">车辆体检</string>
+    <string name="bind_emial_success">激活邮件已发送，请登录到邮箱点击"确认"绑定。</string>
+    <string name="bind_emial_fail">邮箱绑定失败！</string>
+    <string name="ensure_bind_email">确定绑定邮箱？</string> 
+    <string-array name="rescue_vehicle_emergency_phone">
+	    <item>报警求助</item>  
+	    <item>火灾报警</item>
+	    <item>急救中心</item>
+	    <item>交通事故</item>
+	    <item>水上求救</item>
+	    <item>森林火警</item>
+	    <item>红十字会</item>
+	    <item>中国人保</item>
+	    <item>中国人寿</item>
+	</string-array>
+        <string name="login_state_display_login">已登录</string>
+        <string name="login_state_display_logout">未登录</string>   
+        <string name="usercenter_toast_account_invalid">帐号格式不对，请输入CC号，或手机号，或邮箱名。</string>              
+        <string name="usercenter_toast_org_pwd_invalid">原密码格式不对</string>              
+        <string name="usercenter_toast_new_pwd_invalid">新密码格式不对</string>      
+        <string name="usercenter_change_pwd_old_pwd_wrong">原始密码不正确</string>        
+        <string name="usercenter_toast_new_pwd_not_equal">两次新输入的密码不相同</string>   
+        <string name="usercenter_change_pwd_progress_dlg_title">请稍候...</string>              
+        <string name="usercenter_change_pwd_progress_dlg_body">正在提交修改密码请求...</string>              
+        <string name="usercenter_result_change_pwd_success_prompt">修改密码成功！</string>                     
+        <string name="usercenter_result_change_pwd_failed_prompt">修改密码失败！</string>   
+        <string name="usercenter_result_change_pwd_exception_prompt">修改密码过程中出现异常！</string>              
+        <string name="usercenter_request_userinfo">正在请求服务器获取用户资料...</string>              
+        <string name="parameter_is_null_error">参数不能为空</string>         
+        <string name="parameter_format_error">参数格式错误</string>   
+        <string name="system_error">系统异常</string>              
+        <string name="network_error">网络异常</string>              
+        <string name="usercenter_login_fial">用户登录名或者密码错误或用户状态异常</string>                             
+        <string name="usercenter_user_status_error">用户状态错误</string>    
+        <string name="usercenter_email_not_set_error">邮箱未设置异常</string>    
+        <string name="usercenter_username_double_error">用户名重复错误</string>            
+        <string name="usercenter_email_format_error">邮箱格式错误</string>                             
+        <string name="usercenter_mobile_format_error">手机格式错误</string>    
+        <string name="usercenter_username_forat_error">用户名格式错误</string>    
+        <string name="usercenter_password_format_error">密码格式错误</string>             
+        <string name="usercenter_security_question_double_error">密码保护问题重复错误</string>                             
+        <string name="usercenter_phone_format_error">电话格式错误</string>    
+        <string name="usercenter_mobile_is_bind_error">手机已经绑定错误</string>    
+        <string name="usercenter_email_is_bind_error">邮箱已经绑定错误</string>              
+        <string name="usercenter_security_answer_exist_error">密码保护问题已存在异常</string>             
+        <string name="usercenter_not_login_error">用户未登录异常</string>                             
+        <string name="usercenter_vaildate_answer_fial">验证密码保护问题失败</string>    
+        <string name="usercenter_user_not_exist_error">用户不存在错误</string>    
+        <string name="usercenter_password_error">密码错误</string>     
+        <string name="usercenter_email_double_error">邮箱重复错误</string>              
+        <string name="usercenter_unknown_error">未知错误</string>      
+        <string name="usercenter_operate_success">操作成功</string>          
+        <string name="rescue_vehicle_location">定位</string>
+        <string name="rescue_vehicle_close">关闭</string>
+        <string name="main_rapid_diagnostics">快速诊断</string>
+        <string name="mian_advanced_diagnostics">高级诊断</string>
+        <string name="usercenter_retrieve_password_question_fial">获得密码提示问题列表失败</string>
+        <string name="notice">提示</string>
+        <string name="main_unregister">还未下载诊断程序，诊断功能无法使用!</string>
+        <string name="rescue_vehicle_not_open_gps_loaction">您没有打开GPS卫星定位功能！</string><!-- 您没有打开无线网络定位功能！ -->
+        <string name="select_all">全部选中</string> 
+         <!-- 黑匣子 -->
+	    <string name="main_black_box">黑匣子</string>
+</resources>

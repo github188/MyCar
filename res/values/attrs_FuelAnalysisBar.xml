@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    	刻度指示器控件的属性
+     -->
+     <declare-styleable name="FuelAnalysisBar">
+         <!-- 第1组数据名称 -->
+         <attr format="string"  name="group1ItemName"/>
+         <!-- 第2组数据名称 -->
+         <attr format="string" name="group2ItemName"/>
+         <!-- 第3组数据名称 -->
+         <attr format="string" name="group3ItemName"/>
+         <!-- 数据名称文字大小 -->
+         <attr format="dimension" name="itemNameTextSize"/>
+     </declare-styleable>
+     
+</resources>

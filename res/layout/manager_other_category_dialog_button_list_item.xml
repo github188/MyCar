@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 以下是按钮gridview -->
+
+    <Button
+        android:id="@+id/gridview_other_category_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_gray"
+        android:maxLength="4"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/manager_other_category_button_text_size"
+        android:textColor="@color/black"
+        >
+    </Button>
+
+</LinearLayout>

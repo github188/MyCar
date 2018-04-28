@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DPU协议相关   @author luxingsong-->
+    <!-- 出错 以及 操作失败的信息 -->
+    <string name="dpu_failed_to_rename_device">Failed to rename the device</string><!--设备重命名失败-->
+    <string name="dpu_failed_to_connect_device">Failed to connect to the device</string><!--设备连接失败-->
+    <string name="dpu_failed_to_check_security_sum">Failed to verify the device</string><!--设备校验失败-->
+    <string name="dpu_error_no_space">Not enough storage space</string><!--存储空间不足-->
+    <string name="dpu_error_files">Invalid File</string><!--升级文件错误-->
+    <string name="dpu_error_transfer_data">Communication Error: 6403</string><!--数据传输错误 6403-->
+    <string name="dpu_error_transfer_data1">Communication Error: 6405</string><!--数据传输错误 6405-->
+    <string name="dpu_error_md5_info">Verification Error: 6404</string><!--MD5校验错误 6404-->
+    <string name="dpu_error_data_md5_comparison">Verification Error: 6408</string><!--MD5指纹对比不一致 6408-->
+    <string name="dpu_exception">Invalid Response: 23</string><!--设备回应异常  23-->
+    <string name="dpu_error_file_io">I/O Error </string><!--文件IO 错误 -->
+    <string name="dpu_error_no_md5_found">Verified Failed: Missing checksum</string><!--没有找到校验信息 -->
+    <string name="dpu_write_sysini_ok">Writing completed.</string><!--写诊断配置文件 成功! -->
+    <string name="dpu_write_sysini_failed">Writing failed.</string><!--写诊断配置文件 失败! -->
+    <string name="dpu_get_security_check_sum">Loading...</string><!--获取安全校验字-->
+    <string name="dpu_prepare_to_send_file">Preparing...</string><!--准备发送文件&#8230;-->
+    <string name="dpu_send_file_info">File Info</string><!--发送文件信息&#8230;-->
+    <string name="dpu_unexpectetd_response_from_device">Unknown Device Response!</string>
+    <string name="dpu_device_config_file_not_found">Device configuration file not found!</string>
+    <string name="dpu_response_ok">Response correct</string>
+    <string name="dpu_response_error">Response error</string>
+    <string name="dpu_jump_to_download_entry_ok">Firmware runs normally </string>
+    <string name="dpu_jump_to_download_entry_fail">Firmware entry error! 2111</string>
+</resources>

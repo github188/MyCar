@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_list_item_margin_left">10dip</dimen>
+    <dimen name="main_list_item_margin_right">10dip</dimen>
+    <dimen name="main_list_item_padding_left">10dip</dimen>
+    <dimen name="main_list_item_padding_right">10dip</dimen>
+    <dimen name="main_content_margin">10dip</dimen>
+    <dimen name="main_textsize">14dip</dimen>
+    <dimen name="main_button_textsize_big">16dip</dimen>
+    <dimen name="main_button_textsize">14dip</dimen>
+    <dimen name="main_setting_item_height">65dip</dimen>
+    <dimen name="main_list_item_height">47dip</dimen>
+    <dimen name="main_settings_item_title">20dip</dimen>
+    <dimen name="main_settings_item_detail">13dip</dimen>
+    <dimen name="main_bottom_button_margin_bottom">10dip</dimen>
+
+    <!-- 标题栏高度 -->
+    <dimen name="window_title_size">26dip</dimen>
+    <dimen name="custom_title_left">18dip</dimen>
+    <dimen name="custom_title_right">14dip</dimen>
+    <dimen name="main_padding">4dip</dimen>
+    <dimen name="main_title">26dip</dimen>
+
+    <!-- 车辆管家数据资源 开始 -->
+    <dimen name="manager_custom_keyboard_padding_bottom">4dip</dimen>
+    <dimen name="manager_custom_keyboard_margin_top">0dip</dimen>
+    <dimen name="manager_main_padding">17dip</dimen>
+    <dimen name="manager_custom_keyboard_num_textsize">25dip</dimen>
+    <dimen name="manager_custom_keyboard_del_textsize">14dip</dimen>
+    <dimen name="manager_toolbar_textsize">12dip</dimen>
+    <dimen name="manager_editarea_margin_bottom">10dip</dimen>
+    <dimen name="manager_editarea_padding_bottom">6dip</dimen>
+    <dimen name="manager_editarea_padding_top">5dip</dimen>
+    <dimen name="manager_category_width">80dip</dimen>
+    <dimen name="manager_amount_width">80dip</dimen>
+    <dimen name="manager_other_category_button_text_size">13dip</dimen>
+    <dimen name="manager_divider_height">1dip</dimen>
+    <dimen name="manager_list_item_line_padding_top">5dip</dimen>
+    <dimen name="manager_list_item_line_padding_bottom">5dip</dimen>
+    <dimen name="manager_list_item_title_textsize">16dip</dimen>
+    <dimen name="manager_list_item_text_textsize">14dip</dimen>
+    <dimen name="manager_list_item_amount_text_textsize_padding_rihgt">15dip</dimen>
+    <dimen name="manager_main_button_height">60dip</dimen>
+    <dimen name="manager_listview_title_height">35dip</dimen>
+    <dimen name="manager_listview_title_textsize">16dip</dimen>
+    <dimen name="manager_list_item_line_padding_right">5dip</dimen>
+    <dimen name="manager_list_head_textsize">17dip</dimen>
+    <dimen name="manager_list_item_date_text_textsize">14dip</dimen>
+    <dimen name="manager_category_day_list_item_padding_left">10dip</dimen>
+    <dimen name="manager_category_day_list_item_amount_padding_right">30dip</dimen>
+    <dimen name="manager_billing_notify_height">25dip</dimen>
+    <dimen name="manager_billing_notify_text">14dip</dimen>
+    <dimen name="manager_billing_user_settings_usercar_name">16dip</dimen>
+    <dimen name="manager_toolbar_height">60dip</dimen>
+    <dimen name="manager_list_item_height">30dip</dimen>
+    <dimen name="manager_oil_main_padding">3dip</dimen>
+    <dimen name="manager_oil_detail_head">16dip</dimen>
+    <dimen name="manager_edit_height">43dip</dimen>
+    <dimen name="manager_billing_datetime_edit_height">35dip</dimen>
+    <dimen name="manager_toolbar_drawablepadding">1dip</dimen>
+    <dimen name="manager_toolbar_icon_paddingtop">2dip</dimen>
+    <!-- 车辆管家数据资源  结束 -->
+    <!-- 用户中心  开始 -->
+    <dimen name="usercenter_label_size_big">20dp</dimen>
+    <dimen name="usercenter_label_size_medium">16dp</dimen>
+    <dimen name="usercenter_label_size_small">12dp</dimen>
+    <dimen name="usercenter_btn_padding_vertical">15dp</dimen>
+    <dimen name="main_menu_height">70dip</dimen>
+
+    <!-- 用户中心  结束 -->
+	<dimen name="main_in_diagonse_text_size">18dip</dimen>
+	<dimen name="manager_main_button_text2_size">12dip</dimen>
+    <dimen name="manager_main_button_text_size">13dip</dimen>
+    <dimen name="manager_category_button_height">66dip</dimen>
+    <dimen name="manager_custom_keyboard_padding_top">4dip</dimen>
+    <dimen name="manager_category_button_width">90dip</dimen>
+    <dimen name="usercenter_btn_padding">5dp</dimen>
+    <dimen name="usercenter_login_margin_top">10dp</dimen>
+    <dimen name="usercenter_eidt_width">190dp</dimen>
+    <dimen name="usercenter_edit_margin_left">6px</dimen>
+    <dimen name="usercenter_star_username_margin_left">30px</dimen>
+    <dimen name="usercenter_star_password_margin_left">10px</dimen>
+    <dimen name="usercenter_star_change_pssword_cc">10px</dimen>
+    <dimen name="usercenter_star_repassword_margin_left">11px</dimen>
+    <dimen name="usercenter_sync_to_ws_padding">20dp</dimen>
+    <dimen name="usercenter_change_password_re_password">11px</dimen>
+    <dimen name="usercenter_text_margin_left">4px</dimen>
+    <dimen name="rv_iv_margin_top">20dp</dimen>
+    <dimen name="usercenter_register_margin_top">2dp</dimen>
+    <dimen name="usercenter_register_edit_margin_top">1dp</dimen>    
+    <dimen name="main_margin_bottom">5dp</dimen>   
+    <dimen name="main_margin_top">10dp</dimen>    
+    <dimen name="usercenter_register_checkbox_margin_right">50px</dimen>    
+    <dimen name="usercenter_login_edit_width">200dp</dimen> 
+    <dimen name="usercenter_register_textview_width">110dp</dimen>
+    <dimen name="usercenter_register_editview_width">200dp</dimen>  
+    <dimen name="usercenter_login_button_width_big">135dip</dimen>
+    <dimen name="usercenter_login_button_width_small">80dip</dimen>        
+    <dimen name="usercenter_login_button_height">50dip</dimen>         
+</resources>

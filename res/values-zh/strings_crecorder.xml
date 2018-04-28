@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crd_goback">返回</string>
+    <string name="crd_data_sync">数据同步</string>
+    <string name="crd_examin">检测</string>
+    <string name="crd_import_bt_data">导入</string>
+    <string name="crd_cancel">取消</string>
+    <string name="crd_see_detail">查看</string>
+    <string name="crd_title">黑匣子</string>
+</resources>

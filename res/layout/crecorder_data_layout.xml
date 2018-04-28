@@ -1,0 +1,47 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/crecorder_tv_title_baseinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="基本信息"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+         <TextView
+             android:id="@+id/crecorder_tv_baseinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+          <TextView
+             android:id="@+id/crecorder_tv_title_userinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="用户信息"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+          <TextView
+             android:id="@+id/crecorder_tv_userinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+          <TextView
+             android:id="@+id/crecorder_tv_title_autoinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="车辆信息"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+          <TextView
+             android:id="@+id/crecorder_tv_autoinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              />
+     </LinearLayout>
+        
+</ScrollView>

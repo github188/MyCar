@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 刻度指示器控件的属性 -->
+    <declare-styleable name="PowerPointer">
+
+        <!-- 遮罩层 -->
+        <attr name="maskImage" format="reference" />
+        <!-- 指示层 -->
+        <attr name="pointerImage" format="reference" />
+        <!-- 指示层初使偏移量 -->
+        <attr name="pointerOffset" format="dimension" />
+        <!-- 指示值 -->
+        <attr name="pointerValue" format="fraction" />
+        <!-- 控件方向 -->
+        <attr name="pointerOritation" />
+    </declare-styleable>
+
+    <attr name="pointerOritation">
+        <enum name="vertical" value="0" />
+        <enum name="horizontal" value="1" />
+    </attr>
+
+</resources>

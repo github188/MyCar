@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" >
+	<TextView 
+		android:layout_width="60dp"
+		android:layout_height="60dp"/>
+
+  	<LinearLayout 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="30dip" 
+		android:orientation="vertical" 
+		android:weightSum="1">
+		<LinearLayout 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			
+			android:layout_marginLeft="30dip" 
+			android:orientation="horizontal" 
+			android:weightSum="1">
+		  	<TextView android:layout_weight="0.13" 
+				android:id="@+id/usercenter_tv_cc_label" 
+				android:layout_height="wrap_content" 
+				android:text="CC  "  
+				android:layout_width="wrap_content"></TextView>	
+	        <TextView android:layout_weight="0.13" 
+				android:id="@+id/usercenter_tv_cc_value" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"></TextView>			
+	    </LinearLayout>
+  	    <LinearLayout 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_marginTop="15dip" 
+			android:layout_marginLeft="30dip" 
+			android:orientation="horizontal" 
+			android:weightSum="1">
+		  	<TextView android:layout_weight="0.13" 
+				android:id="@+id/usercenter_tv_nickname_label" 
+				android:layout_height="wrap_content" 
+				android:text="昵称    "  
+				android:layout_width="wrap_content"></TextView>	
+	        <TextView android:layout_weight="0.13" 
+				android:id="@+id/usercenter_tv_nickname_value" 
+	 			android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"></TextView>
+	        <TextView android:id="@+id/usercenter_nickname_id"
+	        	android:visibility="invisible"
+	        	android:layout_width="0dip"
+	        	android:layout_height="0dip"
+	        	/>			
+	    </LinearLayout>
+	</LinearLayout>    
+</LinearLayout>

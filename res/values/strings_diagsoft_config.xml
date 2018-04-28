@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VIN 码验证   @author luxingsong-->
+    <string name="diagconf_goback">Back</string><!--返回-->
+    <string name="diagconf_buy">Purchase</string><!--购买-->
+    <string name="diagconf_confirm_config">Confirm</string><!--确认配置-->
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:paddingTop="@dimen/manager_list_item_line_padding_top"
+	android:paddingBottom="@dimen/manager_list_item_line_padding_bottom"
+	android:background="@color/manager_list_category_head"
+	android:layout_height="wrap_content">
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="0dip"
+		android:paddingLeft="@dimen/manager_main_padding"
+		android:text="@string/manager_totalize"
+		android:textSize="@dimen/manager_list_item_title_textsize"
+		android:textColor="@color/manager_text"
+		android:layout_weight="7">
+	</TextView>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="0dip"
+		android:id="@+id/manager_detail_foot_textview_amount"
+		android:text="金额"
+		android:textSize="@dimen/manager_list_item_text_textsize"
+		android:paddingRight="@dimen/manager_list_item_amount_text_textsize_padding_rihgt"
+		android:textColor="@color/manager_text"
+		android:gravity="right"
+		android:layout_weight="6">
+	</TextView>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="0dip"
+		android:text=""
+		android:textSize="@dimen/manager_list_item_title_textsize"
+		android:textColor="@color/manager_text"
+		android:layout_weight="5">
+	</TextView>
+
+</LinearLayout>

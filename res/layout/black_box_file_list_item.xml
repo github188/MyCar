@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="40dp"
+	android:orientation="horizontal" >
+	<CheckBox
+		android:id="@+id/cb_select_file"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:text="文件名称"
+		android:textColor="@color/main_list_item_title" />
+</LinearLayout>

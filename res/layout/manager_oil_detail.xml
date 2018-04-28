@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/manager_oil_frame_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+    		android:background="@drawable/oil_detal_top_display" >
+            <TextView
+                android:id="@+id/textview_manager_oil_detail_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/oil_detail_start"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="true"
+                android:gravity="bottom|center_horizontal"
+                android:text="2011-10-9"
+                android:textColor="@color/black"
+                android:paddingBottom="3dip"
+                android:textSize="12dip" />
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/oil_detail_full_grid" 
+                android:orientation="vertical"
+                >
+            <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="5"
+               android:orientation="horizontal"
+               android:gravity="center" >
+
+
+                <ImageView
+               		android:id="@+id/oil_detail_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/num_1" />
+
+           <ImageView
+            android:id="@+id/oil_detail_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/num_0" />
+
+
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/manager_oil_detail_head_average_oil_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/manager_oil_detail_head_average_oil"
+                android:textColor="@color/main_list_item_detail"
+                android:textSize="10dip" />
+
+
+				<Spinner
+				    android:id="@+id/spinner_manager_oil_car_id"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center_horizontal"
+				    android:background="@drawable/oil_detail_instructions"
+				    android:gravity="center_vertical|left" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textview_manager_oil_detail_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/oil_detail_stop"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:focusable="true"
+                android:gravity="bottom|center_horizontal"
+                android:text="2011-11-9"
+                android:textColor="@color/black"
+                android:textSize="12dip" 
+                android:paddingBottom="3dip"
+                />
+        </RelativeLayout>
+        
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/manager_list_category_head"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/manager_main_padding"
+                android:text="@string/manager_oil_detail_title_oil_type"
+                android:textColor="@color/manager_text"
+                android:textSize="@dimen/manager_list_item_text_textsize" >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:text="@string/manager_oil_detail_title_oil_amount"
+                android:textColor="@color/manager_text"
+                android:textSize="@dimen/manager_list_item_text_textsize" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:text="@string/manager_oil_detail_title_oil_quantity"
+                android:textColor="@color/manager_text"
+                android:textSize="@dimen/manager_list_item_text_textsize" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingLeft="25dip"
+                android:text="@string/licheng"
+                android:textColor="@color/manager_text"
+                android:textSize="@dimen/manager_list_item_text_textsize" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:text="@string/edit"
+                android:textColor="@color/manager_text"
+                android:paddingLeft="@dimen/manager_main_padding"
+                android:textSize="@dimen/manager_list_item_text_textsize" />
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/manager_oil_detail_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/main_divider"
+            android:dividerHeight="@dimen/manager_divider_height" >
+        </ListView>
+    </LinearLayout>
+    <!-- 以下是底部按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/manager_oil_toolbar"
+            android:layout_height="478dp"
+            layout="@layout/manager_oil_toolbar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--   公共 begin  -->
+	<string name="main_indestructible_black_box">ブラックボックス</string>
+	<string name="main_swift_diagnose">ワンクリックテスト</string>
+	<string name="main_advance_diagnose">アドバンス診断</string>
+	<string name="main_manager">車両マネージャー</string>
+	<string name="main_gasoline_analysis">燃料消費</string>
+	<string name="main_car_rescue">車両救援</string>
+	<string name="main_car_forum">車フォーラム</string>
+	<string name="main_more">一覧</string>
+	<string name="main_track">トラック</string>
+	<string name="main_odb2">メーター</string>
+	<string name="main_more_oil_record">給油記録</string>
+	<string name="main_more_device_manage">デバイス管理</string>
+	<string name="main_more_about">アバウト</string>
+	<string name="main_more_help">ヘルプ</string>
+	<string name="call">呼出</string>
+	<string name="custom_title_left">左タイトル</string>
+	<string name="custom_title_right">右タイトル</string>
+	<string name="app_name">DBScar</string>
+	<string name="usercenter">ユーザーセンター</string>
+	<string name="cccenter">CCセンター</string>
+	<string name="vinsearch">VIN検索</string>
+	<string name="carforum">カークラブ</string>
+	<string name="manager">車両管理者</string>
+	<string name="carrescue">車両診断</string>
+	<string name="diagnose">故障診断</string>
+	<string name="updatecenter">アップデートセンター</string>
+	<string name="maintainreference">メイテンナス</string>
+	<string name="myCarSetting">DBScar設定</string>
+	<string name="gettting_data">データ取得中…</string>
+	<string name="ex_userinfo">ユーザー情報</string>
+	<string name="weather">天気情報</string>
+	<string name="tour_number">外出指数：</string>
+	<string name="car_wash_number">洗車指数：</string>
+	<string name="user_center">ユーザーセンター</string>
+	<string name="device">`デバイス管理</string>
+	<string name="love_car_diagnosis">車両点検</string>
+	<string name="refresh_weather">[最新の情報に更新]</string>
+	<string name="refreshing_weather">天气情報を更新中</string>
+	<string name="default_city_name">深圳</string>
+	<string name="default_dtc_content">異常は検出されません</string>
+	<string name="dtc_have_fault">異常が検出されました</string>
+	<string name="default_login_state">ログインしていない</string>
+	<string name="user_info_detail">ユーザー情報詳細</string>
+	<string name="setting_titile">設定</string>
+	<!-- 公共end -->
+	<!-- ユーザーセンター -->
+	<string name="usercenter_login_notice">お客様各位\n • 未登録の場合は【登録】を行ってください；\n • パスワードを忘れた時に【パスワードを忘れた場合】にアクセスしてください；\n • 今回登録しない場合は【スキップ】をクリックして直\n   接プログラムにアクセスしてください。</string>
+	<string name="usercenter_register_notice">ユーザー登録が完了しました。下記CCNo.はお客様専用DBScarNo.となります。\n登録情報を確認した上，【OK】をクリックしてください。</string>
+	<string name="usercenter_cc_mobile_email">ユーザー名/CCNo.</string>
+	<string name="usercenter_dbscar_login">ユーザーログイン</string>
+	<string name="usercenter_login">ログイン</string>
+	<string name="usercenter_register_presentation_1">ネットワークに接続確認後、以下の登録情報を入力してください。* がついている項目は必ず入力してください。</string>
+	<string name="usercenter_register_presentation_2">アカウントを作成したことにより、DBScar個人情報の保護に関する法令およびその他関連する規約に同意したこととなります</string>
+	<string name="usercenter_pwd">パスワード:</string>
+	<string name="usercenter_password">パスワード: ******</string>
+	<string name="usercenter_cc">CC:</string>
+	<string name="usercenter_cc_">CC</string>
+	<string name="usercenter_username">ユーザー名:</string>
+	<string name="usercenter_username_">ユーザー名</string>
+	<string name="usercenter_nickname">ニックネーム:</string>
+	<string name="usercenter_nickname_">ニックネーム</string>
+	<string name="usercenter_mobile">携帯:</string>
+	<string name="usercenter_mobile_">携帯</string>
+	<string name="usercenter_email">Eメール:</string>
+	<string name="usercenter_email_">Eメール</string>
+	<string name="usercenter_activate">アクティブ</string>
+	<string name="usercenter_bind">バンドリング</string>
+	<string name="usercenter_not">未読</string>
+	<string name="usercenter_done">既読</string>
+	<string name="usercenter_account">アカウント:</string>
+	<string name="usercenter_device_info">デバイス情報:</string>
+	<string name="usercenter_re_password">パスワード(再入力):</string>
+	<string name="usercenter_input_orgpwd">現在のパスワード:</string>
+	<string name="usercenter_input_newpwd">新しいパスワード:</string>
+	<string name="usercenter_input_newpwd_again">新しいパスワード(再入力):</string>
+	<string name="usercenter_dbscar_register">ユーザー登録</string>
+	<string name="usercenter_register">登録</string>
+	<string name="usercenter_forget_pwd">パスワードを忘れた場合</string>
+	<string name="usercenter_auto_login">自動ログイン</string>
+	<string name="usercenter_save_pwd">パスワードの保存</string>
+	<string name="usercenter_change_pwd">パスワードの変更</string>
+	<string name="usercenter_change_pwd_submit">提出</string>
+	<string name="usercenter_change_pwd_cancel">終了</string>
+	<string name="usercenter_userinfo">ユーザー情報詳細</string>
+	<string name="usercenter_update">最新の情報に更新</string>
+	<string name="usercenter_logout">ログアウト</string>
+	<string name="usercenter_back">ホームページ</string>
+	<string name="usercenter_password_manage">パスワード管理</string>
+	<string name="usercenter_device_name">デバイス名称:</string>
+	<string name="usercenter_device_serial">シリアル番号:</string>
+	<string name="usercenter_message_no_defined">未確定メッセージ</string>
+	<string name="usercenter_usercenter_exception">パスワード変更が異常</string>
+	<string name="usercenter_connect_service_timeout">サーバー接続タイムアウト</string>
+	<string name="usercenter_account_is_not_null">ユーザー名が無効です</string>
+	<string name="usercenter_illegal_account">使用禁止の文字を含んでいます。正しいCC、あるいはメールアドレス、携帯番号を入力してください。</string>
+	<string name="usercenter_plese_choice">ご選択ください</string>
+	<string name="usercenter_password_tip_question">パスワードの質問</string>
+	<string name="usercenter_retrieve_password_success">パスワード取得成功。メールアドレスへ送信されましたので、ご確認ください\n</string>
+	<string name="usercenter_service_io_exceptin">ユーザー情報を同期する際にサーバーIOエラーが発生しました。ネットワーク接続の状態を確認ください</string>
+	<string name="usercenter_service_parse_xml_exception">ユーザー情報を同期する際にサーバーXml解析エラーが発生しました</string>
+	<string name="usercenter_service_exception">ユーザー情報を同期する際にサーバーエラーが発生しました</string>
+	<string name="usercenter_login_exception"> ログインエラー</string>
+	<string name="usercenter_service_login_timeout"> ログインタイムアウト</string>
+	<string name="usercenter_netword_not_connect">サーバーに接続できませんでした！接続状態を確認ください</string>
+	<string name="rescue_vehicle_not_open_newwork_loaction">ネットワーク位置機能を開きません！</string>
+	<string name="rescue_vehicle_go_setting">設定します</string>
+	<string name="usercenter_fail_to_register">登録失敗、ネットワーク通信を確認してください！</string>
+	<string name="usercenter_registing">登録中...
+	</string>
+	<string name="usercenter_logining">ログイン中...</string>
+	<string name="rescue_vehicle_ensure_call">通話</string>
+	<string name="rescue_vehicle_add_emergency_phone">緊急電話を追加します</string>
+	<string name="rescue_vehicle_update_emergency_phone">緊急電話を修正します</string>
+	<string name="rescue_vehicle_ilegal_mobile">電話番号の入力に誤りがあります</string>
+	<string name="rescue_vehicle_use_gps_location"> GPS位置情報を取得しています。長時間反応がない場合は、GPSをご利用ください...</string>
+	<string name="rescue_vehicle_gps_can_get_location"> GPS位置情報を取得できませんでした。GPSを再度お試しください！</string>
+	<string name="rescue_vehicle_gps_location">GPS位置</string>
+	<string name="rescue_vehicle_searching_around_store">周辺の店舗情報を取得中...</string>
+	<string name="rescue_vehicle_network_locationing">GPSにより位置情報を取得中...</string>
+	<string name="rescue_vehicle_current_location_lat">現在位置: 緯度：</string>
+	<string name="rescue_vehicle_current_location_lng">, 経度：</string>
+	<string name="rescue_vehicle_is_search_around_store">\n周辺の情報を検索する場合は【OK】をクリックしてください</string>
+	<string name="rescue_vehicle_fail_network_location">GPSタイムアウト,位置取得失敗</string>
+	<string name="rescue_vehicle_fail_gps_location">GPSロケーションタイムアウト, 位置取得失敗</string>
+	<string name="rescue_vehicle_store">店舗:</string>
+	<string name="rescue_vehicle_create_date">作成日:</string>
+	<string name="rescue_vehicle_main_server">メインサービス:</string>
+	<string name="rescue_vehicle_connection_people">担当者:</string>
+	<string name="rescue_vehicle_mobile">携帯:</string>
+	<string name="rescue_vehicle_telephone">TEL:</string>
+	<string name="rescue_vehicle_store_address">住所:</string>
+	<string name="rescue_vehicle_lat">緯度:</string>
+	<string name="rescue_vehicle_lng">経度:</string>
+	<string name="usercenter_username_format">5-20桁の数字またはアルファベット</string>
+	<string name="usercenter_password_format">6-20桁の数字またはアルファベット</string>
+	<string name="usercenter_have_not_setting_quesetion">パスワード忘れた場合の設定をしていません</string>
+	<string name="usercenter_hint_password">パスワード</string>
+<!--   車両救援 start by 向遠茂 abbreviate：rv_   -->
+	<string name="emergency_telephone_name">名前:</string>
+<!--  名前 : -->
+	<string name="emergency_telephone_mobile">携帯:</string>
+<!--  手机 : -->
+	<string name="emergency_telephone_menu_delete">削除</string>
+<!--  削除 -->
+	<string name="rv_rescue_vehicles">車両救援</string>
+	<string name="rv_stores_information">周辺の店舗情報</string>
+	<string name="rv_stores_name">店舗名</string>
+	<string name="rv_distance">距離(KM)</string>
+	<string name="rv_telephone">TEL</string>
+	<string name="rv_gps_location">GPS位置</string>
+	<string name="rv_close_gps">GPSを終了する</string>
+	<string name="rv_network_location">ネットワークロケーション</string>
+	<string name="rv_search">検索</string>
+	<string name="rv_emergency_phone">緊急電話</string>
+	<!-- 車両救援 end -->
+	<string name="mycar_about_title">ソフトウェアについて</string>
+	<string name="mycar_about_copyright">©2012 Launch Software</string>
+	<string name="mycar_about_url"><u>http://www.dbscar.com</u></string>
+	<string name="mycar_about_detail">LAUNCH TECH DBScarをご利用いただきありがとうございます。このソフトは車両診断及び関連サービスに対応します。詳しい情報は弊社ホームページをご参考ください。</string>
+	<string name="OK">OK</string>
+	<string name="Cancel">キャンセル</string>
+	<string name="main_legal_terms">法律事項</string>
+	<string name="main_agree">同意する</string>
+	<string name="main_not_agree">同意しない</string>
+	<string name="display_manual_car_portal_net">自動車ポータルサイト </string>
+	<string name="display_manual_dbscar_site">www.dbscar.com</string>
+	<string name="display_manual_diag_20_year">20年以上の診断開発</string>
+	<string name="display_manual_rescue_car">瞬間車両アシスト</string>
+	<string name="display_manual_black_box">ブラックボックスで安全を守る</string>
+	<string name="display_manual_car_after_life">自動車アフターライフ</string>
+	<string name="display_manual_real_now">スタート</string>
+	<string name="skip">スキップ</string>
+	<string name="ask_account">アカウントをお持ちですか？</string>
+	<string name="have_account">アカウントをお持ちの場合</string>
+	<string name="have_not_account">アカウントをお持ちでない場合</string>
+	<string name="legal_terms1">免責条項</string>
+	<string name="legal_terms2">1、この取扱説明書を良くお読みの上、本製品を安全にお使いください。\n
+2、	事故防止の為、運転中の操作は絶対おやめください；本製品を使用中に起こった交通事故や他の経済的損失に対し、弊社は一切責任を負いません。\n
+3、	本製品はブルートゥースを介して車両と車両間のデータ収集及び送信を実施していますので、電波障害が発生するところに使用しないようにしてください(高圧変電所周辺など)。\n
+4、	利用者が勝手に改造または設備やユニットを加装することにより直接または間接的損害が生じた場合は，弊社は一切責任を負いません。\n
+5、	使用中に発見された異常問題は必ず弊社の担当者が修理いたします。実際の異常状況により，担当者が修理方法等を判断させていただきます。\n
+6、	ソフトの著作権をはじめとする一切のプログラム及びドキュメント（文字説明、画像、グラフ、カラー、画面設計、データ、印刷材料、フォルタなど）は株式会社ランチテックジャパンが所有し、著作権法によって保護されています。\n 
+7、	ソフトのリバースエンジニアリング（逆アセンブル等）・解析、逆行分析、分解等の行為を行ってはいけません。\n
+8、	ソフトを使用する際に天災、不可抗力、ウイルス、ハッカーアタック、システムの安定性、ユーザー位置、電源OFF及び他のネットワーク、技術、通信回路などの理由によりサービスの中断あるいは使用不能が発生し、その結果利用者が損失を蒙った場合においても、弊社は一切の責任を負いません。\n
+9、	第三者から生じた通信障害、技術的な異常、ネットワーク、パソコン故障、システム不安定などにより発生した経済的損失に対し，弊社は一切の責任を負いません。\n
+10、	技術故障などの不可抗力により正常に使用できなくなる場合は，弊社は速やかに関連業者に連絡を取り、回復作業を行わせていただきますが、利用者が蒙られた損失に対し、弊社は一切の責任を負いません。\n
+11、	外部ハードウェアの差別性及び複雑性が存在するため、ソフトの品質、性能、特定の目的への適合性、障害が発生しないことを保証することはできません。ソフトの使用により生じた損害に対し、ソフトの開発者は一切の責任を負いません。
+12、	ソフトをダウンロードされた時点で、上記の規約に同意されたものとみなします
+    </string>
+	<string name="uc_register_result">登録結果</string>
+	<string name="uc_register_success">登録完了</string>
+	<string name="uc_register_fail">登録失敗</string>
+	<string name="uc_ask_register_device">今すぐ起動しますか？</string>
+	<string name="uc_notice">提示</string>
+	<string name="uc_send_password_to_email">パスワード通知メールをEメールへ送信します</string>
+	<string name="uc_send_password_to_mobile">パスワード通知メールを携帯へ送信します</string>
+	<string name="uc_retrieved_password_by_question">パスワードの質問によりパスワードを取得</string>
+	<string name="uc_ask_retrieved_method">パスワードの取得方法を選択してください</string>
+	<string name="uc_show_password">パスワードを表示させます</string>
+	<string name="uc_hide_password">パスワードを表示出来ません</string>
+	<string name="uc_confirm">OK</string>
+	<string name="usercenter_ask_device_notice">DBScarお持ちですか？\n•お持ちの場合は【起動】をクリックしてください；\n•お持ちでない場合は【購入】をクリックしてください。</string>
+	<string name="uc_immediately_activate">起動</string>
+	<string name="uc_immediately_buy">購入</string>
+	<string name="uc_account_is_null">CCNo./ユーザー名/メールアドレスを入力してください！</string>
+	<string name="uc_account_is_illegal">アカウント情報が正しくありません！</string>
+	<string name="uc_password_is_illegal">パスワードは6文字以上20文字の半角英数字にしてください！</string>
+	<string name="uc_username_is_null">ユーザー名を入力してください！</string>
+	<string name="uc_username_is_illegal">ユーザー名が正しくありません！</string>
+	<string name="uc_username_is_illegal_1">ユーザー名は5文字以上20文字にしてください！</string>
+	<string name="uc_password_is_null">パスワードを入力してください！</string>
+	<string name="uc_repassword_is_null">パスワード(再入力)を入力してください！</string>
+	<string name="uc_repassword_is_illegal">パスワード(再入力)が正しくありません！</string>
+	<string name="uc_password_different">パスワードが一致していません！</string>
+	<string name="uc_email_is_null">メールアドレスを入力してください！</string>
+	<string name="uc_email_is_illegal">メールアドレスが正しくありません！</string>
+	<string name="uc_nickname_illegal">ニックネームは1文字以上20文字にしてください！</string>
+	<string name="uc_mobile_illegal">携帯番号が正しくありません！</string>
+	<string name="uc_question_1">質問1:</string>
+	<string name="uc_question_2">質問2:</string>
+	<string name="uc_question_3">質問3:</string>
+	<string name="uc_answer">答え:</string>
+	<string name="uc_select_question">パスワードの質問を選択してください</string>
+	<string name="uc_answer_is_null">パスワードの質問を答えてください！</string>
+	<string name="uc_answer_repeat_or_less">パスワードの質問を選択してないか、あるいは選択重複！</string>
+	<string name="uc_get_question_list">パスワードの質問リストを取得中...</string>
+	<string name="intenet_invalid">無効なWEBリクエスト！</string>
+	<string name="intenet_answererror">このパスワードの答えは正しくありません！</string>
+	<string name="uc_retrieved_password">パスワードの質問によりパスワードを再取得します</string>
+	<string name="uc_set_password_question">パスワードの質問を設定してください</string>
+	<string name="uc_set_password_question_success">パスワードの質問の設定が完了しました！</string>
+	<string name="uc_retrieved_password_success">パスワードを再取得できました，メールボックスにてご確認ください！</string>
+	<string name="uc_retrieved_password_success_and_new">パスワードを再取得できました、新しいパスワード：</string>
+	<string name="uc_change_password">パスワード変更</string>
+	<string name="uc_setting_question">パスワードの質問を設定中...</string>
+	<string name="uc_retriefeing_question">パスワードを取得中...</string>
+	<string name="uc_ex_userinfo">ユーザー情報</string>
+	<string name="must_be_not_blank">入力必須です！</string>
+	<string-array name="ex_userinfo_labels">
+		<item>名</item>
+		<item>姓</item>
+		<item>緯度</item>
+		<item>経度</item>
+		<item>現在地</item>
+		<item>会社名</item>
+		<item>自宅電話</item>
+		<item>会社電話</item>
+		<item>住所</item>
+		<item>町</item>
+		<item>市</item>
+		<item>国</item>
+		<item>県</item>
+		<item>CC</item>
+		<item>郵便番号</item>
+	</string-array>
+	<string-array name="MAIN_MENUTITLE">
+		<item>一般</item>
+		<item>設定</item>
+		<item>ツール</item>
+	</string-array>
+	<string name="uc_sync_ex_userinfo_to_ws">サーバーへ同期</string>
+	<string name="uc_syncing_ex_userinfo_to_ws">サーバーへユーザー情報を同期...</string>
+	<string name="uc_syncing_ex_userinfo_from_ws">サーバーからユーザー情報を同期...</string>
+	<string name="main_user_logout">ここをクリックしてログインしてください</string>
+	<string name="main_my_bbs">MY　BBS</string>
+	<string name="main_my_instrument">ゲージ</string>
+	<string name="main_my_bill">消費</string>
+	<string name="bind_emial_success">メールが送信されました。メールをご確認ください。</string>
+	<string name="bind_emial_fail">メールアドレスを起動失敗しました！</string>
+	<string name="ensure_bind_email">メールアドレスをバインドしますか？</string>
+	<string-array name="rescue_vehicle_emergency_phone">
+		<item>通報</item>
+		<item>火事通報</item>
+		<item>救急センター</item>
+		<item>交通事故</item>
+		<item>落水救助</item>
+		<item>森林火災通報</item>
+		<item>赤十字社</item>
+		<item>財産保険会社</item>
+		<item>生命保険会社</item>
+	</string-array>
+	<string name="login_state_display_login">登録済み</string>
+	<string name="login_state_display_logout">未登録</string>
+	<string name="usercenter_toast_account_invalid">無効なアカウント。CCNo.、携帯番号、メールアドレスを入力してください。</string>
+	<string name="usercenter_toast_org_pwd_invalid">旧パスワードが無効</string>
+	<string name="usercenter_toast_new_pwd_invalid">新パスワードが無効</string>
+	<string name="usercenter_change_pwd_old_pwd_wrong">旧パスワードが正しくありません</string>
+	<string name="usercenter_toast_new_pwd_not_equal">入力したパスワードが一致ではありません</string>
+	<string name="usercenter_change_pwd_progress_dlg_title">お待ちください...</string>
+	<string name="usercenter_change_pwd_progress_dlg_body">パスワードを変更しています...</string>
+	<string name="usercenter_result_change_pwd_success_prompt">パスワード変更成功！</string>
+	<string name="usercenter_result_change_pwd_failed_prompt">パスワード変更失敗！</string>
+	<string name="usercenter_result_change_pwd_exception_prompt">パスワード変更エラー！</string>
+	<string name="usercenter_request_userinfo">ユーザー情報を取得中...</string>
+	<string name="parameter_is_null_error">パラメータが無効</string>
+	<string name="parameter_format_error">パラメータが正しいではありません</string>
+	<string name="system_error">システム異常</string>
+	<string name="network_error">ネットワーク異常</string>
+	<string name="usercenter_login_fial">ユーザー名またはパスワード不正、或いはユーザー状態異常</string>
+	<string name="usercenter_user_status_error">ユーザー状態異常</string>
+	<string name="usercenter_email_not_set_error">メールを未設定</string>
+	<string name="usercenter_username_double_error">ユーザー名重複</string>
+	<string name="usercenter_email_format_error">メールアドレスが無効　</string>
+	<string name="usercenter_mobile_format_error">携帯番号が無効</string>
+	<string name="usercenter_username_forat_error">ユーザー名が無効</string>
+	<string name="usercenter_password_format_error">パスワードが無効</string>
+	<string name="usercenter_security_question_double_error">パスワード忘れた場合の質問が重複</string>
+	<string name="usercenter_phone_format_error">電話番号が無効</string>
+	<string name="usercenter_mobile_is_bind_error">携帯番号が既にバインディング</string>
+	<string name="usercenter_email_is_bind_error">メールアドレスが既にバインディング</string>
+	<string name="usercenter_security_answer_exist_error">パスワードが既に存在</string>
+	<string name="usercenter_not_login_error">ユーザー未ログイン</string>
+	<string name="usercenter_vaildate_answer_fial">認証コード質問エラー</string>
+	<string name="usercenter_user_not_exist_error">ユーザー名が存在しません</string>
+	<string name="usercenter_password_error">パスワードエラー</string>
+	<string name="usercenter_email_double_error">メールアドレス重複</string>
+	<string name="usercenter_unknown_error">未知エラー</string>
+	<string name="usercenter_operate_success">操作成功</string>
+	<string name="rescue_vehicle_location">ロケーション</string>
+	<string name="rescue_vehicle_close">終了</string>
+	<string name="main_rapid_diagnostics">クェックテスト</string>
+	<string name="mian_advanced_diagnostics">アドバンステスト</string>
+	<string name="usercenter_retrieve_password_question_fial">パスワード忘れた場合の質問リストを取得失敗</string>
+	<string name="notice">提示</string>
+	<string name="main_unregister">診断ソストをダウンロードしていません!</string>
+	<string name="rescue_vehicle_not_open_gps_loaction">GPS機能を立ち上がりません！</string>
+	<string name="select_all">すべて選択</string>
+	<string name="main_black_box">黑匣子</string>
+    <string name="obdGgpFileName">obd2_cn.ggp</string>
+    <string name="select_device">ブルートゥースを検索中...</string>
+    <string name="none_paired">ペアリング済のブルートゥースが見つかりません</string>
+    <string name="none_found">検索結果0件</string>
+    <string name="title_paired_devices">ペアリング済</string>
+    <string name="title_other_devices">他のブルートゥース</string>
+    <string name="button_scan">ブルートゥースデバイスをサーチ</string>
+    <string name="back_main">ホームページ</string>
+    <string name="back_pre">戻る</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_retry">リトライ</string>
+    <string name="dialog_cancle">キャンセル</string>
+    <string name="dialog_print">プリント</string>
+    <string name="dialog_cancel_datastreamchoice">リセット</string>
+    <string name="diag_selectversion">診断バージョン情報</string>
+    <string name="datastream_show_graph">グラフ表示</string>
+    <string name="datastream_graph_up">前頁</string>
+    <string name="datastream_graph_down">次頁</string>
+    <string name="datastream_title_checkbox">全て選択</string>
+    <string name="diagnose_title">重要事項説明</string>
+    <string name="diagnose_messge1">診断を終了しますか？</string>
+    <string name="datastream_graph_tip_title">表示</string>
+    <string name="datastream_choice_tip_title_adv">ヘルプ:</string>
+    <string name="datastream_graph_tip_message">表示出来るデータがない！</string>
+    <string name="datastream_choice_tip_msg">データストリームを選択してください</string>
+    <string name="datastream_choice_tip_toomuch">データストリームを正確に表示させるため、データストリームの数を100以上から100に減らしました!</string>
+    <string name="bluetoothdevicelist_connect_failed">ブルートゥースを接続できませんでした。リトライしますか?</string>
+    <string name="bluetoothdevicelist_zhixing_failed">実行失敗しました。リトライしますか?</string>
+    <string name="bluetoothdevicelist_password_check_faild">パスワード認証失敗。リトライしますか?</string>
+    <string name="diagnose_menu_show_title">メニュー</string>
+</resources>

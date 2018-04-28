@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:isScrollContainer="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/manager_list_item_line_padding_bottom"
+    android:paddingTop="@dimen/manager_list_item_line_padding_top" >
+
+    <TextView
+        android:id="@+id/manager_billing_detail_category"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:paddingLeft="@dimen/manager_main_padding"
+        android:text="类型"
+        android:textColor="@color/manager_text"
+        android:textSize="@dimen/manager_list_item_title_textsize" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/manager_billing_detail_amount"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="right"
+        android:paddingRight="@dimen/manager_list_item_amount_text_textsize_padding_rihgt"
+        android:text="￥2000.00"
+        android:textColor="@color/manager_text"
+        android:textSize="@dimen/manager_list_item_text_textsize" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/manager_billing_detail_time"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="12:30:56"
+        android:textColor="@color/manager_text" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/main_list_item_margin_right"
+        android:layout_weight="1"
+        android:src="@drawable/setting_arrows" />
+
+</LinearLayout>

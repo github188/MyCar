@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_show_nodtc">故障コードなし! </string>
+    <!-- 診断バージョン情報 -->
+    <string name="version_progress_title">診断バージョン情報</string>
+    <string name="version_progress_readversion">バージョン情報を読取中…</string>
+    <string name="version_progress_enter_download">検索中…</string>
+    <string name="version_progress_enter_diagmode">アクセス中…</string>
+    <string name="version_progress_input_password">パスワード認証中…</string>
+    <string name="version_progress_reset_password">パスワードリセット中…</string>
+    <string name="version_progress_safecheck">セキュリティー認証中…</string>
+    <string name="versoin_show_dpuid">DPU_ID:</string>
+    <string name="version_show_serialno">シリアルNo.:</string>
+    <string name="version_show_language">言語:</string>
+    <string name="version_show_carname">車種名:</string>
+    <string name="version_show_diagversion">モデル:</string>
+    <string name="version_show_boot">BOOTバージョン：</string>
+    <string name="version_show_download">Downloadバージョン：</string>
+    <string name="version_button_enter_update">アップデートセンターへアクセスします!</string>
+    <string name="version_button_enter_diag">診断へアクセスします</string>
+    <string name="version_button_enter_fast_diag">クェックテストへアクセスします</string><!--クェックテストへアクセスします-->
+    <string name="version_no_find_sd_card">SDカードが接続されていない為、診断ができません!</string>
+    <string name="version_button_enter_noconnect">ブルートゥースが接続されていません。リトライしてください!</string>
+    <string name="datastream_graph_first_page">最初のページ</string>
+    <string name="datastream_graph_last_page">最後のページ</string>
+    <string name="firmware_needs_to_be_updated">ハードウェアを更新する必要があります</string><!--  -->
+    <string name="version_selectcar_not_equal">選択された車両は下位機と一致しません！続きますか?</string>
+    <string name="version_selectlang_not_equal">車両言語とシステム言語が一致しません！次に続くと、文字化けを起す可能があります！続きますか?</string>
+    <string name="version_enter_update_toast">携帯ソフトのバージョンとコネクタソフトバージョンが一致しません、更新ください...</string>
+    <string name="version_enter_update_notcomplete">前回の更新は完了しません！</string>
+    <string name="version_bluetooth_connect_lost">ブルートゥース通信が中断しました。最初からやり直してください!</string>
+    <!-- 診断モードstring登録                       begin -->
+    <string name="diagnoseMain">診断</string>
+    <string name="datastream_choice_title">データストリーム選択</string>
+    <string name="datastream_show_title">データストリーム</string>
+    <string name="diag_dtc_title">故障コード</string>
+    <string name="diagnose_quit">終了</string>
+    <!-- 診断モードstring登録                          end -->
+    <!-- 異常処理 -->
+    <string name="BT_error_title">表示</string>
+    <string name="back_too_long">受信データが大きすぎます！</string>
+    <string name="BT_check_error">ブルートゥース通信エラー！</string>
+    <string name="diag_commun_error_title">通信エラー</string>
+    <string name="diag_error_00">通信タイムアウト</string>
+    <string name="diag_error_01">セキュリティー認証エラー!</string>
+    <string name="diag_error_02">データを受信しました。DBScarが作動中!</string>
+    <string name="diag_error_03">データを受信できませんでした。DBScarが作動中!</string>
+    <string name="diag_error_04">容量不足!</string>
+    <string name="diag_error_05">ファイルが既に存在しました!</string>
+    <string name="diag_error_06">ファイルが存在します。アップデート完了しました!</string>
+    <string name="diag_error_07">ファイルが存在します。アップデート完了できません!</string>
+    <string name="diag_error_08">データ量エラー!</string>
+    <string name="diag_error_09">認証失敗!</string>
+    <string name="diag_error_10">ファイル数が正しくありません!</string>
+    <string name="diag_error_11">他の異常!</string>
+    <string name="diag_error_12">DBScar容量不足!</string>
+    <string name="diag_error_13">消去失敗!</string>
+    <string name="diag_error_14">書込失敗!</string>
+    <string name="diag_error_15">ファイルが空です!</string>
+    <string name="diag_error_16">ファイル量が正しくありません!</string>
+    <string name="diag_error_17">設定エラー!</string>
+    <string name="diag_error_18">パスワードが正しくありません!</string>
+    <string name="diag_error_19">パスワード認証失敗!</string>
+    <string name="diag_error_20">パスワードの誤入力回数が制限を超えました!</string>
+    <!-- ブルートゥース接続状況ダイアログボックス -->
+    <string name="BT_conn_dialog_message">該当機能はブルートゥース接続しないとご使用できません。ブルートゥース接続しますか？</string>
+    <string name="BT_conn_dialog_title">表示</string>
+    <string name="BT_conn_dialog_choose_yes">YES</string>
+    <string name="BT_conn_dialog_choose_no">NO</string>
+    <!-- データストリーム選択 -->
+    <string name="dataStreamChooseOKButton">OK</string>
+    <!-- ggpFileName -->
+
+</resources>

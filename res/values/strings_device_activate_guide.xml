@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VIN 码验证   @author luxingsong-->
+    <string name="guide_not_show_again">Do not show this message again!</string><!--不再提示-->
+    <string name="guide_next_step">Next</string><!--下一步-->
+</resources>

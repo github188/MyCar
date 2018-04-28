@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  アップデートファイルをスキャンします    @author luxingsong -->
+    <string name="fscan_scanning_now">スキャン中…;</string>
+    <string name="fscan_scan_error"> スキャンエラー</string>
+    <string name="fscan_scan_exception"> スキャン異常!</string>
+    <string name="fscan_scan_success"> スキャン成功!</string>
+</resources>

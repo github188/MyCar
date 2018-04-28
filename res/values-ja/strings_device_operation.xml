@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="device_activate_guide">DBScarを使用する前に、必ずメーカーソフトをダウンロードしてください。DBScarを車両側のOBDIIコネクターに接続してください。</string>
+    <string name="device_configure_guide">
+	DBScarを起動できました 
+    </string>
+    <string name="firmware_update_guide">
+	DBScarを使用する前に, 必ずソフトをダウンロードまたアップデートしてください。下図のようにDBScarを車側のOBDIIコネクターにを接続してください：
+    </string>
+</resources>

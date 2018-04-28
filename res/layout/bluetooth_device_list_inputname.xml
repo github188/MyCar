@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffffff"
+    android:id="@+id/bluetooth_list_inputname" >
+    <TextView 
+        android:id="@+id/bluetooth_firstname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/bluetoothconnect_input_firstname"/>
+    <EditText 
+        android:id="@+id/bluetooth_inputname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:maxLength="10"
+        android:minWidth="150dip"/>
+</LinearLayout>

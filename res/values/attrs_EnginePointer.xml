@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     	发动机指示器控件的属性 -->
+    <declare-styleable name="EnginePointer">
+
+        <!-- 游标指针滑动所在的线的颜色 -->
+        <attr name="signalPointerTrackColor" format="reference" />
+        <!-- 游标指针1的颜色 -->
+        <attr name="signalPointerColorUpSide" format="color" />
+        <!-- 游标指针2的颜色 -->
+        <attr name="signalPointerColorDownSide" format="color" />
+        <!-- 游标指针的高度 -->
+        <attr name="signalPointerHeight" format="dimension" />
+        <!-- 游标与辅助示意线之间的间距 -->
+        <attr name="vernierMarginForSignalPointer" format="dimension" />
+        <!-- 上方刻度当前值 -->
+        <attr name="valueUpSide" format="float" />
+        <!-- 下方刻度当前值 -->
+        <attr name="valueDownSide" format="float" />
+    </declare-styleable>
+
+</resources>

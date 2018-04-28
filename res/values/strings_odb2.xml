@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="more_str">More</string><!--更多-->
+   <string name="nofaultcode">No Error Code Found!</string><!--无故障码-->
+   <string name="carname">Vehicle Name:</string><!--车名：-->
+   <string name="timestring">Date:</string><!--时间：-->
+   <string name="vincode">VIN:</string><!--VIN：-->
+   <string name="faultcode">DTC:</string><!--故障码：-->
+   <string name="saveOk">Save Successful</string><!--保存成功-->
+	<string name="saveError">Save Failed</string><!--保存失败-->
+	<string name="diagnostic_oil">Fuel Economy:</string><!--油耗：-->
+	<string name="engine_timing_long">(Long Term)</string><!--(长期)-->
+    <string name="engine_timing_short">(Short Term)</string><!--(短期)-->
+    
+    <string name="is_exit">Exit?</string>
+    <string name="exiting">Exiting...</string>
+</resources>

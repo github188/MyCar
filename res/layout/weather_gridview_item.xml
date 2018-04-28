@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weather_gridview_item_city"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    android:text="城市名"
+    android:textColor="@color/black"
+    android:textSize="18sp" />

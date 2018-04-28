@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:isScrollContainer="true"
+	android:layout_width="fill_parent"
+	android:paddingTop="@dimen/manager_list_item_line_padding_top"
+	android:paddingBottom="@dimen/manager_list_item_line_padding_bottom"
+	android:layout_height="wrap_content">
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="0dip"
+		android:paddingLeft="@dimen/manager_category_day_list_item_padding_left"
+		android:id="@+id/manager_category_day_list_item_title"
+		android:text="2010-07-03"
+		android:textSize="@dimen/manager_list_item_title_textsize"
+		android:textColor="@color/manager_text"
+		android:layout_weight="4"
+		>
+	</TextView>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="0dip"
+		android:id="@+id/manager_category_day_list_item_text"
+		android:text="￥2000.00"
+		android:textSize="@dimen/manager_list_item_text_textsize"
+		android:layout_weight="3"
+		android:gravity="right"
+		android:textColor="@color/manager_text"
+		android:paddingRight="@dimen/manager_category_day_list_item_amount_padding_right"
+		>
+	</TextView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SOAP サービスインターフェースに関する記述   @author luxingsong-->
+    <string name="soap_error_not_soaop_object">サーバが反応しません!</string>
+    <string name="soap_error_no_such_property">このプロパティが存在していません!</string>
+</resources>

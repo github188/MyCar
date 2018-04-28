@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DPU协议相关   @author luxingsong-->
+    
+    <!-- 出错 以及 操作失败的信息 -->
+    <string name="dpu_failed_to_rename_device">重命名失败</string>
+    <string name="dpu_failed_to_query_soft_info">查询BOOT DOWNLOAD.BIN 版本失败  2105</string>
+    <string name="dpu_failed_to_connect_device">连接失败</string>
+    <string name="dpu_failed_to_check_security_sum">校验失败</string>
+    <string name="dpu_error_no_space">存储空间不足</string>
+    <string name="dpu_error_files">升级文件错误</string>
+    <string name="dpu_error_transfer_data">数据传输错误 2403</string>
+    <string name="dpu_error_transfer_data1">数据传输错误 2405</string>
+    <string name="dpu_error_md5_info">MD5校验错误 2404</string>
+    <string name="dpu_error_get_dpu_file_md5">获取设备文件MD5校验失败  2408</string>
+    <string name="dpu_exception">设备回应异常  23</string>
+    <string name="dpu_error_file_io">文件IO 错误 </string>
+    <string name="dpu_error_no_md5_found">没有找到校验信息 </string>
+    <string name="dpu_write_sysini_ok">写诊断配置文件 成功! </string>
+    <string name="dpu_jump_to_download_entry_ok">跳转到download入口 </string>
+    <string name="dpu_jump_to_download_entry_fail">跳转到download失败! 2111</string>
+    <string name="dpu_write_sysini_failed">写诊断配置文件 失败! </string>
+    <string name="dpu_get_security_check_sum">获取安全校验字 </string>
+    <string name="dpu_prepare_to_send_file">准备发送文件&#8230;</string>
+    <string name="dpu_send_file_info">发送文件信息&#8230;</string>
+    <string name="dpu_response_ok">设备回应正确</string>
+    <string name="dpu_response_error">设备回应错误</string>
+    <string name="dpu_device_config_file_not_found">设备配置文件[DPUSYS.INI]不存在!</string>
+    <string name="dpu_unexpectetd_response_from_device">设备的响应无法识别!</string>
+</resources>

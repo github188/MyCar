@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DPUプロトコル関連   @author luxingsong-->
+    
+    <!-- エラー及び操作失敗に関する情報 -->
+    <string name="dpu_failed_to_rename_device">名前変更失敗</string>
+    <string name="dpu_failed_to_query_soft_info">BOOT DOWNLOAD.BINバージョンを検索エラー 2105</string>
+    <string name="dpu_failed_to_connect_device">接続失敗</string>
+    <string name="dpu_failed_to_check_security_sum">認証失敗</string>
+    <string name="dpu_error_no_space">容量不足</string>
+    <string name="dpu_error_files">アップデートファイルエラー</string>
+    <string name="dpu_error_transfer_data">データ送信エラー 2403</string>
+    <string name="dpu_error_transfer_data1">データ送信エラー 2405</string>
+    <string name="dpu_error_md5_info">MD5認証エラー 2404</string>
+    <string name="dpu_error_get_dpu_file_md5">ファイルMD5を受取エラー  2408</string>
+    <string name="dpu_exception">デバイスの反応が異常  23</string>
+    <string name="dpu_error_file_io">ファイルIO エラー </string>
+    <string name="dpu_error_no_md5_found">認証情報が見つかりません </string>
+    <string name="dpu_write_sysini_ok">ファイルの書き込みが成功! </string>
+    <string name="dpu_jump_to_download_entry_ok">downloadエントリへ接続OK </string>
+    <string name="dpu_jump_to_download_entry_fail">downloadエントリへ接続エラー! 2111</string>
+    <string name="dpu_write_sysini_failed">ファイルの書き込みが失敗! </string>
+    <string name="dpu_get_security_check_sum">セキュリティーチェックサムを取得します </string>
+    <string name="dpu_prepare_to_send_file">ファイルを送信します&#8230;</string>
+    <string name="dpu_send_file_info">ファイル情報を送信します&#8230;</string>
+    <string name="dpu_response_ok">デバイスの反応が正常</string>
+    <string name="dpu_response_error">デバイスの反応がエラー</string>
+    <string name="dpu_device_config_file_not_found">デバイスファイル[DPUSYS.INI]が存在しません!</string>
+    <string name="dpu_unexpectetd_response_from_device">デバイスの反応を認識できません!</string>
+</resources>

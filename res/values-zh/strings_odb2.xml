@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="more_str">更多</string>
+   <string name="nofaultcode">无故障码</string>
+   <string name="carname">车名：</string>
+   <string name="timestring">时间：</string>
+   <string name="vincode">VIN：</string>
+   <string name="faultcode">故障码：</string>
+   <string name="saveOk">保存成功</string>
+	<string name="saveError">保存失败</string>
+	<string name="diagnostic_oil">油耗：</string>
+	<string name="is_exit">是否退出？</string>
+	
+	    
+	    <string name="exiting">正在退出...</string>
+	    
+</resources>

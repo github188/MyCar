@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 设备激活   @author luxingsong-->
+    <string name="devregister_device_info">车云卡(DBScar)激活</string>
+    <string name="devregister_serialnumber">设备序列号:</string>
+    <string name="devregister_serialnumber_status">序列号状态:</string>
+    <string name="devregister_family_name">姓氏:</string>
+    <string name="devregister_name">名字:</string>
+    <string name="devregister_phone">电话: </string>
+    <string name="devregister_address">地址: </string>
+    <string name="devregister_device_name">设备名称:</string>
+    <string name="devregister_dev_passwd">设备密码:</string>
+    <string name="devregister_goback">返回 </string>
+    <string name="devregister_activate">激活 </string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/linearLayout1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent" >
+	 <CheckedTextView 
+	    android:id="@+id/upc_setting_checktext"
+	    android:layout_width="fill_parent"
+	    android:textColor="@color/black"
+	    android:layout_height="?android:attr/listPreferredItemHeight"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:gravity="center_vertical"
+	    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	    android:paddingLeft="6dip"
+	    android:paddingRight="6dip"
+	  />
+ </LinearLayout>

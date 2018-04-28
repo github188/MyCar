@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  MD5校验    @author luxingsong -->
+    <string name="fmd5_calculating">Verifying...</string><!--正在校验文件&#8230;-->
+    <string name="fmd5_calc_error">Hash Error</string><!--计算文件MD5出错-->
+    <string name="fmd5_exception">An Exception Occurred</string><!--计算文件MD5出现异常!-->
+    <string name="fmd5_success">Compeleted</string><!--计算文件MD5成功!-->
+    <string name="fmd5_the_file">File</string><!--文件-->
+    <string name="fmd5_reason">Reason</string><!--原因-->
+    <string name="fmd5_validate_ok">Validation completed</string><!--文件校验成功!-->
+    <string name="fmd5_create_cookie">Create checksum</string><!--创建校验文件-->
+</resources>

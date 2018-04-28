@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/crecorder_bt_root_layout"
+    android:orientation="vertical" >
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:divider="@drawable/main_divider"
+        android:id="@+id/crecorder_lv_bt_data"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/crecorder_header_bg"
+        android:layout_below="@+id/crecorder_lv_bt_data"
+        android:id="@+id/crecorder_bt_bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+	        android:id="@+id/crecorder_import"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/usercenter_button_bg"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_weight="1"
+	        android:text="@string/crd_import_bt_data"/>
+        <Button
+	        android:id="@+id/crecorder_see_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/usercenter_button_bg"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_weight="1"
+	        android:text="@string/crd_see_detail"/>
+        <Button
+	        android:id="@+id/crecorder_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/usercenter_button_bg"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_weight="1"
+	        android:text="@string/crd_cancel"/>"
+    </LinearLayout>
+</RelativeLayout>

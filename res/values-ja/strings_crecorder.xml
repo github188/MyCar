@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crd_goback">戻る</string>
+    <string name="crd_data_sync">データを同期化する</string>
+    <string name="crd_examin">検査</string>
+    <string name="crd_import_bt_data">インポート</string>
+    <string name="crd_cancel">キャンセル</string>
+    <string name="crd_see_detail">詳細</string>
+    <string name="crd_title">ブラックボックス</string>
+</resources>

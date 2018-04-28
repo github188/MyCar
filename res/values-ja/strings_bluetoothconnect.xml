@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ブルートゥースペアリング画面  add by pufengming 20120331-->
+    <string name="bluetoothconnect_open">ブルートゥースを接続中...</string>
+    <string name="bluetoothconnect_Readversioning">バージョン情報を読取中...</string>
+    <string name="bluetoothconnect_title">ブルートゥースペアリング</string>
+    <string name="bluetoothconnect_button_return">戻る</string>
+    <string name="bluetoothconnect_button_reset">リセット</string>
+    <string name="bluetoothconnect_button_search">デバイスを検索</string>
+    <string name="bluetoothconnect_button_searching">検索中...</string>
+    <string name="bluetoothconnect_pair">ペアリング完了</string>
+    <string name="bluetoothconnect_nopair">ペアリング未完了</string>
+    <string name="bluetoothconnect_mac_error">ブルートゥース通信エラー！</string>
+    <string name="bluetoothconnect_blue_connectnone">未接続...</string>
+    <string name="bluetoothconnect_blue_connecting">接続中...</string>
+    <string name="bluetoothconnect_blue_connected">接続済</string>
+    <string name="bluetoothconnect_blue_connectfail">接続失敗</string>
+    <string name="bluetoothconnect_set_changename">ブルートゥース名を変更</string>
+    <string name="bluetoothconnect_set_cancelpair">ペアリングを取消</string>
+    <string name="bluetoothconnect_input_title">新しいブルートゥース名を入力:</string>
+    <string name="bluetoothconnect_input_ok">OK</string>
+    <string name="bluetoothconnect_input_cancel">キャンセル</string>
+    <string name="bluetoothconnect_retry">リトライ</string>
+    <string name="bluetoothconnect_pair_waitting">実施中，お待ちください...</string>
+    <string name="bluetoothconnect_pair_checkpasswording">パスワードを認証中...</string>
+    <string name="bluetoothconnect_pair_changenameing">ブルートゥース名を変更中...</string>
+    <string name="bluetoothconnect_pair_changename_ok">ブルートゥース名を変更できました。再検索を行うと新しいブルートゥース名が表示されます!</string>
+    <string name="bluetoothconnect_pair_changename_false">ブルートゥース名を変更できませんでした。前へ戻ってください!</string>
+    <string name="bluetoothconnect_input_firstname">DBS</string>
+    <string name="bluetoothconnect_tip_bluecancel">ブルートゥースが終了しました。最初からやり直してください！</string> 
+    <string name="bluetoothconnect_illegal">接続エラー。起動成功したかを確認してください</string> 
+  </resources>
+

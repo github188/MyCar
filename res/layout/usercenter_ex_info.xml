@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+  <RelativeLayout
+        android:id="@+id/manager_billing_menu_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ListView
+            android:id="@+id/lv_ex_userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/main_divider"
+            android:fadingEdge="none"
+            android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="55dp"
+            android:scrollingCache="false" />
+		<LinearLayout
+	    	android:id = "@+id/usercenter_linelayout04"
+	    	android:orientation = "horizontal"
+	    	android:gravity="center_horizontal"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="10dp"
+	    	android:layout_marginLeft="5dp"
+	    	android:layout_marginTop="5dp"
+	    	android:layout_width= "fill_parent"
+	    	android:layout_height="wrap_content">
+			<Button 
+				android:id="@+id/uc_sync_to_ws"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="@color/white"
+				android:textSize="@dimen/manager_main_button_text_size"
+				android:background="@drawable/main_button"
+				android:text="@string/uc_sync_ex_userinfo_to_ws"
+				/>				
+	    </LinearLayout>    
+    </RelativeLayout>
+</LinearLayout>

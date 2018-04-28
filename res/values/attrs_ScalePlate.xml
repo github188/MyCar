@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    	刻度指示器控件的属性
+     -->
+     <declare-styleable name="ScalePlate">
+         <!-- 1级刻度数 -->
+         <attr format="integer"  name="firstScaleCount"/>
+         <!-- 2级刻度数 -->
+         <attr format="integer" name="secondScaleCount"/>
+         <!-- 1级度数值开始 -->
+         <attr format="float" name="scaleStart"/>
+         <!-- 刻度值精度 -->
+         <attr format="integer" name="scalePrecision"/>
+         <!-- 1级刻度步长 -->
+         <attr format="float"	name="scaleStep"/>
+         <!-- 1级刻度值显示间隙 -->
+         <attr format="integer"	name="scaleValueStep"/>
+         <!-- 刻度尺背景 -->
+         <attr format="reference" name="scaleBackgroundColor"/>
+         <!-- 刻度值字体大小 -->
+         <attr format="dimension"	name="scalePlateTextSize"/>
+         <!-- 刻度尺方向 -->
+         <attr name="scaleOritation" />
+         <!-- 游标线背景色 -->
+         <attr format="reference"	name="vernierBackgroundColor"/>
+         <!-- 游标图片 -->
+         <attr format="reference"	name="vernierImage"/>
+         <!-- 游标与刻度之间的间距 -->
+         <attr format="dimension"	name="vernierMarginForScale"/>
+         <!-- 游标与辅助示意线之间的间距 -->
+         <attr format="dimension"	name="vernierMarginForSignalLine"/>
+         <!-- 辅助示意线颜色 -->
+         <attr format="color"	name="signalLineColor"/>
+         <!-- 辅助示意线背景颜色 -->
+         <attr format="color"	name="signalLineBackgroundColor"/>
+         <!-- 辅助示意线粗细 -->
+         <attr format="dimension"	name="signalLineWeight"/>
+         <!-- 辅助示意线缩放描述 -->
+         <attr format="string"	name="zoomDescription"/>
+         <!-- 是否隐藏游标 -->
+         <attr format="boolean" name="isHideScale"/>
+         <!-- 是否隐藏辅助线 -->
+         <attr format="boolean" name="isHideSignalLine"/>
+         <!-- 当前值 -->
+         <attr format="float" name="value"/>
+     </declare-styleable>
+     
+     <attr name="scaleOritation">
+         <enum name="vertical" value="0"/>
+         <enum name="horizontal" value="1"/>
+     </attr>
+
+     
+</resources>

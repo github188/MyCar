@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.cnlaunch.mycar"
+	android:versionCode="11"
+	android:installLocation="auto"
+	android:versionName="@string/mycar_about_version" >
+	<uses-sdk android:minSdkVersion="7" />
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:name=".MyCarApplication" >
+		<!-- ***** 主页面  ******************************************* start -->
+		<!-- android:name=".MyCarActivity" android:name=".diagnose.formal.MyCarDiagnoseActivity" -->
+		<activity
+			android:label="@string/app_name"
+			android:name=".StartAnimationActivity"
+			android:screenOrientation="portrait" >
+			<intent-filter >
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:configChanges="locale"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:name=".MyCarActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".MainMenuMoreActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".DisplayLegalTermsActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="@string/mycar_about_title"
+			android:name=".About"
+			android:theme="@android:style/Theme.Dialog" >
+		</activity>
+		<activity
+			android:name=".diagnose.simplereport.DiagnoseSimpleReportActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<!-- ***** 主页面  ******************************************* end -->
+		<!-- ***** 设置  ******************************************* start -->
+		<activity
+			android:label="@string/app_name"
+			android:name=".SettingActivity"
+			android:theme="@style/main_style" >
+		</activity>
+		<!-- ***** 设置  ******************************************* end -->
+		<!-- ***** 天气及指数  ******************************************* start -->
+		<activity android:name=".WeatherDetailActivity" >
+		</activity>
+		<activity
+			android:name=".WeatherSetCityActivity"
+			android:theme="@android:style/Theme.Dialog" >
+		</activity>
+		<!-- ***** 天气及指数  ******************************************* end -->
+		<!-- *****升级中心 **********************************************start -->
+		<activity
+			android:label="升级中心"
+			android:name=".updatecenter.UpdateCenterMainActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="升级设置"
+			android:name=".updatecenter.UpdateCenterSettingsActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="升级日志查询"
+			android:name=".updatecenter.UpdateCenterLogActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="诊断设备管理"
+			android:name=".updatecenter.UpdateCenterDiagDevManager"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="设备注册"
+			android:name=".updatecenter.DeviceRegisterActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="设备激活"
+			android:name=".updatecenter.DeviceActivateGuideActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="固件升级"
+			android:name=".updatecenter.FirmwareUpdate"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="本地升级"
+			android:name=".updatecenter.LocalUpdateManager"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="用户设备信息"
+			android:name=".updatecenter.AppendUserInfoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="设备配置"
+			android:name=".updatecenter.DiagSoftConfigureActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="诊断升级"
+			android:name=".updatecenter.DiagUpdateActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="TestDialog"
+			android:name=".updatecenter.TestDialog"
+			android:screenOrientation="portrait" >
+		</activity>
+		<service android:name=".updatecenter.HttpDownloadService" >
+		</service>
+		<service android:name=".updatecenter.device.DeviceUpdateService" >
+		</service>
+		<service android:name=".AutoUpdateService"></service>
+		<!-- *****升级中心 **********************************************end -->
+		<!-- ***** 用户中心  ******************************************* start -->
+		<activity
+			android:label="@string/usercenter"
+			android:name=".usercenter.LoginActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="@string/usercenter"
+			android:name=".usercenter.UserRegisterActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="密码找回问题"
+			android:name=".usercenter.PasswordQuestionActvity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:name=".usercenter.UsercenterActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:name=".usercenter.ExUserInfoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<!-- 用户中心，修改密码 -->
+		<activity
+			android:label="@string/usercenter_change_pwd"
+			android:name=".usercenter.ChangePasswordActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="@string/usercenter_userinfo"
+			android:name=".usercenter.UserInfoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="@string/usercenter_userinfo"
+			android:name=".usercenter.UserRegisterConfirmActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<!-- ***** 用户中心  ******************************************* end -->
+		<!-- ***** 公共模块蓝牙  ******************************************* start -->
+		<activity
+			android:configChanges="orientation|keyboardHidden"
+			android:name="com.cnlaunch.bluetooth.BluetoothDeviceListActivity"
+			android:theme="@android:style/Theme.Dialog" />
+		<service android:name="com.cnlaunch.bluetooth.BluetoothWatch">
+		    <intent-filter>
+		        <action android:name="com.cnlaunch.bluetooth.BluetoothWatch"/>
+		    </intent-filter>
+		</service>
+		<!-- ***** 公共模块蓝牙  ******************************************* start -->
+		<!-- 诊断Activity注册区域， ************************************************ begin -->
+		<activity
+			android:label="@string/myCarSetting"
+			android:name="MyCarSettingActivity" >
+		</activity>
+		<!-- 诊断模块主Activity -->
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseSelectVersionActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseMenuActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:launchMode="singleTask"
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseDataStreamShowActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:launchMode="singleTask"
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseDataStreamShowGraphActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseFaultCodeActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseDataStreamChoiceActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.formal.DiagnoseContorlActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:label="@string/diagnoseMain"
+			android:name=".diagnose.MainDiagnoseActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="请选择车型:"
+			android:name=".diagnose.ManualDiagnoseActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="请选择系统:"
+			android:name=".diagnose.ManualDiagnoseCarSystemShowActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="数据流"
+			android:name=".diagnose.DataStreamActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="诊断界面"
+			android:name=".diagnose.DiagnoseDisplayInterface"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="故障码"
+			android:name=".diagnose.DTCActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="冻结帧"
+			android:name=".diagnose.FrozenKeysActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="版本信息"
+			android:name=".diagnose.VersionInformationActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<!-- CRecorder 黑匣子 -->
+		<activity
+			android:name=".crecorder.CRecorderReadDataActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:name=".crecorder.CRecorderHistoryDataActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:name=".crecorder.CRecorderMainActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:name=".crecorder.CRecorderHttpTest"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:name=".crecorder.CRecorder"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<!-- 蓝牙操作activity -->
+		<activity
+			android:label="蓝牙检测中..."
+			android:name=".crecorder.CRecorderBluetoothOperationActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity android:name=".crecorder.CRecorderDataLayoutActivity" />
+		<activity android:name=".crecorder.CRecorderDataFromDPU" />
+		<!-- 诊断Activity注册区域，  ************************************************  end -->
+		<activity
+			android:label="OBD2日常诊断"
+			android:name=".obd2.DataFlowMain"
+			android:screenOrientation="portrait" >
+		</activity>
+		<service
+			android:label="OBD2诊断Service"
+			android:name=".obd2.service.Obd2DiagnoseService" >
+			<intent-filter android:label="OBD2 Diagnose" >
+				<action android:name="com.cnlaunch.mycar.obd2.intent.action.Obd2DiagnoseService" />
+			</intent-filter>
+		</service>
+		<!-- com.cnlaunch.mycar.obd2.intent.action.Obd2DiagnoseService -->
+		<!-- 车辆管家  begin -->
+		<activity
+			android:label="添加账单"
+			android:name=".manager.BillingAddActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="按日统计某类别的账单"
+			android:name=".manager.BillingCategoryDayListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="某日账单列表"
+			android:name=".manager.BillingDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="按日统计账单"
+			android:name=".manager.BillingStatisticsDayListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="按月统计账单"
+			android:name=".manager.BillingStatisticsMonthListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="弹出框口：选择其它类别"
+			android:name=".manager.DialogOtherCategoryActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity
+			android:label="弹出框口：选择日期"
+			android:name=".manager.DialogDatePickerActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity
+			android:name=".manager.BaseActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:label="添加加油记录"
+			android:name=".manager.OilAddActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="加油记录列表"
+			android:name=".manager.OilDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="油耗分析统计图"
+			android:name=".manager.OilDetailBarChartActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="用户车辆管理"
+			android:name=".manager.UserCarAddActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="用户设置"
+			android:name=".manager.UserSettingsActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<!-- 车辆管家  end -->
+		<!-- IM being -->
+		<activity
+			android:label="IM登录"
+			android:name=".im.ImLoginActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent" />
+		<activity
+			android:label="聊天界面"
+			android:name=".im.ChatActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="聊天记录"
+			android:name=".im.ChatLogActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="在线列表"
+			android:launchMode="singleTask"
+			android:name=".im.FriendListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="添加好友"
+			android:name=".im.AddFriendActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="好友信息"
+			android:name=".im.ImFriendInfoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="诊断报告发送记录"
+			android:name=".im.SendFileActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="重新登录"
+			android:name=".im.ReLoginActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<activity
+			android:label="表情弹窗"
+			android:name=".im.FacesActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity
+			android:label="选择文件"
+			android:name=".im.FileSelectActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" />
+		<service
+			android:label="IM Service"
+			android:name=".im.service.ImService" >
+			<intent-filter android:label="IM Service" >
+				<action android:name="com.cnlaunch.mycar.im.intent.action.ImService" />
+			</intent-filter>
+		</service>
+		<provider
+			android:authorities="com.cnlaunch.mycar.im"
+			android:enabled="true"
+			android:label="IM数据"
+			android:name=".im.database.ImDataProvider" >
+		</provider>
+		<!-- IM end -->
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2DataStreamActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<!-- 足迹  begin -->
+		<activity
+			android:label="足迹地图"
+			android:name=".gps.MapDisplayActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:label="足迹"
+			android:name=".gps.TrackListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+			<intent-filter >
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter >
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="file" />
+				<data android:mimeType="*/*" />
+				<data android:pathPattern=".*\\.gpx" />
+				<data android:host="*" />
+			</intent-filter>
+			<intent-filter >
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:mimeType="text/xml" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:label="足迹列表_Debug"
+			android:name=".gps.Debug_TrackListActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<provider
+			android:authorities="com.cnlaunch.mycar"
+			android:enabled="true"
+			android:label="足迹数据"
+			android:name=".gps.database.GpsTrackProvider"
+			android:permission="android.permission.ACCESS_FINE_LOCATION" >
+		</provider>
+		<service
+			android:enabled="true"
+			android:label="足迹Service"
+			android:name=".gps.service.GpsLoggerService"
+			android:permission="android.permission.ACCESS_FINE_LOCATION" >
+			<intent-filter android:label="GPS logger" >
+				<action android:name="com.cnlaunch.mycar.gps.intent.action.GpsLoggerService" />
+			</intent-filter>
+		</service>
+		<!--
+         <receiver
+            android:name=".gps.ControlWidgetProvider"
+            android:label="足迹" >
+            <intent-filter> 
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> 
+            </intent-filter> 
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/gps_control_appwidget_info" />
+        </receiver>
+		-->
+		<!-- 足迹  end -->
+		<!-- 车辆救援  begin -->
+		<activity
+			android:name=".rescuevehicles.RescueVehiclesActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<activity
+			android:name=".rescuevehicles.EmergencyPhoneActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+			<intent-filter >
+				<action android:name="android.intent.action.VIEW" />
+				<action android:name="android.intent.action.EDIT" />
+				<action android:name="android.intent.action.PICK" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.cnlaunch.contact" />
+			</intent-filter>
+			<intent-filter >
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.cnlaunch.contact" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".rescuevehicles.AroundStoresDetailInfoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/main_style" >
+		</activity>
+		<!-- 车辆救援  end -->
+		<!-- love car begin -->
+		<service
+			android:enabled="true"
+			android:name=".diagnose.loveCarHealth.LoveCarService" />
+		<activity
+			android:name=".diagnose.loveCarHealth.MessageActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" >
+			<!-- love car end -->
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.loveCarHealth.SettingAlermService"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.diagnose.loveCarHealth.AlarmAlert"
+			android:screenOrientation="portrait" >
+		</activity>
+		<!-- obd -->
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2MainActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2RandomDataStreamActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.StartTabActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2DiagnosticReportActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.IntermediaryActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2FaultCodeActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.OBD2DiagnoseBaseActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name="com.cnlaunch.mycar.obd2.TestActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<!-- 专业仪表 -->
+		<activity
+			android:name=".professioninstruments.PIActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".professioninstruments.ProfessionalInstrumentsMenuActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+		</activity>
+		<activity
+			android:name=".professioninstruments.InitBluetoothActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<!-- 註冊receiver CallAlarm -->
+		<receiver
+			android:name=".diagnose.loveCarHealth.CallAlarm"
+			android:process=":remote" />
+		<!-- Google Map API -->
+		<uses-library
+			android:name="com.google.android.maps"
+			android:required="false" />
+		<!-- 单元测试 -->
+		<uses-library android:name="android.test.runner" />
+		<!-- 
+		<receiver 
+			android:enabled="true"
+			android:name=".updatecenter.tools.CallReceiver">
+			<intent-filter android:priority="1000">
+				<action android:name="android.intent.action.PHONE_STATE"/>
+			</intent-filter>
+		</receiver> -->
+	</application>
+	
+	<instrumentation
+		android:label="Tests for My App"
+		android:name="android.test.InstrumentationTestRunner"
+		android:targetPackage="com.cnlaunch.mycar.diagnose" />
+	<instrumentation
+		android:label="Tests for MyCar X431File"
+		android:name="android.test.InstrumentationTestRunner"
+		android:targetPackage="com.cnlaunch.mycar" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<user-permission android:name="andrdoi.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

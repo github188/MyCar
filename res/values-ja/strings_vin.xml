@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VINコードを認証   @author luxingsong-->
+    <string name="upc_vin_validation">車両認証コード:</string>
+    <string name="upc_vin_check">認証</string>
+    <string name="upc_vin_help">Help</string>
+    <string name="upc_vin_invalid_format">VINコードのフォーマットが正しくありません</string>
+    <string name="upc_vin_invalid_length">VINコードの長さが正しくありません</string>
+    <string name="upc_vin_right_length">正しいVINコードの長さです</string>
+    <string name="upc_vin_right_format">正しいVINコードです</string>
+    <string name="upc_please_input_vin_number_here">VINコードを入力してください</string>
+</resources>

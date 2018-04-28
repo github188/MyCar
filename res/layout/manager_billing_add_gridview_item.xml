@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/manager_gridview_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/manager_category_button_height"
+        android:background="@drawable/main_button"
+        android:gravity="center_vertical"
+        android:textColor="@color/manager_gridview_button_text"
+        android:textSize="@dimen/manager_main_button_text_size"
+        android:text="停车"
+        android:paddingLeft="37dip"
+        android:layout_margin="4dip"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

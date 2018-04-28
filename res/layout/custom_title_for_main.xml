@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/window_title_size"
+    android:background="@color/black"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/main_title_tv_online"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_title_online" />
+
+    <TextView
+        android:id="@+id/main_title_tv_engine_fault"
+        android:layout_width="36dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+ 		 />
+
+    <LinearLayout
+        android:id="@+id/main_title_weather_area"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_title_imageview_weather"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/weather_small_0"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/main_title_tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:text="20°C"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/main_title_imageview_tour"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/weather_tour_1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/main_title_imageview_washcar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/weather_washcar_1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/main_title_tv_washcar"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="适宜洗车"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

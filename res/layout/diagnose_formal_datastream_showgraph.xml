@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/drawdatastream_showgraph_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/drawdatastream_showgraph_but_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/back_pre" />
+        <Button 
+            android:id="@+id/drawdatastream_showgraph_but_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/datastream_graph_up"/>
+        <Button 
+            android:id="@+id/drawdatastream_showgraph_but_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/datastream_graph_down"/>
+    </LinearLayout>     
+    <SurfaceView 
+        android:id="@+id/drawdatastream_paint"
+        android:layout_above="@id/drawdatastream_showgraph_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</RelativeLayout>

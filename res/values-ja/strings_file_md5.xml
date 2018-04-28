@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  MD5認証    @author luxingsong -->
+    <string name="fmd5_calculating">ファイルを認証中&#8230;</string>
+    <string name="fmd5_calc_error">認証エラー</string>
+    <string name="fmd5_exception">認証異常!</string>
+    <string name="fmd5_success">認証成功!</string>
+    <string name="fmd5_the_file">ファイル</string>
+    <string name="fmd5_reason">原因</string>
+    <string name="fmd5_validate_ok">ファイル認証成功!</string>
+    <string name="fmd5_create_cookie">認証ファイルを作成</string>
+</resources>

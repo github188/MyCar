@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/main_setting_item_height"
+    android:isScrollContainer="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/main_list_item_margin_left"
+        android:paddingRight="20dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/manager_user_settings_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置项"
+            android:textColor="@color/main_list_item_title"
+            android:textSize="@dimen/main_settings_item_title" />
+
+        <TextView
+            android:id="@+id/manager_user_settings_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置说明"
+            android:textColor="@color/main_list_item_detail"
+            android:textSize="@dimen/main_settings_item_detail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/main_list_item_margin_right"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_arrows" />
+    </LinearLayout>
+
+</RelativeLayout>

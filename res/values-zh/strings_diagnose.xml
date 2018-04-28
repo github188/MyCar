@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ggpFileName -->
+    <string name="obdGgpFileName">obd2_cn.ggp</string><!---->
+
+    <!-- DeviceListActivity -->
+    <string name="select_device">查询蓝牙给予连接</string>
+    <string name="none_paired">无已配对蓝牙</string>
+    <string name="none_found">搜索无结果</string>
+    <string name="title_paired_devices">已配对蓝牙</string>
+    <string name="title_other_devices">其他蓝牙</string>
+    <string name="button_scan">搜寻蓝牙设备</string>
+    <string name="back_main">主页</string>
+    <string name="back_pre">返回</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_retry">重试</string>
+    <string name="dialog_cancle">取消</string>
+    <string name="dialog_print">打印</string>
+    <string name="dialog_cancel_datastreamchoice">重选</string>
+    <string name="diag_selectversion">诊断版本信息</string>
+    <string name="datastream_show_graph">图像显示</string>
+    <string name="datastream_graph_up">上一页</string>
+    <string name="datastream_graph_down">下一页</string>
+    <string name="datastream_title_checkbox">全选</string>
+    <string name="diagnose_exit_title">重要提示</string>
+    <string name="diagnose_exit_messge1">退出高级诊断？</string>
+    <string name="datastream_graph_tip_title">提示</string>
+    <string name="datastream_choice_tip_title_adv">建议:</string>
+    <string name="datastream_graph_tip_message">没有可以绘制的数据流！</string>
+    <string name="datastream_choice_tip_msg">请选择数据流!</string>
+    <string name="datastream_choice_tip_toomuch">当前数据流选中超过100条，为了保证数据流显示的流畅性，本次自动缩减为100条!</string>
+    <string name="bluetoothdevicelist_connect_failed">蓝牙连接失败，重试？</string>
+    <string name="bluetoothdevicelist_password_check_failed">密码验证失败，重试？</string>
+    <string name="bluetoothdevicelist_zhixing_failed">执行失败，重试？</string>
+    <string name="menu_show_nodtc">无故障码!</string>
+    <string name="diagnose_menu_show_title">菜单</string>
+
+    <!-- 诊断版本信息 -->
+    <string name="version_progress_title">诊断版本信息</string>
+    <string name="version_progress_readversion">正在读取版本信息…</string>
+    <string name="version_progress_enter_download">正在检查…</string>
+    <string name="version_progress_enter_diagmode">正在进入…</string>
+    <string name="version_progress_input_password">正在验证密码…</string>
+    <string name="version_progress_reset_password">正在重置密码…</string>
+    <string name="version_progress_safecheck">正在进行安全认证…</string>
+    <string name="versoin_show_dpuid">DPU_ID:</string>
+    <string name="version_show_serialno">序列号:</string>
+    <string name="version_show_language">车型语言:</string>
+    <string name="version_show_carname">车型名称:</string>
+    <string name="version_show_diagversion">车型版本:</string>
+    <string name="version_show_boot">BOOT版本：</string>
+    <string name="version_show_download">Download版本：</string>
+    <string name="version_button_enter_update">进入升级中心!</string>
+    <string name="version_button_enter_diag">进入诊断</string>
+    <string name="version_button_enter_fast_diag">进入快速诊断</string><!--进入快速诊断-->
+    <string name="version_no_find_sd_card">手机没有SD卡不能进行诊断!</string>
+    <string name="version_button_enter_noconnect">蓝牙未连接,请重新进入!</string>
+    <string name="datastream_graph_first_page">已经是第一页</string>
+    <string name="datastream_graph_last_page">已经是最后一页</string>
+    <string name="firmware_needs_to_be_updated">有固件需要更新</string><!--  -->
+    <string name="version_selectcar_not_equal">选择车型与下位机不一致！是否继续?</string>
+    <string name="version_selectlang_not_equal">车型语言与系统语言不一致！\n如果继续，有可能造成显示乱码！是否继续?</string>
+    <string name="version_enter_update_toast">手机软件版本与诊断接头版本不一致，请升级...</string>
+    <string name="version_enter_update_notcomplete">上次升级未完成！</string>
+    <string name="version_bluetooth_connect_lost">蓝牙连接已中断，请重新进入诊断!</string>
+    
+    <!-- 诊断模块string注册区域                       begin -->
+    <string name="diagnoseMain">诊断</string>
+    <string name="datastream_choice_title">数据流选择</string>
+    <string name="datastream_show_title">数据流</string>
+    <string name="diag_dtc_title">故障码</string>
+    <string name="diagnose_quit">退  出</string>
+    <!-- 诊断模块string注册区域                          end -->
+
+    <!-- 异常处理 -->
+    <string name="error_title">提示</string>
+    <string name="back_too_long">接收到的数据包长度过长！</string>
+    <string name="BT_check_error">蓝牙通信校验错误！</string>
+    <string name="diag_commun_error_title">通讯错误</string>
+    <string name="diag_error_00">通讯超时</string>
+    <string name="diag_error_01">尚未获得安全校验,或安全校验错误!</string>
+    <string name="diag_error_02">数据已接收,车云卡在忙!</string>
+    <string name="diag_error_03">数据未接收,车云卡在忙!</string>
+    <string name="diag_error_04">存储空间不足!</string>
+    <string name="diag_error_05">文件已存在!</string>
+    <string name="diag_error_06">已存在该软件,版本相同,升级完成!</string>
+    <string name="diag_error_07">已存在该软件,版本相同,升级未完成!</string>
+    <string name="diag_error_08">数据长度校验错误,写入位置与已接收数据长度不符!</string>
+    <string name="diag_error_09">MD5校验失败!</string>
+    <string name="diag_error_10">文件数量不正确!</string>
+    <string name="diag_error_11">其他异常!</string>
+    <string name="diag_error_12">车云卡分配空间不足!</string>
+    <string name="diag_error_13">擦除失败!</string>
+    <string name="diag_error_14">写失败!</string>
+    <string name="diag_error_15">文件空!</string>
+    <string name="diag_error_16">文件长度问题!</string>
+    <string name="diag_error_17">设置出错!</string>
+    <string name="diag_error_18">密码不正确!</string>
+    <string name="diag_error_19">密码验证未通过!</string>
+    <string name="diag_error_20">密码错误次数过多!</string>
+
+    <!-- 蓝牙连接提示对话框 -->
+    <string name="BT_conn_dialog_message">此功能需要在蓝牙连接情况下才可使用，蓝牙尚未连接，连接？</string>
+    <string name="BT_conn_dialog_title">提示</string>
+    <string name="BT_conn_dialog_choose_yes">是</string>
+    <string name="BT_conn_dialog_choose_no">否</string>
+
+    <!-- 数据流选择 -->
+    <string name="dataStreamChooseOKButton">确定</string>
+
+</resources>

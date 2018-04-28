@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 简易报告 -->
+    <string name="simple_report">Quick Diagnosis</string> <!--车辆体检-->
+    <string name="pre_exam_num">Previous Score:</string><!--车辆上次体检得分:-->
+    <string name="car_exam">Start Check</string><!--车辆体检-->
+    <string name="question_num">DTCs</string><!--故障码个数：-->
+    <string name="cause_result">Potential Damange: </string><!--可能造成的后果：-->
+    <string name="help_advise">Analysis: </string><!--驾驶行为分析与建议:-->
+    <string name="data_stream_name">PIDs</string><!--数据流名称-->
+    <string name="data_stream_value">Value</string><!--数据值-->
+    <string name="simple_report_maxvalue">MAX</string><!--最大值-->
+    <string name="simple_report_minvalue">MIN</string><!--最小值-->
+    <string name="simple_report_datailInfo">Detail</string><!--详细报告-->
+    <string name="diag_scan_sys_list">Scanning: system list</string><!--正在扫描:系统列表  -->
+    <string name="diag_scan_sys_data_stream">Scanning: sys data streams</string><!--正在扫描:系统数据流 -->
+    <string name="diag_scan_sys_question_code">Scanning: system DTCs</string><!--正在扫描:系统故障码 -->
+    <string name="diag_scan_finish">Scanning completed</string><!-- 扫描完成 -->
+    <string name="diag_advise_regular">normal</string><!-- 正常 -->
+    <string name="diag_sp_push_str">Detected</string><!-- 标签 1-->
+    <string name="diag_sp_push_unit">  DTCs</string><!-- 单元1 -->
+    <string name="diag_sp_push_str2">Not detected</string><!-- 标签 2 -->
+    <string name="diag_sp_push_str3"></string><!-- 标签 3 -->
+    <string name="diag_sp_push_unit2">DTC</string><!-- 单元2 -->
+    <string name="diag_sp_error_00">Communication Error</string><!-- 通讯超时 -->
+    <string name="diag_sp_error_01"> Password validation failed </string><!-- 密码验证失败 -->
+    <string name="diag_sp_error_02"> Security authentication failed</string><!-- 安全认证失败 -->
+	<string name="diag_sp_no_sys_list">Reading lists that system supports failed</string><!-- 读取系统支持的列表失败 -->
+    <string name="diag_sp_no_appoint_data_list">Reading data stream lists for the specified system failed</string><!-- 读取指定系统数据流列表失败 -->
+    <string name="diag_sp_no_appoint_id_list">Reading data streams for the specified ID failed</string><!-- 读取指定ID的数据流失败 -->
+    <string name="diag_sp_no_appoint_doc_list">Reading code lists for the specified system failed</string><!-- 读取指定系统故障码列表失败 -->
+    <string name="diag_sp_bluetooth_connection_lost">Bluetooth connection disconnect</string><!--蓝牙连接失败  -->
+    <string name="diag_sp_bluetooth_re_connect">Reconnect</string><!--重新连接  -->
+    <string name="diag_sp_activity_init">Initializing...</string>
+    <string name="diag_car_pre_check_num">Last examination score of your car is: </string><!--你的爱车上次体检得分是:  -->
+	<string name="diag_all_test_doc">,In total, …were detected </string><!--共检测出  -->
+	<string name="diag_car_not_check">Your car has not been examined yet</string><!--您的爱车尚未体检 ，请立即体检 --> 
+	<string name="diag_car_cur_check_num">Check Score:</string><!-- 车辆体检得分 -->
+	<string name="diag_all_test">Your car had not been examined yet, please do it immediately, wish you a pleasant journey </string><!--您的爱车还没有体检，请立即体检，祝您旅途愉快 -->
+	<string name="diag_some_good_advise">, please check the report, wish you a pleasant journey </string><!--请尽快处理，祝您旅途愉快 -->
+	<string name="diag_stop_car_exam">Stop Check</string><!-- 停止体验 -->
+	<string name="diag_sp_sys_no_support">The system does not support</string><!-- 系统不支持 -->
+	<string name="diag_sp_error_title2">Error</string><!-- 错误 -->
+	<string name="diag_sp_id_not_defined">ID is not defined</string><!-- ID未定义 -->
+	<string name="diag_sp_data_name_not_defined">The name is not defined</string><!-- 名称未定义 -->
+	<string name="diag_sp_sys_data_empty">No System list</string><!-- 没有系统列表 -->
+	<string name="diag_sp_sys_info_show">Information prompt </string><!-- 信息提示 -->
+	<string name="diag_sp_timeing_info">System is busy, please click in 10 seconds later </string><!--系统正忙，请在 10秒以后再点击-->
+	<string name="diagnose_sp_exit_messge">Exit</string><!--退出快速诊断？-->
+	<string name="diagnose_sp_update_show_messge">Upgrade not completed, cannot use rapid diagnosis, please upgrade</string><!--升级尚未完成，不能使用快速诊断，请升级-->
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  升级文件扫描    @author luxingsong -->
+    <string name="fscan_scanning_now">Scanning...</string><!--正在扫描文件&#8230;-->
+    <string name="fscan_scan_error">An Error Occurred</string><!--扫描出错-->
+    <string name="fscan_scan_exception">An Exception Occurred</string><!--扫描异常-->
+    <string name="fscan_scan_success">Completed</string><!--扫描成功-->
+</resources>

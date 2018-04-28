@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/getFaultCode"
+    	android:text="得到故障码"
+        />
+	<Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/getDataStream"
+    	android:text="得到数据流"
+        />
+	<Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/getRandomDataStream"
+    	android:text="得到指定数据流"
+    	android:visibility="gone"
+        />
+	<Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/getVINCode"
+    	android:text="得到VIN码"
+        />
+</LinearLayout>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VINコードを認証   @author luxingsong-->
+    <string name="diagconf_goback">戻す</string>
+    <string name="diagconf_buy">購入</string>
+    <string name="diagconf_confirm_config">配置確認</string>
+    <string name="diagconf_modify_config">配置変更</string>
+</resources>

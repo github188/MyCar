@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SOAP 服务接口描述   @author luxingsong-->
+    <string name="soap_error_not_soaop_object">ERROR: server no response"</string><!--SOAP ERROR: 服务器返回的数据不是SoapObject对象!\n-->
+    <string name="soap_error_no_such_property">ERROR: no such data !</string><!--SOAP ERROR: 没有这种属性!\n-->
+</resources>

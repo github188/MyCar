@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/simple_repor_info_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:id="@+id/simple_repor_info_test2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+		<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	     <LinearLayout
+            android:id="@+id/simple_repor_info_test"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"      
+         >
+         <ImageView 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_marginTop="32dp"    
+             android:gravity="center"
+             android:background="@drawable/diagnose_simple_report_frame"
+             />
+         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/simple_repor_info_test"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:gravity="top"
+            android:orientation="vertical"           
+            >
+            <LinearLayout
+                android:id="@+id/manager_oil_frame_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+ 				<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/simple_report_exam_num_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/diag_car_cur_check_num"      
+                    android:textColor="@color/manager_text"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/simple_repor_info_2"
+                    android:layout_width="70dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/diagnose_simple_report_num_circle"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/sp_exam_num_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/deep_green"
+                        android:gravity="center"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+               </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manager_oil_frame_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+ 				<LinearLayout
+ 				android:id="@+id/diag_sp_scan_show_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                    <ProgressBar   
+			         android:id="@+id/examCircleProgressBar"    
+			         style="?android:attr/progressBarStyleLarge" mce_style="?android:attr/progressBarStyleLarge"  
+			         android:layout_width="30dp"  
+			         android:layout_height="30dp" 	
+			         android:layout_marginLeft="38dp"
+			         android:visibility="gone"	          
+			        />  
+	 				<TextView
+	                android:id="@+id/current_pro_info"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="1dp"     
+	                android:layout_gravity="center" 	
+	                android:textColor="@color/manager_text"
+	                android:textSize="18dp" />
+ 			    </LinearLayout>
+                 <ProgressBar
+                    android:id="@+id/sp_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="15dip"
+                    android:layout_marginTop="5dp"
+                    android:max="100"
+                    android:progress="0"    
+                    android:progressDrawable="@drawable/main_progress_bar" />
+
+                <Button
+                    android:id="@+id/sp_car_exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/main_button"
+                    android:text="@string/car_exam"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+	 </FrameLayout>
+	 </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/question_num_show"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:onClick="MenuButton_ClickHandler"
+            android:background="@drawable/diagnose_simple_report_blue"
+            >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/question_num"
+                android:textColor="@color/manager_text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/simple_report_question_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@id/textView3"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/question_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true" >
+				<!-- liaochuanhai -->
+				<!-- 
+                <ImageButton
+                    android:id="@+id/sp_show_datail"
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"   
+             	    android:background="@color/transparent" 
+                    android:src="@drawable/diagnose_simple_report_down"            
+                   />  -->
+                  <ImageButton
+                    android:id="@+id/sp_show_datail"
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"   
+             	    android:background="@color/transparent" 
+             	    android:src="@drawable/diagnose_simple_report_down"   
+       				android:clickable="false" 
+       				android:visibility="invisible"
+                   /> 
+            </RelativeLayout>
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/simple_report_question_list"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical" >
+            <!--liaochuanhai-->
+		   <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/diagnose_simple_report_white"         
+            android:layout_below="@+id/simple_report_list1"
+            android:visibility="invisible"
+            >
+	        <ListView
+               android:id="@+id/simple_report_detail_list"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:cacheColorHint="#00000000"
+               android:divider="@drawable/main_divider"
+               android:dividerHeight="@dimen/manager_divider_height"
+	         >
+	       </ListView>
+		  </LinearLayout>
+          <LinearLayout
+               android:id="@+id/simple_report_list1"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:background="@drawable/diagnose_simple_report_blue"
+               android:gravity="center_vertical"
+               android:visibility="invisible"
+               android:orientation="horizontal" >
+
+               <TextView
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="6"
+                   android:paddingLeft="@dimen/manager_main_padding"
+                   android:text="@string/data_stream_name"
+                   android:textColor="@color/manager_text"
+                   android:textSize="13dp" />
+
+               <TextView
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:gravity="center_horizontal"
+                   android:text="@string/data_stream_value"
+                   android:textColor="@color/manager_text"
+                   android:textSize="13dp" />
+
+               <TextView
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:gravity="center_horizontal"
+                   android:text="@string/simple_report_maxvalue"
+                   android:textColor="@color/manager_text"
+                   android:textSize="13dp" />
+
+               <TextView
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:paddingLeft="10dip"
+                   android:text="@string/simple_report_minvalue"
+                   android:textColor="@color/manager_text"
+                   android:textSize="13dp" />
+         </LinearLayout>
+       </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

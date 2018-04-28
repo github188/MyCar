@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="device_activate_guide">尊敬的用户,在开始使用车云卡(DBScar)之前,必须激活并下载相应车型软件.请将车云卡(DBScar)接上汽车的OBDII诊断座,并使汽车钥匙处于打开状态.
+    </string>
+    <string name="device_configure_guide">
+	恭喜你，车云卡(DBScar)激活成功 
+    </string>
+    <string name="firmware_update_guide">
+	尊敬的用户,在开始使用车云卡(DBScar)之前,必须下载车型配置软件并升级,请将车云卡(DBScar)接上汽车的OBDII诊断座.如下图：
+    </string>
+</resources>

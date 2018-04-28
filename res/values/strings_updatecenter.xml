@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主界面  @author luxingsong -->
+    <string name="upc_update_center">Update Center</string><!--升级中心-->
+    <string name="upc_device_update">Device Update</string><!--设备升级-->
+    <string name="upc_local_update">Local Update</string><!--设备本地升级-->
+    <string name="upc_online_update">Online Update</string><!--设备在线升级-->
+    <string name="upc_update_method_tip">Choose an update method</string><!--设备升级方式-->
+    <string name="upc_dbscar_update">Update via internet</string><!--车云网客户端升级-->
+    <string name="upc_new_device_activate">Activate New Connector</string><!--新设备激活-->
+    <string name="upc_update_log_query">History</string><!--升级日志查询-->
+    <string name="upc_settings">Settings</string><!--升级设置-->
+    <string name="upc_download_and_waiting">Downloading, please wait...&#8230;</string><!--下载中,请稍候&#8230;-->
+    <string name="upc_download_failed">Download Failed</string><!--下载失败!-->
+    <string name="upc_download_success">Download is completed,start update ?</string><!--下载成功!-->
+    <string name="upc_please_wait">Please wait...&#8230;</string><!--请稍候&#8230;-->
+    <string name="upc_registering_device">Registering device&#8230;</string>
+	<string name="upc_checking_device">Checking device&#8230;</string>
+    <string name="upc_update_log_title">History</string><!--升级日志-->
+    <string name="upc_time">Time</string><!--时间-->
+    <string name="upc_content">Content</string><!--内容-->
+    <string name="upc_commit_log">Submit</string><!--提交升级日志-->
+    <string name="upc_tips">Tips</string><!--提示-->
+    <string name="upc_error">Error</string><!--错误-->
+    <string name="upc_server_error">Server error</string><!--错误-->
+    <string name="upc_exit">Exit</string><!--退出-->
+    <string name="upc_exit_confirm">Sure to exit now?</string><!--确认退出吗?-->
+    <string name="upc_confirm_to_download">Download Confirmation</string>
+    <string name="upc_retry">Retry</string><!--重试-->
+    <string name="upc_modify_config">Modify</string>
+    <string name="upc_download_config">Download</string>
+    <string name="upc_latest_config_info">Latest configuration for device</string>
+    <string name="upc_device_response_timeout">Device response timeout</string><!--设备回应超时-->
+    <string name="upc_device_sn_not_match">The serial number of the Device is not consistent, cannot upgrade!</string>
+    <string name="upc_success">Completed</string><!--成功-->
+    <string name="upc_ok">OK</string><!--确定-->
+    <string name="upc_confirm">Confirm</string><!--确定-->
+    <string name="upc_cancel">Cancel</string><!--取消-->
+    <string name="upc_disallow_modify_config">Your modification count is greater than 6,cannot update!</string><!-- 您的修改配置次数已经超过6次,无法升级! -->
+    <string name="upc_reselect">Reselect</string>
+    <string name="upc_diag_config_parameter_error">Error in diagnosis config parameters!</string>
+    <string name="upc_later">Later</string><!--以后再说-->
+    <string name="upc_update_right_now">Now</string><!--立即-->
+    <string name="upc_latest_version">Latest Version</string><!--最新版本-->
+    <string name="upc_current_version">Current Version</string><!--当前版本-->
+    <string name="upc_update_now">Update</string><!--立即更新吗-->
+    <string name="upc_already_latest_version">The current version is already the latest!</string><!--已经是最新版本-->
+    <string name="upc_failed_to_query_update_info">Error: Failed to check the version info</string><!--查询DBSCar升级信息失败!-->
+    <string name="upc_querying"></string><!--正在查询升级信息&#8230;-->
+    <string name="upc_querying_failed">Error: Failed to query information!</string><!--查询失败-->
+    <string name="upc_device_serial_info_querying_failed">Error: Failed to read device information!Please exit the program and re-enter.</string>
+    <string name="upc_downloading">Downloading&#8230;</string><!--正在下载 &#8230;-->
+    <string name="upc_download">Download</string><!--下载 -->
+    <string name="upc_server_no_response">Error: Server has no response </string><!--服务器没有回应!-->
+    <string name="upc_querying_dbscar_update_info">Checking...</string><!--正在查询DBSCar升级信息 #8230;-->
+    <string name="upc_sdcard_unmounted_error">Error: The storage card is required to complete the registration and update</string><!--手机没有插入SD卡,不能进行设备的注册和升级操作.-->
+    <string name="upc_failed_to_update_dbscar">Error: Update failed!</string><!--升级DBSCar失败!-->
+    <string name="upc_device_activate">Activation</string><!--设备激活-->
+    <string name="upc_device_register">Registration</string><!--设备注册-->
+    <string name="upc_device_register_succesfully">Registration is successful!</string><!--设备注册-->
+    <string name="upc_please_input_device_name">Please enter the device name</string><!--请输入蓝牙设备名!-->
+    <string name="upc_please_input_diagnosis_password">Please enter the password</string><!--请输入设备的诊断密码!-->
+    <string name="upc_please_input_correct_password">Please enter 6-digit password</string><!--请输入6位密码!-->
+    <string name="upc_device_serial_number">Product serial number:</string><!--设备序列号-->
+    <string name="upc_device_serial_number_status">Status</string><!--序列号状态-->
+    <string name="upc_config_right_now">Configure</string><!--立即配置-->
+    <string name="upc_the_serialnumber_is_expired">Error: Expired serial number!</string><!--该设备序列号已经过期!-->
+    <string name="upc_the_serialnumber_is_error">Error: Invalid serial number. Please contact Launch office!</string><!--该设备序列号有误,请通过正规渠道购买序列号-->
+    <string name="upc_failed_to_registered_device">Error: Failed to register the device!</string><!--产品注册失败!-->
+    <string name="upc_no_serialnumber_found">Error: Invalid Password!</string><!--没有找到序列号密码!-->
+    <string name="upc_no_serialnumber__password_found">Error: Failed to verify serial number!</string><!--获取序列号密码失败!-->
+    <string name="upc_device_name_and_passwowrd_been_modified">"Changes have been saved. Registered Successfully"</string><!--"蓝牙名称和诊断密码已经修改,注册成功!点击'确定'进行配置。"-->
+    <string name="upc_device_successfully_registered">"Completed!"</string><!--"注册成功! 点击'确定'进行配置\n"-->
+    <string name="upc_checking_serial_number">"Checking &#8230;"</string><!--"正在验证序列号&#8230;"-->
+    <string name="upc_current_dbscar_version">"Current Version"</string><!--"当前版本"-->
+    <string name="upc_latest_dbscar_version">"Latest Version"</string><!--"最新版本"-->
+    
+    <!-- 位置信息 -->
+    <string name="upc_error_location_info_timeout">"Timeout error in positioning!"</string>
+    
+    <!-- 网络状态 -->
+    <string name="upc_network_not_active">"Network is not active !\n"</string>
+    <string name="upc_network_communication_error">"Network communication error,please retry!"</string>
+    <!-- http下载 -->
+    <string name="upc_http_error_content_len_zero">"No data available (content = 0)!"</string>
+    
+    <!-- 产品序列号状态 --><!--第一个和最后一个 已注册 有什么区别 需要解释-->
+    <string name="upc_registered">Registered</string><!--已注册-->
+    <string name="upc_unregistered">Unregistered</string><!--未注册-->
+    <string name="upc_expired">Expired</string><!--已作废-->
+    <string name="upc_invalid_product_status">Invalid serial number</string>
+    <string name="upc_invalid_chip_id">Invalid chip ID</string>
+    <string name="upc_invalid_password">Invalid Password</string>
+    <string name="upc_invalid_parameters">Invalid Parameters</string>
+    <string name="upc_product_not_exist">Not exist</string>
+    <string name="upc_not_for_sale">Error: The product is not available , please contact www.dbscar.com for more information.</string><!--未出售-->
+    <string name="upc_the_device_is_registered">The device has been registered.</string><!--此设备已经注册-->
+    <string name="upc_the_device_is_registerd_by_others">The device has been registered by others,\n fail to operate!</string>
+    
+    <!-- 设备动态配置   onekey calc -->
+    <string name="upc_diasoft_config">Device Configuration</string><!--诊断软件配置-->
+    <string name="upc_please_choose">Please Select</string><!--请选择-->
+    <string name="upc_device_activated">Device is activated!</string><!--恭喜你,诊断设备已经激活-->
+    <string name="upc_diag_config_guide">Please download the software first. Tips: You have 6 times to select makes/models for free. Click on "Purchase" button to buy more.</string><!--使用车云卡(DBScar)需设置你的软件并下载升级.请注意,你仅有一次选择车系及6次在该车系下修改车型的机会,后续修改需支付费用,购买请点击购买按钮进入在线购买页面-->
+    <string name="upc_diagsoft_download_confirm">Download confirmation</string><!--您要下载以下配置的软件吗?\n-->
+    <string name="upc_abort_operation_confirm">Exit?</string><!--操作正在进行,确定要退出?\n-->
+    <string name="upc_network_timeout">Communication timeout</string><!--网络超时异常\n-->
+   
+    <!-- 条件 id 对应的分类-->
+    <string name="upc_vehicle">Vehicle</string><!--车系:-->
+    <string name="upc_car_type">Model</string><!--车型:-->
+    <string name="upc_displacement">Displacement</string><!--排量:-->
+    <string name="upc_gearbox">Gear Box</string><!--波箱:-->
+    <string name="upc_engine">Engine</string><!--引擎:-->
+    <string name="upc_produced_area">Made In</string><!--产地:-->
+    <string name="upc_year_brand">Year Made</string><!--年款:-->
+    <string name="upc_software_language">Language</string><!--语言:-->
+    <string name="upc_unknown">Unknown</string><!--未知:-->
+    <!-- 本地升级  -->
+	<string name="upc_local_update_guide">Choose the model and software version to update device</string><!--点击下面的按钮,选择相应的车系,版本类型,然后点击开始升级.-->
+	<string name="upc_vehicle_type">Model</string><!--车系名称:-->
+	<string name="upc_version_number">Version</string><!--版本名称:-->
+	<string name="upc_goback">Back</string><!--返回-->
+	<string name="upc_write_config_file">Writing configuration...</string><!--写配置文件-->
+	<string name="upc_start_local_update">Update</string><!--开始升级-->
+    
+    <!-- 固件升级  -->
+     <string name="upc_update_firmware_progress">Firmware is updating</string>
+    <string name="upc_firmware_update">Firmware Update</string><!--固件升级-->
+    <string name="upc_no_files_found">Files not found!</string><!--没有找到升级文件!-->
+    <string name="upc_errors_in_update_params">>Invalid parameters!</string><!--升级参数错误!-->
+    <string name="upc_prepare_to_update">Preparing...</string><!--准备升级#8230;-->
+    <string name="upc_start_update">Loading...</string><!--开始升级#8230;-->
+    <string name="upc_update_stopped">Paused</string><!--升级已经停止-->
+    <string name="upc_update_failed">Update failed</string><!--升级失败-->
+    <string name="upc_device">Device</string><!--设备-->
+    <string name="upc_connection_lost">Disconnected</string><!--连接断开!-->
+    <string name="upc_connection_establish">Connected</string><!--连接成功!-->
+    <string name="upc_choose">Select</string><!--请选择-->
+    
+    <string name="upc_time_left_before_finish">Time left</string><!--离完成还有-->
+    <string name="upc_seconds"> seconds</string><!--秒-->
+    <string name="upc_minutes"> minutes</string><!--分钟-->
+    <string name="upc_hours">hours</string><!--小时-->
+    <string name="upc_update_file_progress">Updating</string><!--正在升级文件-->
+    <string name="upc_update_finished">Update is completed</string><!--升级完成!-->
+    <string name="upc_update_finish_confirm">Update is completed , you can start diagnosis now!</string><!--"可以开始诊断您的爱车了,点击 确定 进入高级诊断"-->
+    
+    <!-- 升级设置选项   -->
+    <string name="upc_setting_auto_update">Automatically Update</string><!--自动升级-->
+    <string name="upc_setting_auto_commit_log">Automatically Send Feedback</string><!--自动提交日志-->
+    <string name="upc_not_show_device_update_guide">Turn off Tips</string><!--不显示设备激活帮助-->
+    <string name="upc_config_not_finished">Configuration is not done yet!</string><!--配置没有完成-->
+    
+    <!-- 诊断升级管理   -->
+    <string name="upc_version">Version</string><!--版本:-->
+    <string name="upc_language">Language</string><!--语言:-->
+    <string name="upc_more_vehicles">More</string><!--更多车型-->
+    <string name="upc_register_device">Register</string><!--注册设备-->
+    <string name="upc_connect_device">Connect</string><!--连接设备-->
+    <string name="upc_set_bluetooth">Settings</string><!--设置蓝牙-->
+    <string name="upc_notice">Select Software</string><!--请选择相关的车型,诊断软件版本-->
+    <string name="upc_diag_soft_readme">ReadMe</string><!--软件说明:-->
+    <string name="upc_diag_soft_more_vendors">More</string><!--更多车型-->
+    <string name="upc_select_vendor">Select Model</string><!--点击选择车型-->
+    <string name="upc_select_version">Select Version</string><!--点击选择版本-->
+    <string name="upc_connecting_device">Connecting device </string><!--正在连接设备-->
+    <string name="upc_device_connected">Connected</string><!--设备已连接-->
+    <string name="upc_sorry_no_data_found">Error: No data found!</string><!--对不起,找不到数据!-->
+    <string name="upc_user_not_login">Please login to continue</string><!--用户未登陆!-->
+    <string name="upc_help_text">
+          <b>Tips</b><!--升级帮助说明--> 
+        \n\n
+        <b>Bluetooth Connection</b><!--蓝牙连接-->
+        \n\n
+        <b>Update File</b><!--升级文件-->
+        \n\n
+                     More information visit<!--更多信息可以咨询:-->
+        <em><b><u>www.x431.com</u></b></em>
+    </string>
+    <string name="upc_vin_illegal">Invalid VIN</string>
+    <!-- 一键扫描的资源文件  -->
+</resources>

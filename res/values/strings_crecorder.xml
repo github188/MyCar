@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crd_goback">Back</string><!--返回-->
+    <string name="crd_data_sync">Synchronize</string><!--数据同步-->
+    <string name="crd_examin">Check</string><!--检测 需要解释 检测什么？自我检测？检测车辆？-->
+    <string name="crd_import_bt_data">Import</string><!--导入 需要解释 是通过浏览文件，导入数据，还是从服务器下载数据。-->
+    <string name="crd_cancel">Cancel</string><!--取消-->
+    <string name="crd_see_detail">Detail</string><!--查看 需要解释 查看什么-->
+    <string name="crd_title">Black Box</string><!--黑匣子-->
+</resources>

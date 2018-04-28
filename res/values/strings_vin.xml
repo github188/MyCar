@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VIN 码验证   @author luxingsong-->
+    <string name="upc_vin_validation">VIN :</string><!--车辆识别码验证-->
+    <string name="upc_vin_check">Check</string>
+    <string name="upc_vin_help">help</string>
+    <string name="upc_vin_invalid_format">Invalid VIN</string><!--车辆识别码格式不正确 格式指的是什么？-->
+    <string name="upc_vin_invalid_length">Invalid Vin Length</string><!--车辆识别码长度不正确-->
+    <string name="upc_vin_right_length">Valid VIN Length</string><!--车辆识别码格长度正确-->
+    <string name="upc_vin_right_format">Valid VIN</string><!--车辆识别码正确-->
+    <string name="upc_please_input_vin_number_here">Enter VIN here</string><!--输入车辆识别码-->
+</resources>

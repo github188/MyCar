@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relativeLayout3"
+	android:layout_width="fill_parent"
+	android:background="@color/white"
+	android:layout_height="wrap_content" >
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="80dp"
+		android:background="@color/white"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+		<GridView
+			android:id="@+id/main_gv_nine_grid"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:columnWidth="100dp"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:paddingLeft="1dip"
+			android:paddingRight="1dip"
+			android:gravity="center"
+			android:horizontalSpacing="5dip"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="25dip" />
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/main_menu_rl"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<!-- 以下是底部按钮 -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:orientation="horizontal" >
+			<include
+				android:id="@+id/main_menu"
+				layout="@layout/main_menu" />
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

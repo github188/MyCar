@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gps_track">足迹</string>
+    <string name="track_list">足迹列表</string>
+    <string name="error_gps_improt_io">GPX文件读取失败</string>
+    <string name="error_gps_improt_xml_parse">GPX文件解析有误</string>
+    <string name="error_gps_improt_xml_parse_io">GPX文件解析异常</string>
+    <string name="error_gps_improt_xml_parse_time_parse">GPX文件解析异常，路点中的时间格式有误</string>
+    <string name="gps_map_menu">菜单</string>
+    <string name="gps_map_start">开始</string>
+    <string name="gps_map_pause">暂停</string>
+    <string name="gps_map_resume">继续</string>
+    <string name="gps_map_stop">停止</string>
+    <string name="gps_map_note">记事</string>
+    <string name="gps_map_photo">拍照</string>
+    <string name="gps_map_locate">定位</string>
+    <string name="gps_provider_network">网络定位，模糊追踪中</string>
+    <string name="gps_provider_gps">GPS定位，精确追踪中</string>
+    <string name="gps_provider_undisabled">手机定位被禁用，无法记录足迹</string>
+    <string name="gps_service_start">足迹记录服务已启动</string>
+    <string name="gps_default_track_name">足迹</string>
+    <string name="gps_default_track_datetime">2012-2-29 9:51:01</string>
+    <string name="gps_no_waypoint">记录中，但未采集到有效轨迹点</string>
+    <string name="gps_out_of_service">GPS信号太差，定位功能失效</string>
+    <string name="gps_temporarily_unavailable">GPS信号较弱，定位功能临时失效</string>
+    <string name="gps_get_waypoint">记录中:已采集%1$s个轨迹点</string>
+    <string name="gps_notice">提示</string>
+    <string name="gps_open">打开GPS</string>
+    <string name="gps_cancle">取消</string>
+    <string name="gps_note_with_no_waypoint">尚未获得定位信息，此记事将不会与任何位置信息关联,确认继续？</string>
+    <string name="gps_photo_with_no_waypoint">尚未获得定位信息，此照片将不会与任何位置信息关联,确认继续？</string>
+    <string name="gps_go_on">继续</string>
+    <string name="gps_wait_for_create_gpxfile">正在生成GPX文件，请稍候…</string>
+    <string name="gps_ensure">确认</string>
+    <string name="gps_export_failed">导出失败，请检查SD卡是否安装无误</string>
+    <string name="gps_export_succ">导出成功，文件保存在：</string>
+    <string name="gps_no_track">尚无足迹</string>
+    <string name="gps_is_ensure_to_import">确认导入轨迹？</string>
+    <string name="gps_tarck_opterate">操作</string>
+
+    <string-array name="gps_track_list_operate">
+        <item>修改名称</item>
+        <item>删除</item>
+        <item>导出GPX文件</item>
+        <item>查看足迹</item>
+    </string-array>
+
+    <string name="gps_track_del_failed">删除失败，足迹正在记录中…</string>
+    <string name="gps_wait_for_export">导出中，请稍候…</string>
+    <string name="gps_edit_track_name">修改足迹名称</string>
+    
+    <string name="gps_track_name">足迹名称</string>
+    <string name="gps_track_start">出发</string>
+    <string name="gps_save">保存</string>
+    <string name="gps_cancel">取消</string>
+    <string name="gps_sure">确定</string>
+    <string name="gps_unavailable">GPS定位未开启，无法记录足迹</string>
+    <string name="gps_track_name_cannot_be_blank">请填写轨迹名称</string>
+    <string name="gps_cannot_save_photo_for_sdcard_unavailable">SD卡异常，无法存储照片</string>
+    <string name="gps_note">出行记事</string>
+    <string name="gps_tip">注意</string>
+    <string name="gps_ensure_to_stop_track">确认要停止轨迹记录</string>
+
+</resources>

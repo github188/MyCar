@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_statistics_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:isScrollContainer="true"
+        android:orientation="vertical" >
+
+        <!-- 标头 -->
+
+        <TextView
+            android:id="@+id/statistics_list_category_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/manager_list_category_head"
+            android:gravity="center"
+            android:text="@string/manager_account_category_list"
+            android:textColor="@color/manager_text"
+            android:textSize="@dimen/manager_list_head_textsize" >
+        </TextView>
+
+        <!-- 总计 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/manager_list_head"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/manager_list_item_line_padding_bottom"
+            android:paddingTop="@dimen/manager_list_item_line_padding_top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/manager_main_padding"
+                android:text="@string/manager_totalize"
+                android:textColor="@color/manager_list_head_text"
+                android:textSize="@dimen/manager_list_head_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/statistics_list_foot_textview_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/manager_main_padding"
+                android:text="￥0.00"
+                android:textColor="@color/manager_list_head_text"
+                android:textSize="@dimen/manager_list_head_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- 明细列表 -->
+
+        <ListView
+            android:id="@+id/list_category"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/main_divider"
+            android:dividerHeight="@dimen/manager_divider_height"
+            android:gravity="center" >
+        </ListView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/manager_billing_statistics_list_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:isScrollContainer="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statistics_list_date_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/manager_list_category_head"
+            android:gravity="center"
+            android:text="@string/manager_statistics_year_list"
+            android:textColor="@color/manager_text"
+            android:textSize="@dimen/manager_list_head_textsize" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/list_date"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/manager_billing_statistics_list_date_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/main_divider"
+            android:dividerHeight="@dimen/manager_divider_height" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

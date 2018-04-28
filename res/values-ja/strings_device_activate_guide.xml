@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VIN 認証コード   @author luxingsong-->
+    <string name="guide_not_show_again">今後は表示しません</string>
+    <string name="guide_next_step">次へ</string>
+</resources>

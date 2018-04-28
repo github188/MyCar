@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/bottom"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/main_content_margin"
+		android:layout_marginLeft="@dimen/main_content_margin"
+		android:layout_marginRight="@dimen/main_content_margin"
+		android:layout_marginTop="5dip"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/error_notice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:textColor="@color/red" 
+			android:textSize="16dip"
+			android:visibility="invisible"/>
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			 />
+		<TextView
+			android:id="@+id/update_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			/>
+		<ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:max="100"
+            android:progress="10"
+            android:progressDrawable="@drawable/main_progress_bar" />
+		<TextView
+			android:id="@+id/time_remaining"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/blue"
+			 />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/usercenter_login_margin_top"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal" >
+		<Button
+			android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="3dip"
+			android:background="@drawable/main_button"
+			android:text="@string/cancel"
+			android:textColor="@color/white"
+			android:visibility="visible"
+			android:textSize="@dimen/manager_main_button_text_size" />
+	</LinearLayout>
+</LinearLayout>

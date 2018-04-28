@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/crecorder_context_menu_check_file"
+		android:title="查看文件" android:orderInCategory="1" android:menuCategory="system"></item>
+	<item android:id="@+id/crecorder_context_menu_upload_file"
+		android:title="上传文件" android:orderInCategory="2" android:menuCategory="system"></item>
+	<item android:id="@+id/crecorder_context_menu_rename_file"
+		android:title="重命名文件" android:orderInCategory="2"
+		android:menuCategory="system"></item>
+	<item android:id="@+id/crecorder_context_menu_delete_file"
+		android:title="删除文件" android:orderInCategory="3" android:menuCategory="system"></item>
+</menu>

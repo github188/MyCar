@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="im_list_item_title">18dip</dimen>
+    <dimen name="im_list_item_detail">14dip</dimen>
+    <dimen name="im_list_item_mini">12dip</dimen>
+    <dimen name="im_title">18dip</dimen>
+    <dimen name="im_list_item_height">47dip</dimen>
+
+</resources>

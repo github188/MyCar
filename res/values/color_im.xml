@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="im_title_bg">#D62A2A</color>
+    <color name="im_gray">#505050</color>
+    <color name="im_list_item_detail">#3E85CE</color>
+    <color name="im_list_item_title">#535353</color>
+    <color name="listveiw_online_list_divider">#C0CDDD</color>
+
+</resources>

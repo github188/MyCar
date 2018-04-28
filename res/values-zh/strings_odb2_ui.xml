@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="instrument">仪表</string>
+    <string name="oil">油耗</string>
+    <string name="drive_record">行车记录</string>
+    <string name="engine">发动机</string>
+    <string name="instrument_unit_rpm">r/min</string>
+    <string name="instrument_unit_mph">km/h</string>
+    <string name="instrument_unit_g">m/s*s</string>
+    <string name="instrument_unit_g_">m/s*s</string>
+    <string name="instrument_unit_hp">kw</string>
+    <string name="instrument_unit_lb_fp">kg*m</string>
+    <string name="instrument_unit_fuel_level">%</string>
+    <string name="instrument_unit_range">km</string>
+    <string name="instrument_unit_fuel_flow">L/h</string>
+    <string name="instrument_unit_mpg">L/100km</string>
+    <string name="instrument_rpm">转速</string>
+    <string name="instrument_mph">车速</string>
+    <string name="instrument_rpm_mph">车速 与 转速</string>
+    <string name="instrument_g">加速度</string>
+    <!--  
+    <string name="instrument_hp">功率</string>
+    <string name="instrument_lb_fp">扭矩</string>
+    -->
+    <string name="instrument_hp">电瓶电压</string>
+	<string name="instrument_lb_fp">环境温度</string>
+    <string name="instrument_fuel_analysis">近3小时油耗分析</string>
+    <string name="instrument_fuel_level">燃油水平</string>
+    <string name="instrument_range">续航量程</string>
+    <string name="instrument_fuel_flow">每小时油耗</string>
+    <string name="instrument_inst_mpg">瞬时\n油耗</string>
+    <string name="instrument_avg_mpg">平均\n油耗</string>
+    <string name="engine_unit_timing">°</string>
+    <string name="unit_temperate">℃</string>
+    <string name="engine_unit_kpa">kPa</string>
+    <string name="engine_unit_lb_min">g/s</string>
+    <string name="engine_unit_rate">%</string>
+    <string name="engine_timing_long">(长期)</string>
+    <string name="engine_timing_short">(短期)</string>
+    <string name="engine_timing">燃油修正</string>
+    <string name="engine_fuel_trims">点火提前角</string>
+    <string name="engine_fuel_intake">进气温度</string>
+    <string name="engine_fuel_coolant">冷却液温度</string>
+    <string name="engine_fuel_map">进气压力</string>
+    <string name="engine_fuel_maf">空气流量</string>
+    <string name="engine_catalyst">催化剂温度</string>
+    <string name="engine_lambda">油轨压力</string>
+    <string name="engine_load">发动机负载</string>
+    <string name="engine_frp">大气压力</string>
+    <string name="fuel_consumption_avg">平均油耗</string>
+    <string name="distance_travelled">行驶里程</string>
+    <string name="fuel_consumed">耗油量</string>
+    <string name="co2_emission_rate_avg">平均CO2\n排放量</string>
+    <string name="fuel_cost">油量花费</string>
+    <string name="co2_emission">CO2排放量</string>
+    <string name="elapsed_time">旅程时间</string>
+    <string name="drive_time">驾驶时间</string>
+    <string name="fuel_consumption_avg_unit">L/100km</string>
+    <string name="distance_travelled_unit">km</string>
+    <string name="fuel_consumed_unit">L</string>
+    <string name="co2_emission_rate_avg_unit">g/km</string>
+    <string name="fuel_cost_unit">元</string>
+    <string name="co2_emission_unit">kg</string>
+    <string name="drive_time_unit">小时</string>
+    <string name="drive_elapsed_time_unit">小时</string>
+    <string name="drive_record_title">行车记录:</string>
+
+    <string name="odb2_value_zero">0</string>
+    <string name="intermediary_activity_init">正在初始化...</string>
+    <string name="intermediary_activity_tip">提示</string>
+    <string name="intermediary_activity_tipmessage">系统初始化失败，请重新进入！</string>
+    <string name="intermediary_activity_tip_ok">确定</string>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SOAP 服务接口描述   @author luxingsong-->
+    <string name="soap_error_not_soaop_object">服务器没有回应!</string>
+    <string name="soap_error_no_such_property">没有相应的数据!</string>
+</resources>

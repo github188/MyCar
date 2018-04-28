@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="more_str">一覧</string>
+	<string name="nofaultcode">故障コードなし</string>
+	<string name="carname">車名：</string>
+	<string name="timestring">時間：</string>
+	<string name="vincode">VIN：</string>
+	<string name="faultcode">故障コード：</string>
+	<string name="saveOk">保存完了</string>
+	<string name="saveError">保存失敗</string>
+	<string name="diagnostic_oil">オイル消費：</string>
+	<string name="is_exit">終了しますか？</string>
+	<string name="exiting">終了します...</string>
+</resources>

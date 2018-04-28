@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rescue_vehicles_emergency_telephone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+      <LinearLayout 
+           android:id="@+id/mybottom_linear1"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:paddingBottom="80dp"
+           android:orientation="horizontal">
+	    <ListView 
+	        android:id="@+id/lv_emergency_telephone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:divider="@drawable/main_divider"
+            android:fadingEdge="none"
+	        android:cacheColorHint="#00000000"
+	       ></ListView>
+    </LinearLayout>
+
+    <!-- 以下是底部按钮 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+		<Button
+			android:id="@+id/btn_back"
+			android:text="@string/bluetoothconnect_button_return"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:background="@drawable/main_button"
+			></Button>
+		<Button
+			android:id="@+id/btn_add_emergency_telephonse"
+			android:text="@string/manager_add_continue"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="@dimen/manager_main_button_text_size"
+			android:background="@drawable/main_button"
+			android:layout_marginLeft="47dp"
+			></Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

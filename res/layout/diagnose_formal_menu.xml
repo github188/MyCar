@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/diagnose_lineout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/diagnose_menu_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/diagnose_lineout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+		<Button
+            android:id="@+id/diagnose_menu_back_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:text="@string/back_pre" />
+        <Button
+            android:id="@+id/diagnose_menu_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/main_button_color"
+            android:background="@drawable/main_button"
+            android:textSize="@dimen/main_button_textsize"
+            android:visibility="gone"
+            android:text="@string/diagnose_quit" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/diagnose_menu_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diagnose_lineout_title"   
+        android:layout_above="@id/diagnose_lineout_button"
+        android:cacheColorHint="#00000000"
+        android:textSize="21dip"
+        android:dividerHeight="2px"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+    </ListView>
+</RelativeLayout>

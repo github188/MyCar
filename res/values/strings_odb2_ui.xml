@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="instrument">Instrument</string>
+    <string name="oil">Fuel consumption</string>
+    <string name="drive_record">Driving record</string>
+    <string name="engine">Engine</string>
+    <string name="instrument_unit_rpm">r/min</string>
+    <string name="instrument_unit_mph">km/h</string>
+    <string name="instrument_unit_g">m/s*s</string>
+    <string name="instrument_unit_g_">m/s*s</string>
+    <string name="instrument_unit_hp">kw</string>
+    <string name="instrument_unit_lb_fp">kg*m</string>
+    <string name="instrument_unit_fuel_level">%</string>
+    <string name="instrument_unit_range">km</string>
+    <string name="instrument_unit_fuel_flow">L/h</string>
+    <string name="instrument_unit_mpg">L/100km</string>
+    <string name="instrument_rpm">Revolution</string>
+    <string name="instrument_mph">Vehicle speed</string>
+    <string name="instrument_rpm_mph">Vehicle speed and rotation</string>
+    <string name="instrument_g">Accelerati\non</string>
+    <!--  
+    <string name="instrument_hp">Power</string>
+    <string name="instrument_lb_fp">Torque</string>
+    -->
+        <string name="instrument_hp">Battery \nvoltage</string>
+<string name="instrument_lb_fp">Ambient \ntemperature</string>
+
+    <string name="instrument_fuel_analysis">Fuel consumption analysis for last three hours</string>
+    <string name="instrument_fuel_level">Remaining fuel</string>
+    <string name="instrument_range">Mileage</string>
+    <string name="instrument_fuel_flow">Fuel consumption per hour</string>
+    <string name="instrument_inst_mpg">IFC</string><!-- Instantaneous Fuel consumption -->
+    <string name="instrument_avg_mpg">AFC</string><!-- Average Fuel consumption -->
+    <string name="engine_unit_timing">°</string>
+    <string name="unit_temperate">℃</string>
+    <string name="engine_unit_kpa">kPa</string>
+    <string name="engine_unit_lb_min">g/s</string>
+    <string name="engine_unit_rate">%</string>
+    <string name="engine_timing">Ignition timing</string>
+    <string name="engine_fuel_trims">Ignition advance angle</string>
+    <string name="engine_fuel_intake">Intake air temperature</string>
+    <string name="engine_fuel_coolant">Coolant temperature</string>
+    <string name="engine_fuel_map">Intake air pressure</string>
+    <string name="engine_fuel_maf">Mass air flow</string>
+    <string name="engine_catalyst">Catalyst temperature</string>
+    <string name="engine_lambda">Fuel rail pressure</string>
+    <string name="engine_load">Engine load</string>
+    <string name="engine_frp">Atmospheric pressure</string>
+    <string name="fuel_consumption_avg">Average fuel consumption</string>
+    <string name="distance_travelled">Mileage</string>
+    <string name="fuel_consumed">Fuel cost</string>
+    <string name="co2_emission_rate_avg">Average CO2\n emission rate</string>
+    <string name="fuel_cost">Fuel cost</string>
+    <string name="co2_emission">CO2 emission rate</string>
+    <string name="elapsed_time">Travelled time</string>
+    <string name="drive_time">Driving time</string>
+    <string name="fuel_consumption_avg_unit">L/100km</string>
+    <string name="distance_travelled_unit">km</string>
+    <string name="fuel_consumed_unit">L</string>
+    <string name="co2_emission_rate_avg_unit">g/km</string>
+    <string name="fuel_cost_unit">Yuan</string>
+    <string name="co2_emission_unit">kg</string>
+    <string name="drive_time_unit">Hour</string>
+    <string name="drive_elapsed_time_unit">Hour</string>
+    <string name="drive_record_title">Driving record:</string>
+
+    <string name="odb2_value_zero">0</string>
+    <string name="intermediary_activity_init">Initializing...</string>
+    <string name="intermediary_activity_tip">Tip</string>
+    <string name="intermediary_activity_tipmessage">System initialization failed, please enter again!</string>
+    <string name="intermediary_activity_tip_ok">OK</string>
+
+</resources>

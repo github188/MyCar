@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="instrument">メーター</string>
+    <string name="oil">燃料消費</string>
+    <string name="drive_record">走行記録</string>
+    <string name="engine">エンジン</string>
+    <string name="instrument_unit_rpm">r/min</string>
+    <string name="instrument_unit_mph">km/h</string>
+    <string name="instrument_unit_g">m/s*s</string>
+    <string name="instrument_unit_g_">m/s*s</string>
+    <string name="instrument_unit_hp">kw</string>
+    <string name="instrument_unit_lb_fp">kg*m</string>
+    <string name="instrument_unit_fuel_level">%</string>
+    <string name="instrument_unit_range">km</string>
+    <string name="instrument_unit_fuel_flow">L/h</string>
+    <string name="instrument_unit_mpg">L/100km</string>
+    <string name="instrument_rpm">回転速度</string>
+    <string name="instrument_mph">走行速度</string>
+    <string name="instrument_rpm_mph">走行速度と回転速度</string>
+    <string name="instrument_g">加速度</string>
+    <!--  
+    <string name="instrument_hp">パワー和</string>
+    <string name="instrument_lb_fp">トルク</string>
+    -->
+    <string name="instrument_hp">バッテリー電圧</string>
+	<string name="instrument_lb_fp">環境温度</string>
+    <string name="instrument_fuel_analysis">3時間の燃料消費分析</string>
+    <string name="instrument_fuel_level">燃料レベル</string>
+    <string name="instrument_range">レンジ</string>
+    <string name="instrument_fuel_flow">燃料消費/時間</string>
+    <string name="instrument_inst_mpg">瞬間/n燃料消費</string>
+    <string name="instrument_avg_mpg">平均/n燃料消費</string>
+    <string name="engine_unit_timing">°</string>
+    <string name="unit_temperate">℃</string>
+    <string name="engine_unit_kpa">kPa</string>
+    <string name="engine_unit_lb_min">g/s</string>
+    <string name="engine_unit_rate">%</string>
+    <string name="engine_timing_long">(長期)</string>
+    <string name="engine_timing_short">(短期)</string>
+    <string name="engine_timing">燃料修正</string>
+    <string name="engine_fuel_trims">燃調</string>
+    <string name="engine_fuel_intake">吸気温度</string>
+    <string name="engine_fuel_coolant">冷却液温度</string>
+    <string name="engine_fuel_map">吸気圧力</string>
+    <string name="engine_fuel_maf">空気流量</string>
+    <string name="engine_catalyst">触媒温度</string>
+    <string name="engine_lambda">オイルタンカー圧力</string>
+    <string name="engine_load">エンジン負荷</string>
+    <string name="engine_frp">気圧</string>
+    <string name="fuel_consumption_avg">平均燃料消費</string>
+    <string name="distance_travelled">走行マイル</string>
+    <string name="fuel_consumed">燃料消費量</string>
+    <string name="co2_emission_rate_avg">平均CO2\n排気量</string>
+    <string name="fuel_cost">燃料費用</string>
+    <string name="co2_emission">CO2排気量</string>
+    <string name="elapsed_time">走行時間</string>
+    <string name="drive_time">ドライバー時間</string>
+    <string name="fuel_consumption_avg_unit">L/100km</string>
+    <string name="distance_travelled_unit">km</string>
+    <string name="fuel_consumed_unit">L</string>
+    <string name="co2_emission_rate_avg_unit">g/km</string>
+    <string name="fuel_cost_unit">円</string>
+    <string name="co2_emission_unit">kg</string>
+    <string name="drive_time_unit">時間</string>
+    <string name="drive_elapsed_time_unit">時間</string>
+    <string name="drive_record_title">走行記録:</string>
+
+    <string name="odb2_value_zero">0</string>
+    <string name="intermediary_activity_init">初期化中...</string>
+    <string name="intermediary_activity_tip">提示</string>
+    <string name="intermediary_activity_tipmessage">システム初期化失敗，やり直してください！</string>
+    <string name="intermediary_activity_tip_ok">OK</string>
+
+</resources>

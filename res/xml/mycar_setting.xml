@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="title_key"
+        android:summary="做一些说明"
+        >
+        <!-- android:title="@string/love_car_setting"  -->
+
+        <EditTextPreference
+            android:dialogIcon="@drawable/bluetooth_pic_up"
+            android:dialogMessage="正在输入..."
+            android:dialogTitle="请您输入蓝牙接头的名称"
+            android:key="edittext_key"
+            android:summary="此选项是输入要链接的蓝牙的名称"
+            android:title="要连接的蓝牙名称" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="all_along_open_key"
+            android:summary="选择勾上爱车体检一直在后台运行"
+            android:title="一直开着" />
+
+        <PreferenceScreen
+            android:key="setting_time_screen"
+            android:summary="爱车体检将能根据您所设置的时间段定时为您的爱车进行健康状况的监测，并及时发通知到您的手机上面，让您能够及时了解自己爱车的健康状况"
+            android:title="爱车体检运行时间段设置" />
+
+        <PreferenceScreen
+            android:key="setting_show_screen"
+            android:title="爱车体检说明" >
+
+            <Preference
+                android:key="setting_show"
+                android:summary="MyCar是深圳市元征科技股份有限公司旗下的一款手机应用诊断软件，" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="mycar_about_key"
+        android:summary="做一些说明"
+        android:title="@string/mycar_about_title" >
+        <PreferenceScreen
+            android:key="setting_about_screen"
+            android:title="软件说明、版本等信息" >
+            <Preference
+                android:key="mycar_about_show"
+                android:summary="@string/mycar_about_detail" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <CheckBoxPreference
+        android:key="open_close_key"
+        android:title="@string/close_love_car_health"
+        android:summary="test check box item"
+        android:defaultValue="false"
+        />
+
+	<PreferenceScreen 
+	    android:title="设置爱车体检时间范围"
+	    android:key="setting_time_screen"
+	    >
+-->
+
+<!--
+        <PreferenceCategory
+        	android:summary="some item"
+        	android:title="爱车体检运行时间段设置（官方推荐）" />
+		    <com.cnlaunch.mycar.diagnose.loveCarHealth.TimePreferenceBegin
+				android:key="time_test_begin"
+				android:title="起始时间"
+				android:defaultValue="1000000"
+				/>
+		    
+		    <com.cnlaunch.mycar.diagnose.loveCarHealth.TimePreferenceEnd
+				android:key="time_test_end"
+				android:title="结束时间"
+				android:defaultValue="1000000"
+				/>
+-->
+<!--     </PreferenceScreen> -->

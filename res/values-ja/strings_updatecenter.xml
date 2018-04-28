@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- メイン画面  @author luxingsong -->
+	<string name="upc_update_center">アップデートセンター</string>
+	<string name="upc_device_update">デバイスアップデット</string>
+	<string name="upc_local_update">ローカルアップデット</string>
+	<string name="upc_online_update">オーラインアップデット</string>
+	<string name="upc_update_method_tip">アップデット方法を選択します</string>
+	<!-- デバイスのアップデット方法 -->
+	<string name="upc_dbscar_update">DBScarユーザー側ソフトアップデート</string>
+	<string name="upc_new_device_activate">新デバイスの起動</string>
+	<string name="upc_update_log_query">アップデート記録の検索</string>
+	<string name="upc_settings">アップデート設定</string>
+	<string name="upc_download_and_waiting">ダウンロード中、お待ちください…</string>
+	<string name="upc_download_failed">ダウンロード失敗!</string>
+	<string name="upc_download_success">ダウンロード成功!</string>
+	<string name="upc_please_wait">お待ちください;</string>
+	<string name="upc_registering_device">デバイス登録中...</string>
+	<string name="upc_checking_device">デバイス認証中...</string>
+	<string name="upc_update_log_title">アップデート記録</string>
+	<string name="upc_time">時間</string>
+	<string name="upc_content">内容</string>
+	<string name="upc_commit_log">アップデート記録を送信します</string>
+	<string name="upc_tips">表示</string>
+	<string name="upc_error">エラー</string>
+	<string name="upc_modify_config">配置変更</string>
+	<string name="upc_download_config">配置をダウンロード</string>
+	<string name="upc_latest_config_info">最新車両配置</string>
+	<string name="upc_server_error">サーバエラー</string>
+	<string name="upc_exit">終了</string>
+	<string name="upc_exit_confirm">終了しますか?</string>
+	<string name="upc_confirm_to_download">ダウンロードします</string>
+	<string name="upc_retry">リトライ</string>
+	<string name="upc_device_response_timeout">デバイス反応なし、リトライしてください!</string>
+	<string name="upc_device_sn_not_match">シリアルが一致しません。アップデットできません！</string>
+	<string name="upc_success">成功</string>
+	<string name="upc_disallow_modify_config">変更は6回に満たしましたので、デバイス配置を変更できません!</string>
+	<string name="upc_diag_config_parameter_error">デバイス配置のパラメートエラー!</string>
+	<string name="upc_ok">OK</string>
+	<string name="upc_confirm">OK</string>
+	<string name="upc_cancel">キャンセル</string>
+	<string name="upc_download">ダウンロード</string>
+	<string name="upc_reselect">再選択</string>
+	<string name="upc_later">後でアップデートをする</string>
+	<string name="upc_update_right_now">今すぐアップデートをする</string>
+	<string name="upc_latest_version">最新バージョン</string>
+	<string name="upc_current_version">現在バージョン</string>
+	<string name="upc_update_now">今すぐアップデートをしますか?</string>
+	<string name="upc_already_latest_version">すでに最新バージョンです</string>
+	<string name="upc_failed_to_query_update_info">DBScarアップデート情報の検索が失敗!</string>
+	<string name="upc_querying">アップデート情報を検索中…</string>
+	<string name="upc_querying_failed">検索失敗!</string>
+	<string name="upc_device_serial_info_querying_failed">デバイス情報を読取エラー!最初からやり直してください。</string>
+	<string name="upc_downloading">ダウンロード中 ...;</string>
+	<string name="upc_server_no_response">サーバーが応答しません!</string>
+	<string name="upc_querying_dbscar_update_info">DBScarアップデート情報を検索中...;</string>
+	<string name="upc_sdcard_unmounted_error">SDカードが配置されていません。デバイスの登録またはアップデートを実行できません.</string>
+	<string name="upc_failed_to_update_dbscar">アップデート失敗!</string>
+	<string name="upc_device_activate">デバイスを起動します</string>
+	<string name="upc_device_register">デバイス登録</string>
+	<string name="upc_device_register_succesfully">デバイス登録成功!</string>
+	<!-- デバイス登録 -->
+	<string name="upc_please_input_device_name">DBScarのブルートゥース名を入力してください!</string>
+	<string name="upc_please_input_diagnosis_password">パスワードを入力してください!</string>
+	<string name="upc_please_input_correct_password">パスワード(6桁)を入力してください!</string>
+	<string name="upc_device_serial_number">シリアルNo.</string>
+	<string name="upc_device_serial_number_status">シリアルNo.状態</string>
+	<string name="upc_config_right_now">情報を今すぐ設定します</string>
+	<string name="upc_the_serialnumber_is_expired">シリアルNo.の有効期限が切れました!</string>
+	<string name="upc_the_serialnumber_is_error">シリアルNo.が正しくありません。正規販売店よりご購入ください</string>
+	<string name="upc_failed_to_registered_device">製品登録失敗!</string>
+	<string name="upc_no_serialnumber_found">シリアルNo.が見つかりません!</string>
+	<string name="upc_no_serialnumber__password_found">シリアルNo.パスワードを取得できませんでした!</string>
+	<string name="upc_device_name_and_passwowrd_been_modified">"ブルートゥース名及びパスワードを変更しました。登録完了!'OK'をクリックします。"</string>
+	<string name="upc_device_successfully_registered">"登録完了!'OK'をクリックします。\n"</string>
+	<string name="upc_checking_serial_number">"シリアルNo.を確認中…"</string>
+	<string name="upc_current_dbscar_version">"現在バージョン"</string>
+	<string name="upc_latest_dbscar_version">"最新バージョン"</string>
+	<!-- 位置情報 -->
+	<string name="upc_error_location_info_timeout">"位置情報取得エラー!"</string>
+	<!-- インタネット状態 -->
+	<string name="upc_network_not_active">"インタネット接続エラー!"</string>
+	<string name="upc_network_communication_error">"インタネット通信エラー、もう一度試してください!"</string>
+	<!-- httpダウンロード -->
+	<string name="upc_http_error_content_len_zero">"ダウンロードできるデータがなし!"</string>
+	<!-- シリアル状態 -->
+	<string name="upc_registered">登録済</string>
+	<string name="upc_unregistered">未登録</string>
+	<string name="upc_expired">期限切れ</string>
+	<string name="upc_not_for_sale">未販売</string>
+	<string name="upc_invalid_chip_id">チップID無効</string>
+	<string name="upc_invalid_product_status">非法なシリアル!</string>
+	<string name="upc_invalid_password">パスワード無効</string>
+	<string name="upc_invalid_parameters">パラメータ無効</string>
+	<string name="upc_product_not_exist">製品が存在しません</string>
+	<string name="upc_the_device_is_registered">デバイスが登録済み</string>
+	<string name="upc_the_device_is_registerd_by_others">登録済な製品,操作失敗!</string>
+	<!-- デバイス情報   onekey calc -->
+	<string name="upc_diasoft_config">診断ソフトの情報</string>
+	<string name="upc_please_choose">ご選択ください</string>
+	<string name="upc_device_activated">デバイスが起動できました</string>
+	<string name="upc_diag_config_guide">DBScarをご利用する際にソフトを設定及びアップデートする必要があります。注：メーカーの選択は1回のみ、車種の選択は6回のみです。制限回数を満たした後の選択は有料となります。「すぐ購入」をクリックしてオンライン購入画面にアクセスします</string>
+	<string name="upc_diagsoft_download_confirm">ダウンロードしますか?</string>
+	<string name="upc_abort_operation_confirm">終了しますか?\n</string>
+	<string name="upc_network_timeout">ネットワークタイムアウト\n</string>
+	<!-- 条件 id 対応の分類 -->
+	<string name="upc_vehicle">車両シリーズ:</string>
+	<string name="upc_car_type">車両型式:</string>
+	<string name="upc_displacement">排気量:</string>
+	<string name="upc_gearbox">ギアボックス:</string>
+	<string name="upc_engine">エンジン:</string>
+	<string name="upc_produced_area">製造地域:</string>
+	<string name="upc_year_brand">年式:</string>
+	<string name="upc_software_language">言語</string>
+	<string name="upc_unknown">未知:</string>
+	<!-- ローカルエリアアップデート -->
+	<string name="upc_local_update_guide">下記ボタンをクリックし車両シリーズ、バージョンを選択します。OKをクリックし、アップデートします.</string>
+	<string name="upc_vehicle_type">車両シリーズ:</string>
+	<string name="upc_version_number">バージョン名:</string>
+	<string name="upc_goback">戻る</string>
+	<string name="upc_write_config_file">情報を書き込み</string>
+	<string name="upc_start_local_update">アップデートします</string>
+	<!-- Download.bin アップデット -->
+	<string name="upc_downloadbin_update">DownloadBin アップデット</string>
+	<!-- ハードウェアのアップデット -->
+	<string name="upc_firmware_update">ハードウェアをアップデートします</string>
+	<string name="upc_no_files_found">アップデートファイルが見つかりません!</string>
+	<string name="upc_errors_in_update_params">アップデートパラメーターがエラー!</string>
+	<string name="upc_prepare_to_update">ソフトウェアのアップデート#8230;</string>
+	<string name="upc_start_update">アップデートをスタートします#8230;</string>
+	<string name="upc_update_stopped">アップデートがストップしました</string>
+	<string name="upc_update_failed">アップデート失敗</string>
+	<string name="upc_device">デバイス </string>
+	<string name="upc_connection_lost">接続中断!</string>
+	<string name="upc_connection_establish">接続成功!</string>
+	<string name="upc_choose">ご選択ください</string>
+	<string name="upc_time_left_before_finish">残り時間</string>
+	<string name="upc_update_sucess">アップデット成功!</string>
+	<string name="upc_seconds">秒</string>
+	<string name="upc_minutes">分</string>
+	<string name="upc_hours">時間</string>
+	<string name="upc_update_file_progress">ファイルをアップデート中</string>
+	<string name="upc_update_firmware_progress">ハードウェアを更新中</string>
+	<string name="upc_update_finished">アップデート完了!</string>
+	<string name="upc_update_finish_confirm">"車両診断できます。OKをクリックして診断にアクセスします"</string>
+	<!-- アップデート設定項目 -->
+	<string name="upc_setting_auto_update">自動的にアップデートします</string>
+	<string name="upc_setting_auto_commit_log">自動記録に設定します</string>
+	<string name="upc_not_show_device_update_guide">ヘルプが表示出来ません</string>
+	<string name="upc_config_not_finished">設定が完了できません</string>
+	<!-- 診断アップデート管理 -->
+	<string name="upc_version">バージョン:</string>
+	<string name="upc_language">言語:</string>
+	<string name="upc_more_vehicles">車両型式一覧</string>
+	<string name="upc_register_device">デバイスを登録します</string>
+	<string name="upc_connect_device">デバイスを接続します</string>
+	<string name="upc_set_bluetooth">ブルートゥースを設定します</string>
+	<string name="upc_notice">車式、ソフトバージョンを選択ください</string>
+	<string name="upc_diag_soft_readme">ソフト説明:</string>
+	<string name="upc_diag_soft_more_vendors">車両型式一覧</string>
+	<string name="upc_select_vendor">車両型式を選択ください</string>
+	<string name="upc_select_version">バージョンを選択ください</string>
+	<string name="upc_connecting_device">デバイスを接続中</string>
+	<string name="upc_device_connected">デバイスを接続済</string>
+	<string name="upc_sorry_no_data_found">データが見つかりません!</string>
+	<string name="upc_user_not_login">ユーザー未登録!</string>
+	<string name="upc_help_text"><b>アップデートヘルプ</b> 
+  \n\n 
+  <b>ブルートゥース接続</b> 
+  \n\n 
+  <b>アップデートファイル</b> 
+  \n\n 詳細情報の参照先: 
+ <em>
+			<b>
+				<u>www.x431.com</u>
+			</b>
+		</em></string>
+	<string name="upc_vin_illegal">VINコードが間違いました！</string>
+
+ 
+<!-- ワンクリックスキャンのリソースファイル -->
+</resources>

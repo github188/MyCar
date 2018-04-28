@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<LinearLayout
+			android:id="@+id/ll_deviceinfo2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp" >
+		<TextView
+			android:id="@+id/serial_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/usercenter_device_serial"
+			android:textSize="20dip"
+			android:layout_marginLeft="10dip"
+			android:textColor="@color/main_description"/>
+		<TextView 
+			android:id="@+id/tv_value_serial_no"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="50dip"
+			android:text="@string/usercenter_device_serial"
+			android:textSize="20dip"
+			android:textColor="@color/main_description"/>
+			<ImageView
+				android:id="@+id/iv_ex_userinfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dip"
+				android:layout_marginTop="10dp"
+				android:src="@drawable/setting_arrows" />
+		</LinearLayout>
+		
+
+</LinearLayout>

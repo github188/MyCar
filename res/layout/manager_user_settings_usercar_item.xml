@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/manager_user_settings_usercar_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="我的爱车"
+        android:layout_weight="1"
+        android:layout_marginLeft="17dip"
+        android:textColor="@color/main_list_item_title"
+        android:textSize="@dimen/main_settings_item_title" 
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dip"
+        android:src="@drawable/setting_arrows" />
+
+</LinearLayout>

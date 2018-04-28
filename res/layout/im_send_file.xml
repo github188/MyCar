@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview_no_log"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingRight="10dip"
+        android:text="@string/im_no_send_file_history"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listview_sendfile_log"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/main_divider"
+        android:dividerHeight="@dimen/manager_divider_height" >
+    </ListView>
+
+    <include layout="@layout/im_toolbar" />
+
+</LinearLayout>

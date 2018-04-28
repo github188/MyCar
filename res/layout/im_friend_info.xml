@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/im_chat_log_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview_userhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userface_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical" >
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/im_cc_no"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textview_ccno"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/im_nickname"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textview_nickname"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/im_area"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textview_area"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/im_age"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textview_age"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/button_del_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_button"
+            android:text="@string/im_del_friend"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

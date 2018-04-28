@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="manager_category_button_height">100dip</dimen>
+</resources>
