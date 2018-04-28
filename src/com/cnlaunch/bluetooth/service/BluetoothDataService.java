@@ -17,109 +17,109 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	//debug
 	private static final String TAG = "BluetoothDataService";
 	private static final boolean D = true;
-	//µ¥Àı´ËÀ¶ÑÀ¸´Î»
+	//å•ä¾‹æ­¤è“ç‰™å¤ä½
 	private static BluetoothDataService m_bluetooth_service = null;
-	//À¶ÑÀ·şÎñÊµÀı
+	//è“ç‰™æœåŠ¡å®ä¾‹
 	private BluetoothAdapterService m_bluetooth_adapter_service = null;
-	// µ±Ç°À¶ÑÀÃû×Ö
+	// å½“å‰è“ç‰™åå­—
 	private String m_now_bluetoothname = null;
 	private String m_now_bluetoothmac = null;
-	private boolean m_show_connect_activity = false;
-	//³¬Ê±¿ØÖÆ±äÁ¿
-	private static final int TIME_MAX = 10; 		//ÉèÖÃÄ¬ÈÏ³¬Ê±Ê±¼ä,Îª100msµÄÕûÊı±¶
-	private static final int TIME_MAX_SEND = 5; 	//³¬Ê±ÖØ·¢´ÎÊı
-	private int m_time_send = 0;					//³¬Ê±ÖØ·¢´ÎÊı¼ÆÊıÆ÷
-	private boolean m_time_switch = false;  		//³¬Ê±¿ØÖÆ¿ª¹Ø
-	private int m_time_counter = 0;					//³¬Ê±¼ÆÊıÆ÷
-	private int m_time_max = 0;						//³¬Ê±µÈ´ıÊ±¼ä 
-	//¶¨Ê±Æ÷
+	private boolean m_show_connect_activity = false; //è¿æ¥çŠ¶æ€
+	//è¶…æ—¶æ§åˆ¶å˜é‡
+	private static final int TIME_MAX = 10; 		//è®¾ç½®é»˜è®¤è¶…æ—¶æ—¶é—´,ä¸º100msçš„æ•´æ•°å€
+	private static final int TIME_MAX_SEND = 5; 	//è¶…æ—¶é‡å‘æ¬¡æ•°
+	private int m_time_send = 0;					//è¶…æ—¶é‡å‘æ¬¡æ•°è®¡æ•°å™¨
+	private boolean m_time_switch = false;  		//è¶…æ—¶æ§åˆ¶å¼€å…³
+	private int m_time_counter = 0;					//è¶…æ—¶è®¡æ•°å™¨
+	private int m_time_max = 0;						//è¶…æ—¶ç­‰å¾…æ—¶é—´ 
+	//å®šæ—¶å™¨
 	private Timer m_timer = null;
 	private TimerTask m_TimerTask;
-	//À¶ÑÀ×´Ì¬·â×°
+	//è“ç‰™çŠ¶æ€å°è£…
 	public BlueStateEvent m_blue_state = null;
-	//À¶ÑÀÉÏÒ»´Î×´Ì¬
+	//è“ç‰™ä¸Šä¸€æ¬¡çŠ¶æ€
 	public BlueStateEvent m_blue_state_last = null;
-	//¹Û²ìÕß¶ÔÏóÁĞ±í
+	//è§‚å¯Ÿè€…å¯¹è±¡åˆ—è¡¨
 	private ArrayList<BluetoothInterface> m_observer_list = null;
-	//À¶ÑÀÁ¬½Ó½çÃæ×¨ÓÃ
-	private boolean m_teshu_observer_switch = false;  //µ±ÎªtrueÊ±ºò£¬ÆÁ±ÎÆäËû¹Û²ìÕß
-	private BluetoothInterface m_teshu_observer = null; //ÌØÉ«¹Û²ìÕß,µ±ÉÏÃæÖµÎªtrueÊ±£¬Ö»¸øÕâÒ»¸ö¹Û²ìÕß·¢ËÍÏûÏ¢
-	//À¶ÑÀ¹Û²ìÕß
+	//è“ç‰™è¿æ¥ç•Œé¢ä¸“ç”¨
+	private boolean m_teshu_observer_switch = false;  //å½“ä¸ºtrueæ—¶å€™ï¼Œå±è”½å…¶ä»–è§‚å¯Ÿè€…
+	private BluetoothInterface m_teshu_observer = null; //ç‰¹è‰²è§‚å¯Ÿè€…,å½“ä¸Šé¢å€¼ä¸ºtrueæ—¶ï¼Œåªç»™è¿™ä¸€ä¸ªè§‚å¯Ÿè€…å‘é€æ¶ˆæ¯
+	//è“ç‰™è§‚å¯Ÿè€…
 	Intent m_bluetooth_intent = null;
 	
-	//µ¥ÀıÊµÏÖ
+	//å•ä¾‹å®ç°
 	public synchronized static BluetoothDataService getInstance()
 	{
 		if(m_bluetooth_service == null)
 			m_bluetooth_service = new BluetoothDataService();
 		return m_bluetooth_service;	
 	}
-	//¹¹Ôì·½·¨
+	//æ„é€ æ–¹æ³•
 	private BluetoothDataService()
 	{
 		m_bluetooth_adapter_service = BluetoothAdapterService.getInstance();
 		m_bluetooth_adapter_service.AddBlueCaalback(this);
-		m_blue_state = m_bluetooth_adapter_service.m_blue_state;  //³õÊ¼»¯À¶ÑÀ×´Ì¬
-		// ³õÊ¼»¯¶¨Ê±Æ÷
+		m_blue_state = m_bluetooth_adapter_service.m_blue_state;  //åˆå§‹åŒ–è“ç‰™çŠ¶æ€
+		// åˆå§‹åŒ–å®šæ—¶å™¨
 		m_timer = new Timer();
 		m_TimerTask = new TimerTask() 
 		{
 			@Override
 			public void run() 
 			{
-			//TODO ×Ô¶¯ÔËĞĞ£¬Ã¿¸ô200ºÁÃë×Ô¶¯ÔËĞĞÒ»´Î
+			//TODO è‡ªåŠ¨è¿è¡Œï¼Œæ¯éš”200æ¯«ç§’è‡ªåŠ¨è¿è¡Œä¸€æ¬¡
 				if(m_time_switch == true)
 				{
 					m_time_counter ++;
-					if(m_time_counter >= m_time_max) //³¬Ê±Ê±¼äµ½
+					if(m_time_counter >= m_time_max) //è¶…æ—¶æ—¶é—´åˆ°
 					{
 						m_time_send ++;
-						m_time_counter = 0;//¸´Î»¼ÆÊıÆ÷
-						if(m_time_send == TIME_MAX_SEND) //´ïµ½³¬Ê±´ÎÊı
+						m_time_counter = 0;//å¤ä½è®¡æ•°å™¨
+						if(m_time_send == TIME_MAX_SEND) //è¾¾åˆ°è¶…æ—¶æ¬¡æ•°
 						{
-							if(D) Log.i(TAG,"½ÓÊÕ³¬Ê±£¬Ä£Ê½£º" + m_send_mode);
-							m_time_switch = false; //¹Ø±Õ³¬Ê±¼ÆÊıÆ÷
+							if(D) Log.i(TAG,"æ¥æ”¶è¶…æ—¶ï¼Œæ¨¡å¼ï¼š" + m_send_mode);
+							m_time_switch = false; //å…³é—­è¶…æ—¶è®¡æ•°å™¨
 							if(m_send_mode == CMD_OneToOne)
-								m_send_mode = CMD_NONE; //¸´Î»Ä£Ê½
+								m_send_mode = CMD_NONE; //å¤ä½æ¨¡å¼
 							NotifyGetDataTimeout();
 						}
 						else
 						{
-							SendCmd(m_sendbuf, m_sendbuflen); //³¬Ê±ÖØ·¢
+							SendCmd(m_sendbuf, m_sendbuflen); //è¶…æ—¶é‡å‘
 						}
 					}
 				}
 			}
 		};
-		m_timer.schedule(m_TimerTask, 100, 200); //ÉèÖÃ¶¨Ê±Æ÷£¬ÑÓÊ±100ºÁÃëÖ´ĞĞ£¬Ã¿¸ô200ºÁÃë´¥·¢Ò»´Î¡£	
-		//³õÊ¼»¯¹Û²ìÕßÁĞ±í
+		m_timer.schedule(m_TimerTask, 100, 200); //è®¾ç½®å®šæ—¶å™¨ï¼Œå»¶æ—¶100æ¯«ç§’æ‰§è¡Œï¼Œæ¯éš”200æ¯«ç§’è§¦å‘ä¸€æ¬¡ã€‚	
+		//åˆå§‹åŒ–è§‚å¯Ÿè€…åˆ—è¡¨
 		m_observer_list = new ArrayList<BluetoothInterface>();
 	}
 	//************************************************************************//
-	//·¢ËÍÃüÁîÄ£Ê½
-	public static final int CMD_NONE  	  =	0; 			// ²»½ÓÊÕÊı¾İµÈ´ı×´Ì¬
-	public static final int CMD_OneToOne  = 1; 			// ·¢Ò»Ö¡ÊÕÒ»Ö¡
-	public static final int CMD_OneToNone = 2; 			// ·¢Ò»Ö¡²»½ÓÊÕ
-	public static final int CMD_OneToMore = 3; 			// ·¢Ò»Ö¡ÊÕ¶àÖ¡
-	public static final int CMD_ReadMode  =	4; 			// Ö»ÊÕÊı¾İ¡¢¼àÌıÄ£Ê½	
-	//·¢ËÍÊı¾İÄ£Ê½
+	//å‘é€å‘½ä»¤æ¨¡å¼
+	public static final int CMD_NONE  	  =	0; 			// ä¸æ¥æ”¶æ•°æ®ç­‰å¾…çŠ¶æ€
+	public static final int CMD_OneToOne  = 1; 			// å‘ä¸€å¸§æ”¶ä¸€å¸§
+	public static final int CMD_OneToNone = 2; 			// å‘ä¸€å¸§ä¸æ¥æ”¶
+	public static final int CMD_OneToMore = 3; 			// å‘ä¸€å¸§æ”¶å¤šå¸§
+	public static final int CMD_ReadMode  =	4; 			// åªæ”¶æ•°æ®ã€ç›‘å¬æ¨¡å¼	
+	//å‘é€æ•°æ®æ¨¡å¼
 	private int m_send_mode = CMD_NONE;
-	// ¶¨Òå·¢ËÍÊı¾İ»º³åÇø
-	private final static int m_recvbuff_len = 8*1024;	//Êı¾İ»º³åÇø³¤¶È
+	// å®šä¹‰å‘é€æ•°æ®ç¼“å†²åŒº
+	private final static int m_recvbuff_len = 8*1024;	//æ•°æ®ç¼“å†²åŒºé•¿åº¦
 	private byte[] m_sendbuf = new byte[m_recvbuff_len];
-	private int m_sendbuflen = 0; // ·¢ËÍÊı¾İ³¤¶È
-	// ¼ÆÊıÆ÷
-	private byte m_counter = 0; // Ñ­»·¼ÆÊıÆ÷
-	private byte[] m_address = { (byte) 0xF0, (byte) 0xF8 }; // ¶¨ÒåÉÏÎ»»úºÍÏÂÎ»»úµØÖ·
+	private int m_sendbuflen = 0; // å‘é€æ•°æ®é•¿åº¦
+	// è®¡æ•°å™¨
+	private byte m_counter = 0; // å¾ªç¯è®¡æ•°å™¨
+	private byte[] m_address = { (byte) 0xF0, (byte) 0xF8 }; // å®šä¹‰ä¸Šä½æœºå’Œä¸‹ä½æœºåœ°å€
 	
-	// À¶ÑÀÊı¾İ¹ıÂËÏà¹Ø±äÁ¿
+	// è“ç‰™æ•°æ®è¿‡æ»¤ç›¸å…³å˜é‡
 	
-	private byte[] 	m_recvbuff = new byte[m_recvbuff_len]; 	// ½ÓÊÕ¹ÜµÀ»º³åÇø
-	private int 	m_recvbuffStartAddress = 0; 		// ½ÓÊÕ¹ÜµÀÍ·µØÖ·
-	private int 	m_recvbuffDataLength = 0; 			// ½ÓÊÕ¹ÜµÀÊı¾İ³¤¶È
+	private byte[] 	m_recvbuff = new byte[m_recvbuff_len]; 	// æ¥æ”¶ç®¡é“ç¼“å†²åŒº
+	private int 	m_recvbuffStartAddress = 0; 		// æ¥æ”¶ç®¡é“å¤´åœ°å€
+	private int 	m_recvbuffDataLength = 0; 			// æ¥æ”¶ç®¡é“æ•°æ®é•¿åº¦
 
-	//********************************½Ó¿Úº¯Êı*********************************//
-	//»ñÈ¡µ±Ç°Á¬½ÓÀ¶ÑÀÃû³Æ
+	//********************************æ¥å£å‡½æ•°*********************************//
+	//è·å–å½“å‰è¿æ¥è“ç‰™åç§°
 	public String GetConnectedBluetoothName()
 	{
 		if(m_blue_state.IsConnected())
@@ -127,7 +127,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		else
 			return null;
 	}
-	//»ñÈ¡µ±Ç°Á¬½ÓÀ¶ÑÀMACµØÖ·
+	//è·å–å½“å‰è¿æ¥è“ç‰™MACåœ°å€
 	public String GetConnectedBluetoothMac()
 	{
 		if(m_blue_state.IsConnected())
@@ -135,7 +135,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		else
 			return null;
 	}
-	//ÉèÖÃµ±Ç°À¶ÑÀÃû³ÆºÍµØÖ·
+	//è®¾ç½®å½“å‰è“ç‰™åç§°å’Œåœ°å€
 	public boolean SetConnectedBluetooth(String name,String mac)
 	{
 		if(name.length() > 0)
@@ -148,34 +148,34 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 			return false;
 		return true;
 	}
-	//ÏÔÊ¾À¶ÑÀÁ¬½Ó½çÃæ
+	//æ˜¾ç¤ºè“ç‰™è¿æ¥ç•Œé¢
 	public void ShowBluetoothConnectActivity(Activity activity)
 	{
 		if(m_show_connect_activity) 
 			return;
-		m_show_connect_activity = true; //·ÀÖ¹¶à´ÎÖØ¸´µ÷ÓÃ
+		m_show_connect_activity = true; //é˜²æ­¢å¤šæ¬¡é‡å¤è°ƒç”¨
 		if(m_bluetooth_intent == null)
 		{
 			m_bluetooth_intent = new Intent(activity, BluetoothWatch.class);
 			activity.startService(m_bluetooth_intent);
 		}
-		//»ñÈ¡µ±Ç°µÄactivity
+		//è·å–å½“å‰çš„activity
 		Intent intent = new Intent(activity, BluetoothDeviceListActivity.class);
 		activity.startActivity(intent);
 	}
-	//Ìí¼Ó¹Û²ìÕß
+	//æ·»åŠ è§‚å¯Ÿè€…
 	public synchronized void AddObserver(BluetoothInterface observer)
 	{
 		if(observer != null)
 			m_observer_list.add(observer);
 	}
-	//É¾³ı¹Û²ìÕß
+	//åˆ é™¤è§‚å¯Ÿè€…
 	public synchronized void DelObserver(BluetoothInterface observer)
 	{
 		if(observer != null)
 			m_observer_list.remove(observer);
 	}
-	//Í¨Öª¹Û²ìÕßÀ¶ÑÀÖĞ¶Ï
+	//é€šçŸ¥è§‚å¯Ÿè€…è“ç‰™ä¸­æ–­
 	private synchronized void NotifyBlueConnectLost()
 	{
 		for(int i = 0; i < m_observer_list.size(); i++)
@@ -193,7 +193,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 			}				
 		}
 	}
-	//Í¨ÖªÀ¶ÑÀÁ¬½Ó³É¹¦
+	//é€šçŸ¥è“ç‰™è¿æ¥æˆåŠŸ
 	private synchronized void NotifyBlueConnected()
 	{
 		for(int i = 0; i < m_observer_list.size(); i++)
@@ -211,7 +211,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 			}
 		}
 	}
-	//Í¨ÖªÊÕµ½µÄÊı¾İ
+	//é€šçŸ¥æ”¶åˆ°çš„æ•°æ®
 	private synchronized void NotifyGetDataFromService(byte[] databuf,int datalen)
 	{
 		for(int i = 0; i < m_observer_list.size(); i++)
@@ -230,7 +230,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		}
 			
 	}
-	//Í¨Öª½ÓÊÕÊı¾İ³¬Ê±
+	//é€šçŸ¥æ¥æ”¶æ•°æ®è¶…æ—¶
 	private synchronized void NotifyGetDataTimeout()
 	{
 		for(int i = 0; i < m_observer_list.size(); i++)
@@ -248,7 +248,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 			}
 		}
 	}
-	//Í¨Öª¹Û²ìÕßÀ¶ÑÀÁ¬½Ó½çÃæ·µ»ØÁË
+	//é€šçŸ¥è§‚å¯Ÿè€…è“ç‰™è¿æ¥ç•Œé¢è¿”å›äº†
 	private synchronized void NotifyBlueConnectClose()
 	{
 		for(int i = 0; i < m_observer_list.size(); i++)
@@ -258,10 +258,10 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 					v_interface.BlueConnectClose();
 		}
 	}
-	//½áÊøÀ¶ÑÀ·şÎñ 
+	//ç»“æŸè“ç‰™æœåŠ¡ 
 	public void StopBlueService(Activity activity)
 	{
-		//ÖÕÖ¹·şÎñ
+		//ç»ˆæ­¢æœåŠ¡
 		if(m_bluetooth_intent != null)
 		{
 			activity.stopService(m_bluetooth_intent);
@@ -269,7 +269,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		}
 		m_bluetooth_adapter_service.StopService();
 	}
-	//ÉèÖÃÊÇ·ñÒÑ¾­ÏÔÊ¾À¶ÑÀÁ¬½Ó½çÃæ
+	//è®¾ç½®æ˜¯å¦å·²ç»æ˜¾ç¤ºè“ç‰™è¿æ¥ç•Œé¢
 	public synchronized void SetShowConnectActivity(boolean show)
 	{
 		m_show_connect_activity = show;
@@ -278,54 +278,54 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	{
 		return m_blue_state.IsConnected();
 	}
-	//ÖØÖÃ³¬Ê±
+	//é‡ç½®è¶…æ—¶
 	public void ResetTimeOut()
 	{
 		m_time_switch = false;
 		m_time_counter = 0;
 	}
-	//ÉèÖÃÌØÊâ¹Û²ìÕß£¬µ±ÉèÖÃÎªtrueÊ±£¬Ö»¸ø¸Ã¹Û²ìÕß·¢ËÍÏûÏ¢
+	//è®¾ç½®ç‰¹æ®Šè§‚å¯Ÿè€…ï¼Œå½“è®¾ç½®ä¸ºtrueæ—¶ï¼Œåªç»™è¯¥è§‚å¯Ÿè€…å‘é€æ¶ˆæ¯
 	public void SetSpecialObserver(boolean Pswitch,BluetoothInterface Pobserver)
 	{
 		m_teshu_observer_switch = Pswitch;
 		m_teshu_observer = Pobserver;
 	}
 	/******************************************************
-	 * ¸Ãº¯ÊıÓÃÓÚÀ¶ÑÀ·¢ËÍÊı¾İ
+	 * è¯¥å‡½æ•°ç”¨äºè“ç‰™å‘é€æ•°æ®
 	 * 
 	 * @param mode
-	 *            :·¢ËÍÃüÁîµÄÄ£Ê½ ²Î¼Óline16µÄÔ¤¶¨Òå
+	 *            :å‘é€å‘½ä»¤çš„æ¨¡å¼ å‚åŠ line16çš„é¢„å®šä¹‰
 	 * @param cmd
-	 *            :·¢ËÍÃüÁî×Ö
+	 *            :å‘é€å‘½ä»¤å­—
 	 * @param Sendbuf
-	 *            :·¢ËÍÊı¾İÇø
+	 *            :å‘é€æ•°æ®åŒº
 	 * @param SendLen
-	 *            £º·¢ËÍÊı¾İÇøÄÚÈİ³¤¶È
+	 *            ï¼šå‘é€æ•°æ®åŒºå†…å®¹é•¿åº¦
 	 * @param Ptime
-	 *            £º½ÓÊÕÊı¾İ³¬Ê±¿ØÖÆ£¬Ê±¼äÄ¬ÈÏµ¥Î»100msµÄÕûÊı±¶ ¡£
-	 * @return 0--·¢ËÍ³É¹¦; -1 -- ·¢ËÍÊ§°Ü, -2 -- ÕıÔÚ·¢ËÍ...
+	 *            ï¼šæ¥æ”¶æ•°æ®è¶…æ—¶æ§åˆ¶ï¼Œæ—¶é—´é»˜è®¤å•ä½100msçš„æ•´æ•°å€ ã€‚
+	 * @return 0--å‘é€æˆåŠŸ; -1 -- å‘é€å¤±è´¥, -2 -- æ­£åœ¨å‘é€...
 	 ******************************************************/
 	public int SendDataToBluetooth(int mode, byte[] cmd, byte[] Sendbuf,
 			int SendLen, int Ptime) 
 	{
-		//ÏÈÅĞ¶ÏÀ¶ÑÀÁ¬½ÓÊÇ·ñÕı³££¬Èç¹û²»Õı³££¬ÔòÍ¨Öª¹Û²ìÕß
+		//å…ˆåˆ¤æ–­è“ç‰™è¿æ¥æ˜¯å¦æ­£å¸¸ï¼Œå¦‚æœä¸æ­£å¸¸ï¼Œåˆ™é€šçŸ¥è§‚å¯Ÿè€…
 		if(!m_blue_state.IsConnected())
 		{
-			//Í¨Öª¹Û²ìÕß
+			//é€šçŸ¥è§‚å¯Ÿè€…
 			NotifyBlueConnectLost();
 			return -1;
 		}
-		//¼ì²éÏµÍ³ÊÇ·ñÕıÔÚ·¢ËÍÊı¾İ
+		//æ£€æŸ¥ç³»ç»Ÿæ˜¯å¦æ­£åœ¨å‘é€æ•°æ®
 		if(m_time_switch == true)
 			return -2;
 		int iRet = 0;
 		if (cmd.length < 2)
 			return -1;
-		m_send_mode = mode; // ÉèÖÃµ±Ç°Êı¾İ·¢ËÍÄ£Ê½
-		//¼ÆËã·¢ËÍ³¬Ê±Ê±¼ä
+		m_send_mode = mode; // è®¾ç½®å½“å‰æ•°æ®å‘é€æ¨¡å¼
+		//è®¡ç®—å‘é€è¶…æ—¶æ—¶é—´
 		m_time_max = ((Ptime / 100) > TIME_MAX) ? (Ptime / 100): TIME_MAX;
-		m_time_send = 0;// ÖØÖÃ³¬Ê±´ÎÊı
-		m_time_counter = 0; //³¬Ê±¼ÆÊ±ÇåÁã
+		m_time_send = 0;// é‡ç½®è¶…æ—¶æ¬¡æ•°
+		m_time_counter = 0; //è¶…æ—¶è®¡æ—¶æ¸…é›¶
 		switch (m_send_mode) {
 		case CMD_OneToOne:
 			m_sendbuflen = AddDataToCommond(cmd, Sendbuf, SendLen, m_sendbuf);	
@@ -334,7 +334,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	            m_counter++;
 	        }
 			m_time_switch = true;
-			// ·¢ËÍÃüÁî
+			// å‘é€å‘½ä»¤
 			SendCmd(m_sendbuf, m_sendbuflen);
 			break;
 		case CMD_OneToNone:
@@ -344,7 +344,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
                 m_counter++;
             }
 			m_time_switch = false;
-			// ·¢ËÍÃüÁî
+			// å‘é€å‘½ä»¤
 			SendCmd(m_sendbuf, m_sendbuflen);
 			break;
 		case CMD_OneToMore:
@@ -354,7 +354,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
                 m_counter++;
             }
 			m_time_switch = true;
-			// ·¢ËÍÃüÁî
+			// å‘é€å‘½ä»¤
 			SendCmd(m_sendbuf, m_sendbuflen);
 			break;
 		case CMD_ReadMode:
@@ -364,24 +364,24 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
                 m_counter++;
             }
 			m_time_switch = true;
-			// ·¢ËÍÃüÁî
+			// å‘é€å‘½ä»¤
 			SendCmd(m_sendbuf, m_sendbuflen);
 			break;
-		case CMD_NONE: // ²»×öÈÎºÎ´¦Àí£¬¶ªÆúÎŞĞ§Êı¾İ
+		case CMD_NONE: // ä¸åšä»»ä½•å¤„ç†ï¼Œä¸¢å¼ƒæ— æ•ˆæ•°æ®
 			break;
 		default:
 			break;
 		}
 		return iRet;
 	}
-	// ·¢ËÍÒ»Ö¡ÃüÁî¸øÀ¶ÑÀÉè±¸
+	// å‘é€ä¸€å¸§å‘½ä»¤ç»™è“ç‰™è®¾å¤‡
 	private void SendCmd(byte[] cmd, int Plen) 
 	{
 		if(!m_blue_state.IsConnected())
 		{
-			//Í¨Öª¹Û²ìÕß
+			//é€šçŸ¥è§‚å¯Ÿè€…
 			NotifyBlueConnectLost();
-			m_time_switch = false; //¹Ø±Õ³¬Ê±ÖØ·¢
+			m_time_switch = false; //å…³é—­è¶…æ—¶é‡å‘
 			return ;
 		}
 		byte[] commandbuff = new byte[Plen];
@@ -389,23 +389,23 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		if (m_bluetooth_adapter_service != null)
 			m_bluetooth_adapter_service.write(commandbuff);
 		String send = bytesToHexString(commandbuff, Plen);
-		// if(D) Log.i(TAG,"·¢ËÍ³¤¶È£º" + Plen);
-		if (D)	Log.i(TAG, "·¢ËÍ£º" + send);
+		// if(D) Log.i(TAG,"å‘é€é•¿åº¦ï¼š" + Plen);
+		if (D)	Log.i(TAG, "å‘é€ï¼š" + send);
 	}
-	//´¦ÀíÊÕµ½µÄÀ¶ÑÀÊı¾İ
+	//å¤„ç†æ”¶åˆ°çš„è“ç‰™æ•°æ®
 	private void ReceiveBlueData(byte[] databuf,int datalen)
 	{
-	    if(D) Log.i(TAG,"ÊÕµ½Î´Ğ£ÑéµÄÊı¾İ£º" + bytesToHexString(databuf, datalen));
-		//ÏÈÍ¨¹ı¼ÆÊıÆ÷¹ıÂËÀ¬»øÊı¾İ
+	    if(D) Log.i(TAG,"æ”¶åˆ°æœªæ ¡éªŒçš„æ•°æ®ï¼š" + bytesToHexString(databuf, datalen));
+		//å…ˆé€šè¿‡è®¡æ•°å™¨è¿‡æ»¤åƒåœ¾æ•°æ®
 		if(datalen < 8) return;
 		if((byte)(databuf[6] + 1) != m_counter) 
 		{
-			if(D) Log.i(TAG,"¼ÆÊıÆ÷Ğ£Ñé´íÎó!");
+			if(D) Log.i(TAG,"è®¡æ•°å™¨æ ¡éªŒé”™è¯¯!");
 			return;
 		}
 		if(m_send_mode == CMD_NONE)
 		{
-			if(D) Log.i(TAG,"ÖĞ¶Ï½ÓÊÕ!");
+			if(D) Log.i(TAG,"ä¸­æ–­æ¥æ”¶!");
 			return;
 		}
 		else if(m_send_mode == CMD_OneToOne)
@@ -425,31 +425,31 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		{
 			m_time_switch = false;
 		}
-		//·¢ËÍÊı¾İ¸ø¹Û²ìÕß
-		//ÔÚÕâÀïÈ¥µô°üÍ·°üÎ² ¸øÓÃ»§µÄÊı¾İÎª<ÃüÁî×Ö> + <Êı¾İ>
+		//å‘é€æ•°æ®ç»™è§‚å¯Ÿè€…
+		//åœ¨è¿™é‡Œå»æ‰åŒ…å¤´åŒ…å°¾ ç»™ç”¨æˆ·çš„æ•°æ®ä¸º<å‘½ä»¤å­—> + <æ•°æ®>
 		//byte [] v_sendbuf = new byte[datalen - 8];
 		//System.arraycopy(databuf, 7, v_sendbuf, 0, datalen - 8);
 		//NotifyGetDataFromService(v_sendbuf, datalen - 8);
 		if(datalen <= 8) return;
 		NotifyGetDataFromService(databuf,datalen);
 		String v_recv = bytesToHexString(databuf, datalen);
-		if(D) Log.i(TAG,"ÊÕµ½£º" + v_recv);
+		if(D) Log.i(TAG,"æ”¶åˆ°ï¼š" + v_recv);
 	}
-	// °Ñ½ÓÊÕµ½µÄÁãÉ¢µÄÀ¶ÑÀÊı¾İÕûÀí³É±ê×¼µÄÒ»Ö¡Ö¡µÄÊı¾İ°ü£¡
+	// æŠŠæ¥æ”¶åˆ°çš„é›¶æ•£çš„è“ç‰™æ•°æ®æ•´ç†æˆæ ‡å‡†çš„ä¸€å¸§å¸§çš„æ•°æ®åŒ…ï¼
 	private void receiveData(byte[] buff, int length) 
 	{
-		// ÏÈ½«½ÓÊÕÊı¾İ»º´æµ½¹ÜµÀ
+		// å…ˆå°†æ¥æ”¶æ•°æ®ç¼“å­˜åˆ°ç®¡é“
 		int i;
-		byte v_check = 0; // Ğ£Ñé×Ö½Ú
-		int framelenght = 0; // Ö¡Êı¾İ³¤¶È
+		byte v_check = 0; // æ ¡éªŒå­—èŠ‚
+		int framelenght = 0; // å¸§æ•°æ®é•¿åº¦
 
 		for (i = 0; i < length; i++) {
 			m_recvbuff[(m_recvbuffStartAddress + m_recvbuffDataLength + i) % m_recvbuff_len] = buff[i];
 		}
 		m_recvbuffDataLength += length;
-		if(D) Log.i(TAG,"ÊÕµ½->m_recvbuffDataLength = " + m_recvbuffDataLength);
-		// ²éÕÒºÏÊÊÊı¾İ²¢·µ»Ø¸ø½çÃæ
-		// ÏÈÕÒ0x55 0xAA£¬È»ºóÔÙÅĞ¶ÏÄ¿±êµØÖ·Ô´µØÖ·£¬ÔÙÈ¡³öÊı¾İ³¤¶È£¬²¢Ğ£Ñé£¬Èç¹ûĞ£Ñé²»¶ÔÔò¶ªÆú¸ÃÖ¡Êı¾İ
+		if(D) Log.i(TAG,"æ”¶åˆ°->m_recvbuffDataLength = " + m_recvbuffDataLength);
+		// æŸ¥æ‰¾åˆé€‚æ•°æ®å¹¶è¿”å›ç»™ç•Œé¢
+		// å…ˆæ‰¾0x55 0xAAï¼Œç„¶åå†åˆ¤æ–­ç›®æ ‡åœ°å€æºåœ°å€ï¼Œå†å–å‡ºæ•°æ®é•¿åº¦ï¼Œå¹¶æ ¡éªŒï¼Œå¦‚æœæ ¡éªŒä¸å¯¹åˆ™ä¸¢å¼ƒè¯¥å¸§æ•°æ®
 		if (m_recvbuffDataLength < 8)
 			return;
 		while (m_recvbuffDataLength >= 8) 
@@ -462,12 +462,12 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 				{
 					framelenght = (m_recvbuff[(m_recvbuffStartAddress + 4) % m_recvbuff_len] & 0xFF)
 								* 0x100	+ (m_recvbuff[(m_recvbuffStartAddress + 5) % m_recvbuff_len] & 0xFF);
-					// ÅĞ¶ÏÊÇ·ñÊÕÈ«ÁËÒ»Ö¡Êı¾İ
+					// åˆ¤æ–­æ˜¯å¦æ”¶å…¨äº†ä¸€å¸§æ•°æ®
 					if (framelenght > m_recvbuffDataLength - 7)
 						break;
-					// Ìí¼ÓÖ¡Í·
+					// æ·»åŠ å¸§å¤´
 					v_check = 0;
-					byte[] messagebuffer = new byte[framelenght + 7]; // ·¢ËÍÏûÏ¢»º³åÇø
+					byte[] messagebuffer = new byte[framelenght + 7]; // å‘é€æ¶ˆæ¯ç¼“å†²åŒº
 					if(D) Log.i(TAG,"messagebuffer = " + (framelenght + 7));
 					messagebuffer[0] = m_recvbuff[(m_recvbuffStartAddress + 0) % m_recvbuff_len];
 					messagebuffer[1] = m_recvbuff[(m_recvbuffStartAddress + 1) % m_recvbuff_len];
@@ -476,22 +476,22 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 						messagebuffer[2 + i] = m_recvbuff[(m_recvbuffStartAddress + 2 + i) % m_recvbuff_len];
 						v_check ^= m_recvbuff[(m_recvbuffStartAddress + 2 + i) % m_recvbuff_len];
 					}
-					if (v_check == m_recvbuff[(m_recvbuffStartAddress + 6 + framelenght) % m_recvbuff_len])// Ö¡Ğ£ÑéÕıÈ·
+					if (v_check == m_recvbuff[(m_recvbuffStartAddress + 6 + framelenght) % m_recvbuff_len])// å¸§æ ¡éªŒæ­£ç¡®
 					{
 						messagebuffer[framelenght + 6] = v_check;
-						// µÃ³öÊÕµ½µÄÊı¾İÄÚÈİ
+						// å¾—å‡ºæ”¶åˆ°çš„æ•°æ®å†…å®¹
 						// messagebuffer framelenght + 7
 						// String v_recv =
 						// bytesToHexString(messagebuffer,framelenght + 7);
-						//if(D) Log.i(TAG,"Êä³ö£ºaddr=" + m_recvbuffStartAddress + "len=" + framelenght + 7);
-						//´¦ÀíÊÕµ½µÄÀ¶ÑÀÊı¾İ
+						//if(D) Log.i(TAG,"è¾“å‡ºï¼šaddr=" + m_recvbuffStartAddress + "len=" + framelenght + 7);
+						//å¤„ç†æ”¶åˆ°çš„è“ç‰™æ•°æ®
 						ReceiveBlueData(messagebuffer,framelenght + 7);
 					}
 					else
 					{
-						if(D) Log.e(TAG,"½ÓÊÕĞ£Ñé´íÎó");
+						if(D) Log.e(TAG,"æ¥æ”¶æ ¡éªŒé”™è¯¯");
 					}
-					// ÒÆ¶¯¹ÜµÀÖ¸Õë
+					// ç§»åŠ¨ç®¡é“æŒ‡é’ˆ
 					m_recvbuffStartAddress = (m_recvbuffStartAddress + framelenght + 7) % m_recvbuff_len;
 					if(m_recvbuffStartAddress > m_recvbuff_len)
 						m_recvbuffStartAddress = m_recvbuffStartAddress % m_recvbuff_len;
@@ -504,7 +504,7 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 					m_recvbuffDataLength--;
 					if(D) Log.i(TAG,"m_recvbuffDataLength = " + m_recvbuffDataLength);
 				}
-			} else // ÒÆ¶¯ÆğÊ¼µØÖ·
+			} else // ç§»åŠ¨èµ·å§‹åœ°å€
 			{
 				// Log.e("bt","error");
 				m_recvbuffStartAddress++;
@@ -515,25 +515,25 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	}	
 	public int AddDataToCommond(byte[] Pcmd, byte[] Pdata, int PdataLen,byte[] Pcommond) 
 	{
-		int iRet = 0; // ·µ»Ø×é×°Êı¾İ³¤¶È
-		Arrays.fill(Pcommond, (byte) 0); // ·şÎ»·¢ËÍ×Ö·û´®
+		int iRet = 0; // è¿”å›ç»„è£…æ•°æ®é•¿åº¦
+		Arrays.fill(Pcommond, (byte) 0); // æœä½å‘é€å­—ç¬¦ä¸²
 		Pcommond[0] = 0x55;
 		Pcommond[1] = (byte) 0xAA;
-		Pcommond[2] = m_address[0]; // Ä¿±êµØÖ·
-		Pcommond[3] = m_address[1]; // Ô´µØÖ·
-		// Ìí¼ÓÊı¾İ³¤¶È
-		Pcommond[4] = (byte) ((3 + PdataLen) / 0x100); // Ä¿±êµØÖ·
-		Pcommond[5] = (byte) ((3 + PdataLen) % 0x100); // Ô´µØÖ·
-		// Ìí¼Ó¼ÆÊıÆ÷
+		Pcommond[2] = m_address[0]; // ç›®æ ‡åœ°å€
+		Pcommond[3] = m_address[1]; // æºåœ°å€
+		// æ·»åŠ æ•°æ®é•¿åº¦
+		Pcommond[4] = (byte) ((3 + PdataLen) / 0x100); // ç›®æ ‡åœ°å€
+		Pcommond[5] = (byte) ((3 + PdataLen) % 0x100); // æºåœ°å€
+		// æ·»åŠ è®¡æ•°å™¨
 		Pcommond[6] = m_counter;
-		// Ìí¼ÓÃüÁî×Ö
+		// æ·»åŠ å‘½ä»¤å­—
 		Pcommond[7] = Pcmd[0];
 		Pcommond[8] = Pcmd[1];
-		// Ìí¼ÓÃüÁîÄÚÈİ
+		// æ·»åŠ å‘½ä»¤å†…å®¹
 		for (int i = 0; i < PdataLen; i++) {
 			Pcommond[9 + i] = Pdata[i];
 		}
-		// ¼ÆËãĞ£Ñé
+		// è®¡ç®—æ ¡éªŒ
 		Pcommond[9 + PdataLen] = CalcXorChechSum(Pcommond, 2, 8 + PdataLen);
 		iRet = 9 + PdataLen + 1;
 		return iRet;
@@ -550,12 +550,12 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	/**
 	 * @author pufengming
 	 * @param data
-	 *            Êı¾İ°ü×Ö½ÚÊı×é
+	 *            æ•°æ®åŒ…å­—èŠ‚æ•°ç»„
 	 * @param start
-	 *            Ğ£ÑéÆğÊ¼Î»ÖÃ
+	 *            æ ¡éªŒèµ·å§‹ä½ç½®
 	 * @param end
-	 *            Ğ£ÑéµÄ½áÊøÎ»ÖÃ
-	 * @return XORĞ£ÑéÖµ
+	 *            æ ¡éªŒçš„ç»“æŸä½ç½®
+	 * @return XORæ ¡éªŒå€¼
 	 * */
 	public static byte CalcXorChechSum(byte[] data, int start, int end) {
 		byte chechsum = 0;
@@ -570,10 +570,10 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 	}
 
 	/****
-	 * @author luxingsong °Ñ×Ö½ÚÊı×é×ª»»³É16½øÖÆ×Ö·û´®
+	 * @author luxingsong æŠŠå­—èŠ‚æ•°ç»„è½¬æ¢æˆ16è¿›åˆ¶å­—ç¬¦ä¸²
 	 * @param bArray
-	 *            ×Ö½ÚÊı×é
-	 * @return String ×ª»»³ÉµÄ×Ö·û´®
+	 *            å­—èŠ‚æ•°ç»„
+	 * @return String è½¬æ¢æˆçš„å­—ç¬¦ä¸²
 	 */
 	public static final String bytesToHexString(byte[] bArray, int len) {
 		StringBuffer sb = new StringBuffer(bArray.length);
@@ -592,24 +592,24 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 		return sb.toString();
 	}
 	
-	//»Øµ÷º¯Êı
+	//å›è°ƒå‡½æ•°
 	@Override
 	public void GetDataFromBlueSocket(byte[] buf, int len) {
 		// TODO Auto-generated method stub
 		if(D)
 		{
 			String v_show = bytesToHexString(buf, len);
-			//Log.i(TAG,"»Øµ÷£º" + v_show);
+			//Log.i(TAG,"å›è°ƒï¼š" + v_show);
 		}
-		//if(D) Log.i(TAG,"»Øµ÷Êı¾İ£º" + len);
+		//if(D) Log.i(TAG,"å›è°ƒæ•°æ®ï¼š" + len);
 		receiveData(buf,len);
-		if(D) Log.i(TAG,"»Øµ÷Êı¾İOK");
+		if(D) Log.i(TAG,"å›è°ƒæ•°æ®OK");
 	}
 	@Override
 	public void GetBluetoothState(BlueStateEvent state) {
 		// TODO Auto-generated method stub
-		if(D) Log.i(TAG,"»ñÈ¡À¶ÑÀ×´Ì¬!!!");
-		m_blue_state_last = m_blue_state;//±£´æÀúÊ·×´Ì¬
+		if(D) Log.i(TAG,"è·å–è“ç‰™çŠ¶æ€!!!");
+		m_blue_state_last = m_blue_state;//ä¿å­˜å†å²çŠ¶æ€
 		m_blue_state = state;
 		ResetTimeOut();
 		if(m_blue_state.IsConnected())
@@ -629,13 +629,13 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
 				NotifyBlueConnectLost();
 		}
 	}
-	//µ÷ÓÃÍ¨Öª
+	//è°ƒç”¨é€šçŸ¥
 	public void BlueConnectClose()
 	{
 		NotifyBlueConnectClose();
 	}
 	
-	//Í¨Öª¹Û²ìÕß¶ÔÏó
+	//é€šçŸ¥è§‚å¯Ÿè€…å¯¹è±¡
 	public class DataToClient
 	{
 		private BlueStateEvent m_blue_state = null;
@@ -670,13 +670,13 @@ public class BluetoothDataService extends Observable implements BluetoothAdapter
         return sb.toString();
     }
     
-    // ÉèÖÃ¼ÆÊıÆ÷
+    // è®¾ç½®è®¡æ•°å™¨
     public void setCounter(byte count)
     {
         synchronized (this)
         {
             this.m_counter = count;   
-            if(D)Log.d(TAG, "¼ÆÊıÆ÷£º"  + m_counter);
+            if(D)Log.d(TAG, "è®¡æ•°å™¨ï¼š"  + m_counter);
         }
     }
 }
